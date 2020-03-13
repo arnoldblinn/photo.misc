@@ -1,0 +1,38 @@
+From: Gene Piaquadio [software@warwick.net]
+Sent: Wednesday, November 08, 2000 6:42 PM
+To: arnoldb@the-b-team.org
+Subject: SI_COMM
+
+Thank you for your SI_COMM order. In order to install SI_COMM please
+perform the following:
+
+1 - If you have not already received a copy of the SI_COMM demo please
+go to our web site at http://www.sinnovations.com/htdocs/sicommdemo.htm
+and download a copy. The file is password protected with the
+following password: atlanta96 please note that only the last
+two digits in this password are numeric and the alpha characters
+are in lower case.
+
+To install the demo version unzip the file contents into a directory and
+run
+the setup.exe program.
+
+2 - After you have installed the SI_COMM demo run the attached program
+to convert the demo install into a full retail build. This program will
+install to the default location c:\Program Files\SI_COMM\BIN. If you
+installed SI_COMM to a different location specify the location when
+prompted.
+
+3 - Save your product id number in a safe place # si0300069081
+Reference that number whenever you contact technical support.
+
+Attached you will also find a copy of your receipt in Adobe Acrobat
+format.
+
+Please feel free to contact me if you have any questions about the
+software.
+
+Regards,
+
+Gene Piaquadio
+genep@sinnovations.com

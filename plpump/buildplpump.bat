@@ -1,0 +1,1 @@
+c:\WINDOWS\Microsoft.NET\Framework\v1.1.4322\csc /t:exe /r:System.DLL /out:"plpump.exe" plpump.cs ..\util\webutil.cs ..\util\imageutil.cs photolist.cs /debug /unsafe

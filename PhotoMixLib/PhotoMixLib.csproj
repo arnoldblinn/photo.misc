@@ -1,0 +1,104 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9227377B-EA03-476B-A9BB-4D81060EA7F2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>Msn.PhotoMix</AssemblyName>
+    <RootNamespace>Msn.PhotoMix</RootNamespace>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>.\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sources" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ErrorLog.cs" />
+    <Compile Include="Passport\Puid.cs" />
+    <Compile Include="PhotoMixError.cs" />
+    <Compile Include="PhotoMixErrorAttribute.cs" />
+    <Compile Include="PhotoMixException.cs" />
+    <Compile Include="PhotoMixLog.cs" />
+    <Compile Include="PhotoMixQuery.cs" />
+    <Compile Include="Services\FacebookChannel.cs" />
+    <Compile Include="Services\FlickrChannel.cs" />
+    <Compile Include="Services\SmugMugChannel.cs" />
+    <Compile Include="SlideShow\Channel.cs" />
+    <Compile Include="SlideShow\ChannelItem.cs" />
+    <Compile Include="SlideShow\Feed.cs" />
+    <Compile Include="SlideShow\FixedReferenceChannel.cs" />
+    <Compile Include="SlideShow\SlideShowItem.cs" />
+    <Compile Include="SlideShow\CompiledTextFeed.cs" />
+    <Compile Include="SlideShow\CompiledTextFeedItem.cs" />
+    <Compile Include="SlideShow\CompileUtil.cs" />
+    <Compile Include="SlideShow\FriendlyName.cs" />
+    <Compile Include="SlideShow\ListItem.cs" />
+    <Compile Include="SlideShow\ReferenceChannel.cs" />
+    <Compile Include="SlideShow\RssChannel.cs" />
+    <Compile Include="SlideShow\SlideShow.cs" />
+    <Compile Include="SlideShow\SpaceChannel.cs" />
+    <Compile Include="SlideShow\StaticChannel.cs" />
+    <Compile Include="SlideShow\TextRssChannelItem.cs" />
+    <Compile Include="SlideShow\UrlChannelItem.cs" />
+    <Compile Include="USTraffic\USTrafficChannel.cs" />
+    <Compile Include="Util\ImageUtil.cs" />
+    <Compile Include="Util\MiscUtil.cs" />
+    <Compile Include="Util\TimeUtil.cs" />
+    <Compile Include="Util\WebPageBitmap.cs" />
+    <Compile Include="Weather\CompiledWeather.cs" />
+    <Compile Include="Weather\WeatherChannel.cs" />
+    <Compile Include="WebPage\CompiledWebPage.cs" />
+    <Compile Include="WebPage\WebPageChannel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="placefil.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FrameworkLib\FrameworkLib.csproj">
+      <Project>{8794F531-A42B-4E44-9193-70A274E12588}</Project>
+      <Name>FrameworkLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="MSHTML">
+      <Guid>{3050F1C5-98B5-11CF-BB82-00AA00BDCE0B}</Guid>
+      <VersionMajor>4</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>

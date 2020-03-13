@@ -1,0 +1,142 @@
+<Schema xmlns="urn:schemas-microsoft-com:xml-data" xmlns:dt="urn:schemas-microsoft-com:datatypes">    
+      
+    <AttributeType name="Version" required="yes" dt:type="int"/>       
+    <ElementType name="Name" content="textOnly"/>
+    <ElementType name="Type" dt:type="int" content="textOnly"/>
+        
+    <ElementType name="LastRun" dt:type="dateTime" content="textOnly"/>
+    <ElementType name="Reason" content="textOnly"/>    
+    <ElementType name="Failed" dt:type="boolean" content="textOnly"/>
+    <ElementType name="Status" content="eltOnly" model="closed">
+        <element type="LastRun"/>        
+        <element type="Failed"/>
+        <element type="Reason"/>
+    </ElementType>
+    
+    <ElementType name="URI" content="textOnly"/>    
+    <ElementType name="Picture" content="eltOnly" model="closed">
+        <element type="Name"/>
+        <element type="URI"/>
+    </ElementType>    
+    <ElementType name="PictureList" content="eltOnly" model="closed">
+        <element type="Picture" minOccurs="0" maxOccurs="*"/>        
+    </ElementType>
+    <ElementType name="Album" content="eltOnly" model="closed">
+    	<attribute type="Version"/>
+    	<element type="Name"/>
+    	<element type="PictureList"/>
+    </ElementType>
+    
+    <ElementType name="AlbumURI" content="textOnly"/>
+    <ElementType name="Source" content="eltOnly" model="closed">        
+        <element type="Type"/>
+        <element type="Album"/>
+        <element type="AlbumURI"/>
+    </ElementType>
+    
+    <ElementType name="Disable" dt:type="boolean" content="textOnly"/>
+    <ElementType name="Connect" dt:type="boolean" content="textOnly"/>
+    <ElementType name="Hours" dt:type="int" content="textOnly"/>
+    <ElementType name="Minutes" dt:type="int" content="textOnly"/>
+    <ElementType name="Weekday" dt:type="int" content="textOnly"/>
+    <ElementType name="Monthday" dt:type="int" content="textOnly"/>
+    <ElementType name="foobar" content="textOnly"/>
+    <ElementType name="Schedule" content="eltOnly" model="closed">
+        <element type="Type"/>
+        <element type="Disable"/>
+        <element type="Connect"/>
+        <element type="Hours"/>
+        <element type="Minutes"/>
+        <element type="Weekday"/>
+        <element type="Monthday"/>
+    </ElementType>
+        
+    <ElementType name="Width" dt:type="int" content="textOnly"/>
+    <ElementType name="Height" dt:type="int" content="textOnly"/>
+    <ElementType name="Grow" dt:type="boolean" content="textOnly"/>
+    <ElementType name="Shrink" dt:type="boolean" content="textOnly"/>
+    <ElementType name="Rotate" dt:type="boolean" content="textOnly"/>
+    <ElementType name="RotateDirection" dt:type="int" content="textOnly"/>
+    <ElementType name="Pad" dt:type="boolean" content="textOnly"/>
+    <ElementType name="PadColor" dt:type="int" content="textOnly"/>
+    <ElementType name="VerticalAlign" dt:type="int" content="textOnly"/>
+    <ElementType name="HorizontalAlign" dt:type="int" content="textOnly"/>
+    <ElementType name="Margins" dt:type="boolean" content="textOnly"/>
+    <ElementType name="TopMargin" dt:type="int" content="textOnly"/>
+    <ElementType name="LeftMargin" dt:type="int" content="textOnly"/>
+    <ElementType name="RightMargin" dt:type="int" content="textOnly"/>
+    <ElementType name="BottomMargin" dt:type="int" content="textOnly"/>
+    <ElementType name="MarginColor" dt:type="int" content="textOnly"/>
+    <ElementType name="Compression" dt:type="int" content="textOnly"/>        
+    <ElementType name="Thumbnail" dt:type="boolean" content="textOnly"/>        
+    <ElementType name="ThumbWidth" dt:type="int" content="textOnly"/>        
+    <ElementType name="ThumbHeight" dt:type="int" content="textOnly"/>        
+    <ElementType name="FormatSettings" content="eltOnly" model="closed">
+        <element type="Width"/>
+        <element type="Height"/>
+        <element type="Grow"/>
+        <element type="Shrink"/>
+        <element type="Rotate"/>
+        <element type="RotateDirection"/>
+        <element type="Pad"/>
+        <element type="PadColor"/>
+        <element type="VerticalAlign"/>
+        <element type="HorizontalAlign"/>
+        <element type="Margins"/>
+        <element type="TopMargin"/>
+        <element type="LeftMargin"/>
+        <element type="RightMargin"/>
+        <element type="BottomMargin"/>
+        <element type="MarginColor"/>
+        <element type="Compression"/>
+        <element type="Thumbnail"/>
+        <element type="ThumbWidth"/>
+        <element type="ThumbHeight"/>
+    </ElementType>
+    
+    <ElementType name="Format" content="eltOnly" model="closed">
+        <element type="Name"/>
+        <element type="FormatSettings"/>        
+    </ElementType>   
+    
+    <ElementType name="FormatProfile" content="eltOnly" model="closed">
+    	<attribute type="Version"/>
+        <element type="Name"/>
+        <element type="FormatSettings"/>
+    </ElementType>   
+    
+    <ElementType name="Directory" content="textOnly"/>
+    <ElementType name="DirectoryDelete" dt:type="boolean" content="textOnly"/>
+    <ElementType name="FileTemplate" content="textOnly"/>    
+    <ElementType name="DigiFramePort" dt:type="int" content="textOnly"/>
+    <ElementType name="DigiFrameMedia" dt:type="int" content="textOnly"/>    
+    <ElementType name="Destination" content="eltOnly" model="closed">
+        <element type="Type"/>
+        <element type="Directory"/>
+        <element type="DirectoryDelete"/>
+        <element type="FileTemplate"/>        
+        <element type="DigiFramePort"/>        
+        <element type="DigiFrameMedia"/>        
+    </ElementType>
+    
+    <ElementType name="Task" content="eltOnly" model="closed">
+    	<attribute type="Version"/>
+        <element type="Name"/>
+        <element type="Status"/>
+        <element type="Source"/>
+        <element type="Schedule"/>
+        <element type="Format"/>
+        <element type="Destination"/>
+    </ElementType>
+    
+    <ElementType name="Tasks" content="eltOnly" model="closed">
+        <attribute type="Version"/>
+        <element type="Task" maxOccurs="*" minOccurs="0"/>
+    </ElementType>
+    
+    <ElementType name="FormatProfiles" content="eltOnly" model="closed">
+        <attribute type="Version"/>
+        <element type="FormatProfile" maxOccurs="*" minOccurs="0"/>
+    </ElementType>
+    
+</Schema>

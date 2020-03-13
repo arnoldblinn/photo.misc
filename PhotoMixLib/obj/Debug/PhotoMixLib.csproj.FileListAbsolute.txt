@@ -1,0 +1,8 @@
+C:\photomix\private\PhotoMixLib\bin\Debug\Msn.PhotoMix.dll
+C:\photomix\private\PhotoMixLib\bin\Debug\Msn.PhotoMix.pdb
+C:\photomix\private\PhotoMixLib\bin\Debug\Msn.Framework.dll
+C:\photomix\private\PhotoMixLib\bin\Debug\Msn.Framework.pdb
+C:\photomix\private\PhotoMixLib\obj\Debug\ResolveAssemblyReference.cache
+C:\photomix\private\PhotoMixLib\obj\Debug\PhotoMixLib.csproj.ResolveComReference.cache
+C:\photomix\private\PhotoMixLib\obj\Debug\Msn.PhotoMix.dll
+C:\photomix\private\PhotoMixLib\obj\Debug\Msn.PhotoMix.pdb

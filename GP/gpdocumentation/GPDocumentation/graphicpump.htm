@@ -1,0 +1,2503 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 10">
+<meta name=Originator content="Microsoft Word 10">
+<link rel=File-List href="graphicpump_files/filelist.xml">
+<link rel=Edit-Time-Data href="graphicpump_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Introduction</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Arnold Blinn</o:Author>
+  <o:LastAuthor>Arnold Blinn</o:LastAuthor>
+  <o:Revision>29</o:Revision>
+  <o:TotalTime>1200</o:TotalTime>
+  <o:Created>2000-11-09T07:04:00Z</o:Created>
+  <o:LastSaved>2001-06-22T17:15:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>4787</o:Words>
+  <o:Characters>27286</o:Characters>
+  <o:Company>Microsoft Corp.</o:Company>
+  <o:Lines>227</o:Lines>
+  <o:Paragraphs>64</o:Paragraphs>
+  <o:CharactersWithSpaces>32009</o:CharactersWithSpaces>
+  <o:Version>10.2625</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{mso-style-next:Normal;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:12.0pt;
+	font-family:Arial;
+	mso-font-kerning:0pt;}
+h2
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:14.0pt;
+	font-family:Arial;
+	font-style:italic;}
+h3
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	font-size:13.0pt;
+	font-family:Arial;}
+h4
+	{mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:4;
+	font-size:12.0pt;
+	font-family:Arial;}
+h5
+	{mso-style-next:Normal;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:5;
+	font-size:20.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:Arial;
+	font-weight:normal;}
+h6
+	{mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:-.5in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:6;
+	font-size:12.0pt;
+	font-family:Arial;}
+p.MsoHeading7, li.MsoHeading7, div.MsoHeading7
+	{mso-style-next:Normal;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:7;
+	font-size:18.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	font-weight:bold;}
+p.MsoToc1, li.MsoToc1, div.MsoToc1
+	{mso-style-update:auto;
+	mso-style-next:Normal;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoToc2, li.MsoToc2, div.MsoToc2
+	{mso-style-update:auto;
+	mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:12.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoToc3, li.MsoToc3, div.MsoToc3
+	{mso-style-update:auto;
+	mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:24.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoToc4, li.MsoToc4, div.MsoToc4
+	{mso-style-update:auto;
+	mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	font-weight:bold;}
+p.MsoToc5, li.MsoToc5, div.MsoToc5
+	{mso-style-update:auto;
+	mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:48.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoToc6, li.MsoToc6, div.MsoToc6
+	{mso-style-update:auto;
+	mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:60.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoToc7, li.MsoToc7, div.MsoToc7
+	{mso-style-update:auto;
+	mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:1.0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoToc8, li.MsoToc8, div.MsoToc8
+	{mso-style-update:auto;
+	mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:84.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoToc9, li.MsoToc9, div.MsoToc9
+	{mso-style-update:auto;
+	mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:96.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:center 3.0in right 6.0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoBlockText, li.MsoBlockText, div.MsoBlockText
+	{margin-top:0in;
+	margin-right:-.5in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in .75in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-even-footer:url("graphicpump_files/header.htm") ef1;
+	mso-footer:url("graphicpump_files/header.htm") f1;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:279184325;
+	mso-list-template-ids:1998230036;}
+@list l0:level1
+	{mso-level-start-at:2;
+	mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1
+	{mso-list-id:798887250;
+	mso-list-type:hybrid;
+	mso-list-template-ids:560919184 67698713 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l1:level1
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2
+	{mso-list-id:899248543;
+	mso-list-template-ids:1281627824;}
+@list l2:level1
+	{mso-level-start-at:3;
+	mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3
+	{mso-list-id:963927973;
+	mso-list-template-ids:120511752;}
+@list l3:level1
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2050"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-US link=blue vlink=purple style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<h5><a name="_Toc497375144">Graphic Pump</a></h5>
+
+<p class=MsoFooter style='tab-stops:.5in center 3.0in right 6.0in'><span
+style='mso-bookmark:_Toc497375144'></span><a href="http://www.graphicpump.com/"><span
+style='mso-bookmark:_Toc497375144'><span style='font-family:Arial'>http://www.graphicpump.com</span></span><span
+style='mso-bookmark:_Toc497375144'></span></a><span style='mso-bookmark:_Toc497375144'><span
+style='font-family:Arial'><o:p></o:p></span></span></p>
+
+<p class=MsoFooter style='tab-stops:.5in center 3.0in right 6.0in'><span
+style='mso-bookmark:_Toc497375144'><span style='font-family:Arial'>Version 1.1
+User’s Manual<o:p></o:p></span></span></p>
+
+<p class=MsoFooter style='tab-stops:.5in center 3.0in right 6.0in'><span
+style='mso-bookmark:_Toc497375144'><span style='font-family:Arial'>Copyright
+2000-2001 by Graphic Pump, All Rights Reserved<o:p></o:p></span></span></p>
+
+<h1><span style='mso-bookmark:_Toc497375144'><span style='font-size:18.0pt;
+mso-bidi-font-size:12.0pt'><o:p>&nbsp;</o:p></span></span></h1>
+
+<h1><span style='mso-bookmark:_Toc497375144'><span style='font-size:18.0pt;
+mso-bidi-font-size:12.0pt'>Introduction</span></span><span style='font-size:
+18.0pt;mso-bidi-font-size:12.0pt'><o:p></o:p></span></h1>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'>The Graphic Pump automatically
+moves copies of images from the Internet to your Screen Saver, Pocket PC, Photo
+Wallet, or Digital Picture Frame.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'>It is a utility that sits on
+the system tray and pumps images to these devices, applying formatting along
+the way.<span style='mso-spacerun:yes'>  </span>Images can be pumped to these
+devices on a pre-determined schedule, or on demand.<span
+style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'>The application ships as
+freeware.<span style='mso-spacerun:yes'>  </span>Feel free to distribute it to
+anyone you choose.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'>For the latest version,
+news, or to make feature suggestions visit:<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'><a
+href="http://www.graphicpump.com/">http://www.graphicpump.com</a><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<h1><a name="_Toc497375145"><span style='font-size:18.0pt;mso-bidi-font-size:
+12.0pt'>History and Uses</span></a><span style='font-size:18.0pt;mso-bidi-font-size:
+12.0pt'><o:p></o:p></span></h1>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'>The history behind the
+Graphic Pump is simple. It started as a simple goal. I wanted a way to have my
+photo albums displayed on a variety of devices, ranging from a Pocket PC to a
+Screen Saver to a digital picture frame.<span style='mso-spacerun:yes'> 
+</span>Sometimes the photos came from multiple locations, sometimes I simply
+came across photos that were interesting, and sometimes I wanted to get photos
+and images from the Internet that were updated periodically.<span
+style='mso-spacerun:yes'>  </span>I wanted to be able to update my photos at a
+central place and have them be updated on all these devices. Finally, I wanted
+to be able to update the photos in my albums frequently, but not have to repeat
+the process of both manipulating my photos and moving my photos to all my
+devices and locations.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'>I not only wanted this
+capability for myself, but also wanted to setup the application for my
+relatives, with me controlling the photos they would see remotely.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'>Out of this simple idea came
+the Graphic Pump.<span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'>The Graphic Pump’s main
+purpose is to load, format, and save JPG files to a new location. <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'>There are three main
+concepts in the application:<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<ol style='margin-top:0in' start=1 type=a>
+ <li class=MsoNormal style='mso-list:l1 level1 lfo3;tab-stops:list .5in'><span
+     style='font-family:Arial'>Formats Profiles<o:p></o:p></span></li>
+</ol>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoBodyTextIndent>A user typically deals with a fixed number of devices
+and fixed number of desired formats for JPG files on these devices.<span
+style='mso-spacerun:yes'>  </span>This is handled in the Graphic Pump through a
+set of global named Format Profiles.<span style='mso-spacerun:yes'> 
+</span>Each Format Profile stores the various settings for the final saved JPG
+file (e.g. size, compression, etc).</p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><span
+style='mso-spacerun:yes'> </span><o:p></o:p></span></p>
+
+<ol style='margin-top:0in' start=2 type=a>
+ <li class=MsoNormal style='mso-list:l1 level1 lfo3;tab-stops:list .5in'><span
+     style='font-family:Arial'>Pumping an Image on Demand<o:p></o:p></span></li>
+</ol>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoBodyTextIndent>In its simplest form, the Graphic Pump can take an
+individual image and Pump (save) it to a new location.<span
+style='mso-spacerun:yes'>  </span>Think of this as a “Common Save” dialog that
+remembers all the various JPG formats you may wish to apply to the image.</p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<ol style='margin-top:0in' start=3 type=a>
+ <li class=MsoNormal style='mso-list:l1 level1 lfo3;tab-stops:list .5in'><span
+     style='font-family:Arial'>Tasks<o:p></o:p></span></li>
+</ol>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'>The
+program allows you to schedule &quot;tasks&quot; that are either run on demand,
+or repeated on a schedule.<span style='mso-spacerun:yes'>  </span>A task has
+four main properties:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'>Source
+for the images - This can be images on a hard disk or images off of the
+Internet. It can also be an album file containing pointers to images on the
+hard disk or off the Internet.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'>Schedule
+for running the task - This can be on demand, hourly, daily, weekly, or monthly<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'>Formatting
+for the images - This allows you to optimize the images for a particular
+device, and apply some simple margin, padding, and rotation along the way. This
+formatting uses the same Format Profiles discussed above.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'>Destination
+for the images - This is where you want the images (and other output) to go<o:p></o:p></span></p>
+
+<p class=MsoToc1><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<h1><a name="_Toc497375146"><span style='font-size:18.0pt;mso-bidi-font-size:
+12.0pt'>Installing and Running the Application</span></a><span
+style='font-size:18.0pt;mso-bidi-font-size:12.0pt'><o:p></o:p></span></h1>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'>Installing the application
+is simple.<span style='mso-spacerun:yes'>  </span>A simple setup.exe program is
+run.<span style='mso-spacerun:yes'>  </span>This installs the Graphic Pump
+application, the Graphic Pump Screen Saver, and several supporting libraries.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'><span
+style='mso-spacerun:yes'> </span><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'>By default the application
+places a shortcut into the Startup program group. This allows the Graphic Pump
+to run once the system is booted.<span style='mso-spacerun:yes'>  </span>You
+can remove this shortcut or place it somewhere else, but running the
+application at startup is necessary to run tasks on a schedule. You can also
+simply run the executable (GraphicPump.exe) from Windows if desired.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'>Once the application is
+running, an icon appears in the system tray.<span style='mso-spacerun:yes'> 
+</span>The icon is a small &quot;pump&quot; with the letter &quot;G&quot; in
+it.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'>Clicking on this icon will launch
+the main configuration dialog. Right clicking on the icon brings up a menu that
+allows you to bring up the main configuration dialog or exit the application.<o:p></o:p></span></p>
+
+<b><span style='font-size:13.0pt;font-family:Arial;mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA'><br clear=all style='page-break-before:always'>
+</span></b>
+
+<h3><a name="_Toc497375147"><span style='font-size:18.0pt;mso-bidi-font-size:
+13.0pt'>The Main Dialog</span></a><span style='font-size:18.0pt;mso-bidi-font-size:
+13.0pt'><o:p></o:p></span></h3>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'>The main dialog is the
+control center for the Application.<span style='mso-spacerun:yes'>  </span>From
+here Format Profiles can be managed, images can be pumped on demand, and Tasks
+can be managed. The main dialog also contains an area for quickly dragging
+files for processing and for displaying feedback on the currently running task.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<h1>Menus</h1>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<h4>File -&gt; Pump Image</h4>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'>This
+allows you to process an individual file on demand.<span
+style='mso-spacerun:yes'>  </span>This menu command will bring up a dialog
+asking for the minimal settings to save this individual file.<span
+style='mso-spacerun:yes'>  </span>Dragging and dropping the file onto the
+picture of the pump in the main window of the application will also bring up
+this dialog. <b><o:p></o:p></b></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'>File
+-&gt; Send to Tray<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'>This
+allows you to minimize the Graphic Pump application.<span
+style='mso-spacerun:yes'>  </span>The application is still running, but only
+appears in the system tray.<span style='mso-spacerun:yes'>  </span>To minimize
+the application, select the “File -&gt; Send to Tray” menu item.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'><span
+style='mso-spacerun:yes'> </span><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'>File
+-&gt; Exit<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'>This
+will terminate the application. Any tasks scheduled to run will not execute
+once the application is shut down. To exit the application, select the “File
+-&gt; Exit” menu item.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<h4>Edit -&gt; Format Profiles</h4>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoBodyTextIndent>This will bring up a dialog box that allows you to
+create, edit, or delete save Format Profiles.<span style='mso-spacerun:yes'> 
+</span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<h4>View -&gt; View Status</h4>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoBodyTextIndent>This tells the main dialog to display or not display
+the Execution Status area.<span style='mso-spacerun:yes'>  </span>The Execution
+Status area will display information about the current Image or Task being
+pumped. </p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<h4>View -&gt; Always on Top</h4>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'>This
+tells the main dialog to always display on top or not on top of all other
+windows.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'><span
+style='mso-spacerun:yes'> </span><b><o:p></o:p></b></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'>Help
+-&gt; Registration/About<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'>This
+allows you to find information about the application version and support
+information.<span style='mso-spacerun:yes'>    </span><o:p></o:p></span></p>
+
+<p class=MsoToc1><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoToc4><span style='font-weight:normal'><!--[if gte vml 1]><v:shapetype
+ id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+ path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:323.4pt;
+ height:126pt'>
+ <v:imagedata src="graphicpump_files/image001.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=431 height=168
+src="graphicpump_files/image002.jpg" v:shapes="_x0000_i1025"><![endif]></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-27.0pt;margin-bottom:
+0in;margin-left:.5in;margin-bottom:.0001pt'><span style='font-family:Arial'>Main
+Dialog<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<h1 style='margin-left:.5in'>Pump</h1>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'>Dragging
+and Dropping image files into the “Pump” will bring up the Pump Image dialog,
+allowing this image to be processed.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<h4>Execution Status</h4>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoBodyTextIndent>The Execution Status area displays information about
+the currently running task or image being processed.</p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<h1><span style='font-size:18.0pt;mso-bidi-font-size:12.0pt'>Pump Image<o:p></o:p></span></h1>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'>The Pump Image dialog
+contains all the settings to pump an individual image.<span
+style='mso-spacerun:yes'>  </span>This dialog is called when choosing File
+-&gt; Pump Image from the main menu, or when dragging and dropping an image
+onto the Pump Icon in the main dialog.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1026" type="#_x0000_t75" style='width:254.4pt;height:206.4pt'>
+ <v:imagedata src="graphicpump_files/image003.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=339 height=275
+src="graphicpump_files/image004.jpg" v:shapes="_x0000_i1026"><![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'>Pump
+Image Dialog<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<h4>Source</h4>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoBodyTextIndent>This is the source file that will be “Pumped”.<span
+style='mso-spacerun:yes'>  </span>Depending on how the dialog was invoked, this
+will either be a type in field allowing any graphic file to be entered, or will
+be the name of the file that will be pumped.</p>
+
+<p class=MsoBodyTextIndent><o:p>&nbsp;</o:p></p>
+
+<p class=MsoBodyTextIndent>To change the file being processed simply type in a
+new valid image file or click the “Browse” button to select one.</p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'>Format
+Profile<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoBodyTextIndent>This is the Format Profile to use for saving the
+image.<span style='mso-spacerun:yes'>  </span>A Format Profile contains all the
+formatting options for the final JPEG file, and can be created by choosing Edit
+-&gt; Format Profile from the main menu.<span style='mso-spacerun:yes'> 
+</span></p>
+
+<p class=MsoBodyTextIndent><o:p>&nbsp;</o:p></p>
+
+<p class=MsoBodyTextIndent>See the section on “Format Profiles” for more
+information.</p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'>Destination<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'>Depending
+on where you want the graphic image saved, you can select a target destination
+for the image.<span style='mso-spacerun:yes'>  </span>This can either be a
+directory, or a Digi-Frame picture frame.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'>Directory
+(when Destination = Directory)<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoBodyTextIndent>When the destination is a directory, the name of the
+directory to save the image is displayed in this field.<span
+style='mso-spacerun:yes'>  </span>To select a new directory, type in the name
+or click the “Browse button to select one.</p>
+
+<p class=MsoToc4><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'>Overwrite
+(when Destination = Directory)<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoBodyTextIndent>When the destination is a directory, checking this
+option tells the system to automatically overwrite any image already in the destination
+directory without generating an error.</p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'>Port
+(when Destination = Digi-Frame)<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoBodyTextIndent>When the destination is a Digi-Frame picture frame,
+this tells the system what Serial Port the frame is connected to. To automatically
+detect the port, click the “Detect” button.</p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'>Media
+(when Destination = Digi-Frame)<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoBodyTextIndent>When the destination is a Digi-Frame picture frame,
+this tells the system what type of Media (Compact Flash or SmartMedia) is in
+the frame.<span style='mso-spacerun:yes'>  </span>To automatically detect the
+media, click the “Detect” button.</p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'>Filename<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'>This
+is the name of the final image in the directory or on the Digi-Frame.<span
+style='mso-spacerun:yes'>  </span>Note that for this feature to work on the
+Digi-Frame you need firmware version k or better.<span
+style='mso-spacerun:yes'>  </span>See <a href="http://www.digi-frame.com/">http://www.digi-frame.com</a>
+for more information.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<h4>Pump</h4>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'>This
+will cause the image to be Pumped with the settings chosen.<span
+style='mso-spacerun:yes'>  </span>Once successful, will close the Pump Image
+dialog.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<h4>Cancel</h4>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'>This
+will cancel the current operation.<o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-family:Arial'><span style='mso-tab-count:
+1'>          </span><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoHeading7>Format Profiles</p>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'>The Format Profiles dialog
+allows you to manage different common settings for saving JPG images.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'>A Format Profile consists of
+a profile name and a number of Format Settings controlling the JPG output. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1027" type="#_x0000_t75" style='width:241.2pt;height:189.6pt'>
+ <v:imagedata src="graphicpump_files/image005.jpg" o:title="IMAGE006"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=322 height=253
+src="graphicpump_files/image006.jpg" v:shapes="_x0000_i1027"><![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'>Format
+Profiles Dialog<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<h4>New</h4>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'>The
+“New” button allows you to create a new format profile.<span
+style='mso-spacerun:yes'>  </span>This command will bring up a dialog asking
+for the Profile name will allow you to set the Profile Settings.<span
+style='mso-spacerun:yes'>  </span>To create a new Format Profile, click the
+“New” button.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<h4>Edit</h4>
+
+<p class=MsoToc1><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoBodyTextIndent>The “Edit” button allows you to edit an existing
+Format Profile.<span style='mso-spacerun:yes'>  </span>This command will bring
+up a dialog box allowing you to edit the profile name and the profile settings.
+To edit a Format Profile, select the Format Profile in the list and click the
+“Edit” button.</p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<h4>Delete</h4>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoBodyTextIndent>The “Delete” button allows you to delete an existing
+Format Profile.<span style='mso-spacerun:yes'>  </span>To delete a Format
+Profile, select the Format Profile in the list and click the “Delete Button”.</p>
+
+<p class=MsoBodyTextIndent><o:p>&nbsp;</o:p></p>
+
+<p class=MsoBodyTextIndent>Note: Any tasks that currently use this Format
+Profile will automatically use a copy of settings for this Format Profile.</p>
+
+<p class=MsoBodyTextIndent><o:p>&nbsp;</o:p></p>
+
+<p class=MsoBodyTextIndent><b>Export<o:p></o:p></b></p>
+
+<p class=MsoBodyTextIndent><b><o:p>&nbsp;</o:p></b></p>
+
+<p class=MsoBodyTextIndent>The “Export” button allows you to export a Format
+Profile into a Graphic Pump Format Profile File (.GPF file).<span
+style='mso-spacerun:yes'>  </span>This file can then later be imported into the
+application.</p>
+
+<p class=MsoBodyTextIndent><o:p>&nbsp;</o:p></p>
+
+<p class=MsoBodyTextIndent>Exporting format profiles is useful when new devices
+with specific settings are available, and the settings wish to be imported.</p>
+
+<p class=MsoBodyTextIndent><o:p>&nbsp;</o:p></p>
+
+<p class=MsoBodyTextIndent><b>Import<o:p></o:p></b></p>
+
+<p class=MsoBodyTextIndent><b><o:p>&nbsp;</o:p></b></p>
+
+<p class=MsoBodyTextIndent>The “Import” button allows you to import a Format
+Profile from a Graphic Pump Format Profile File (.GPF file).<span
+style='mso-spacerun:yes'>  </span></p>
+
+<p class=MsoBodyTextIndent><o:p>&nbsp;</o:p></p>
+
+<p class=MsoBodyTextIndent>Several interesting .GPF files are included in the
+TestSource subdirectory of directory where the application is installed.<span
+style='mso-spacerun:yes'>  </span>Also, check <a
+href="http://www.graphicpump.com/">http://www.graphicpump.com</a> for
+additional .GPF files that support different devices </p>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<h4>OK</h4>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoBodyTextIndent>This will close the dialog.</p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoHeading7>Format Settings</p>
+
+<p class=MsoNormal><b><span style='font-size:18.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-size:18.0pt;
+mso-bidi-font-size:12.0pt;font-family:Arial'><!--[if gte vml 1]><v:shape id="_x0000_i1028"
+ type="#_x0000_t75" style='width:373.2pt;height:333pt'>
+ <v:imagedata src="graphicpump_files/image007.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=498 height=444
+src="graphicpump_files/image008.jpg" v:shapes="_x0000_i1028"><![endif]><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'>Format
+Settings Dialog<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'>Target
+Size: Width</span></b><span style='font-family:Arial'> <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'>This
+is the desired width for the resulting images in pixels. If no resize rules are
+applied (grow, shrink, or rotate), this value is ignored.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'>Target
+Size: Height <o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'>This
+is the desired height for the resulting images in pixels.<span
+style='mso-spacerun:yes'>  </span>If no resize rules are applied (grow, shrink,
+or rotate), this option is ignored.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<h4>Target Size: Thumbnail</h4>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoBodyTextIndent>This option indicates that a thumbnail should be
+generated inside the resulting output file.<span style='mso-spacerun:yes'> 
+</span>Generating a thumbnail increases the size of the target file, and not
+all output devices take advantage of this extra data.<span
+style='mso-spacerun:yes'>  </span>However, devices that do utilize this
+thumbnail will benefit.</p>
+
+<p class=MsoBodyTextIndent><o:p>&nbsp;</o:p></p>
+
+<p class=MsoBodyTextIndent><b>Target Size: Thumb Width<o:p></o:p></b></p>
+
+<p class=MsoBodyTextIndent><b><o:p>&nbsp;</o:p></b></p>
+
+<p class=MsoBodyTextIndent>This is the width of the thumbnail.</p>
+
+<p class=MsoBodyTextIndent><o:p>&nbsp;</o:p></p>
+
+<p class=MsoBodyTextIndent><b>Target Size: Thumb Height<o:p></o:p></b></p>
+
+<p class=MsoBodyTextIndent><b><o:p>&nbsp;</o:p></b></p>
+
+<p class=MsoBodyTextIndent>This is the height of the thumbnail.</p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<h1 style='margin-left:.5in'><a name="_Toc497375153">Resizing: Shrink to Size </a></h1>
+
+<h1 style='margin-left:.5in'><span style='mso-bookmark:_Toc497375153'><o:p>&nbsp;</o:p></span></h1>
+
+<h1 style='margin-left:.5in'><span style='mso-bookmark:_Toc497375153'><span
+style='font-weight:normal'>This tells the Graphic Pump that the image should be
+shrunk to fit in the target width and height.<span style='mso-spacerun:yes'> 
+</span>The aspect ratio will be preserved when doing the resize.<span
+style='mso-spacerun:yes'>  </span>In other words, if the source image is 200
+pixels wide by 400 pixels high, and the desired format is 100 pixels wide by
+100 pixels wide, the final image will be 50 pixels wide by 100 pixels
+high.<span style='mso-spacerun:yes'>  </span>This leaves the aspect ratio of
+the image alone and shrinks to the smallest width to display the image.</span></span><span
+style='font-weight:normal'><o:p></o:p></span></h1>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<h1 style='margin-left:.5in'><a name="_Toc497375154">Resizing: Grow to Size</a><span
+style='mso-bookmark:_Toc497375154'><span style='font-weight:normal'> <o:p></o:p></span></span></h1>
+
+<h1 style='margin-left:.5in'><span style='mso-bookmark:_Toc497375154'><span
+style='font-weight:normal'><o:p>&nbsp;</o:p></span></span></h1>
+
+<h1 style='margin-left:.5in'><span style='mso-bookmark:_Toc497375154'><span
+style='font-weight:normal'>This tells the Graphic Pump that the image should
+grow to fit in the target width and height.<span style='mso-spacerun:yes'> 
+</span>The aspect ratio will be preserved when doing the resize.</span></span><span
+style='font-weight:normal'> <o:p></o:p></span></h1>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'>Rotate:
+Rotate to Size </span></b><span style='font-family:Arial'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'>This
+tells the Graphic Pump to rotate the image 90 degrees to maximize the size of
+the image given the desired width and height.<span style='mso-spacerun:yes'> 
+</span>This option only makes sense when the resulting image will be displayed
+on a device that is easily rotated for display (such as a pocket PC).<span
+style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'>For
+example, if the desired image size is 640 pixels wide by 480 pixels high, and
+the image to pump is 100 pixels wide by 500 pixels high, the image is rotated
+to allow the bigger dimension of the source image to take 640 pixels in the
+final image.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<h1 style='margin-left:.5in'><a name="_Toc497375155">Rotate: Direction </a></h1>
+
+<h1 style='margin-left:.5in'><span style='mso-bookmark:_Toc497375155'><o:p>&nbsp;</o:p></span></h1>
+
+<h1 style='margin-left:.5in'><span style='mso-bookmark:_Toc497375155'><span
+style='font-weight:normal'>This tells the Graphic Pump to rotate clockwise or
+counter clockwise if a rotation is necessary.</span></span></h1>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'>JPEG
+Settings: Compression </span></b><span style='font-family:Arial'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'>This
+is the amount to compress the final image.<span style='mso-spacerun:yes'> 
+</span>The higher the compression, the lower the quality of the image and the
+less disk space the image takes.<span style='mso-spacerun:yes'>  </span>The
+lower the compression, the higher the quality of the image and the more disk
+space the image takes. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'>Padding:
+Pad to Size <o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'>This
+tells the Graphic Pump that the final image should be padded with pixels to
+match the desired width and height when either growing or shrinking the
+image.<span style='mso-spacerun:yes'>  </span>If the image is not grown or
+shrunk to the desired size, padding options are not available.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'>In
+the example above, the image would be padded with 50 pixels horizontally to
+make the final image 100 pixels wide by 100 pixels high.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'>Padding:
+Color</span></b><span style='font-family:Arial'> <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'>This
+is the color that should be used to pad the image to the desired size. To
+change the padding color, click “Change” next to the pad color and select a new
+color.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'>Padding:
+Vertical</span></b><span style='font-family:Arial'> <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'>This
+is the vertical (up/down) alignment of the resized image in the final padded
+image of the full size.<span style='mso-spacerun:yes'>  </span>Options are top,
+center, and bottom.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><span
+style='mso-spacerun:yes'> </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'>Padding:
+Horizontal</span></b><span style='font-family:Arial'> <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'>This
+is the horizontal (left/right) alignment of the resized image in the final
+padded image of the full size. Options are left, center, and right. In the
+example above, left alignment would yield the extra 50 pixels (of pad color) on
+the right (the image is aligned to the left), center would yield 25 pixels on
+the right and 25 pixels on the left, and right would yield the extra 50 pixels
+on the left (the image is aligned to the right).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'>Margins</span></b><span
+style='font-family:Arial'> <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'>This
+tells the Graphic Pump to place margins around the image.<span
+style='mso-spacerun:yes'>  </span>This can give the image an appearance similar
+to a photograph.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'>Margins:
+Top </span></b><span style='font-family:Arial'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'>This
+is the number of pixels to place on the top of the image when margins are
+specified.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'>Margins:
+Left</span></b><span style='font-family:Arial'> <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'>This
+is the number of pixels to place on the left of the image when the margins are
+specified.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'>Margins:
+Right</span></b><span style='font-family:Arial'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'>This
+is the number of pixels to place on the right of the image when the margins are
+specified.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'>Margins:
+Bottom</span></b><span style='font-family:Arial'> <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'>This
+is the number of pixels to place on the bottom of the image when the margins
+are specified.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'>Margins:
+Color </span></b><span style='font-family:Arial'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoBodyTextIndent>This is the color to use for the margins.<span
+style='mso-spacerun:yes'>  </span>To change the margin color, click “Change”
+next to the margin color.</p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><span
+style='mso-spacerun:yes'> </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'>OK</span></b><span
+style='font-family:Arial'> <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'>This
+accepts changes made to the formatting.<span style='mso-spacerun:yes'> 
+</span>Click the &quot;OK&quot; button to accept changes for the task.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'>Cancel</span></b><span
+style='font-family:Arial'> <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'>This
+cancels changes made to the formatting.<span style='mso-spacerun:yes'> 
+</span>Click the &quot;Cancel&quot; button to cancel changes for the task.<b><o:p></o:p></b></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-size:18.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'>Tasks<o:p></o:p></span></b></p>
+
+<p class=MsoToc4><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:.5in'><!--[if gte vml 1]><v:shape id="_x0000_i1029"
+ type="#_x0000_t75" style='width:313.2pt;height:222pt'>
+ <v:imagedata src="graphicpump_files/image009.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=418 height=296
+src="graphicpump_files/image010.jpg" v:shapes="_x0000_i1029"><![endif]></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'>Tasks
+Dialog<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<h1 style='margin-left:.5in'>Wizard</h1>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'>This
+allows you to run the “New Task Wizard”.<span style='mso-spacerun:yes'> 
+</span>Click the “New Task wizard button to run the wizard and create a new
+task.<span style='mso-spacerun:yes'>  </span>See the section on the “New Task
+Wizard” for an explanation of the wizard.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'>New</span></b><span
+style='font-family:Arial'> <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'>This
+allows you to create a new task.<span style='mso-spacerun:yes'>  </span>Click
+the &quot;New&quot; button to create a new task.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'>Edit<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'>This
+allows you to edit an existing task.<span style='mso-spacerun:yes'> 
+</span>Select a task from the Tasks list and click the &quot;Edit&quot; button
+to edit the task.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'>Run<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'>This
+allows you to manually execute a task.<span style='mso-spacerun:yes'> 
+</span>Tasks normally run automatically on a schedule, but sometimes it is
+useful to run a task interactively to test the task or for a task that runs
+infrequently.<span style='mso-spacerun:yes'>  </span>Select a task from the
+Tasks list and click the &quot;Run&quot; button to run the task.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'>Delete
+<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'>This
+allows you to delete the selected.<span style='mso-spacerun:yes'> 
+</span>Select a task from the Tasks list and click the &quot;Delete&quot;
+button to remove the task.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<h4>Export</h4>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoBodyTextIndent>This allows you to export the selected task into a
+.GPT file.<span style='mso-spacerun:yes'>  </span>To export the task, select the
+task and click the “Export” button.<span style='mso-spacerun:yes'>  </span></p>
+
+<p class=MsoBodyTextIndent><b><o:p>&nbsp;</o:p></b></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'>Import<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoBodyTextIndent>This allows you to import a task from a .GPT
+file.<span style='mso-spacerun:yes'>  </span>To import a task, click the
+“Import” button.</p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<h4>OK</h4>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'>This
+closes the Tasks dialog.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><a name="_Toc497375148"><span
+style='font-family:Arial'><o:p>&nbsp;</o:p></span></a></p>
+
+<span style='font-size:12.0pt;font-family:Arial;mso-fareast-font-family:"Times New Roman";
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal><span style='mso-bookmark:_Toc497375148'><b><span
+style='font-size:18.0pt;mso-bidi-font-size:12.0pt;font-family:Arial'>New Task
+Wizard <o:p></o:p></span></b></span></p>
+
+<p class=MsoFooter style='tab-stops:.5in center 3.0in right 6.0in'><span
+style='mso-bookmark:_Toc497375148'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=MsoNormal><span style='mso-bookmark:_Toc497375148'><span
+style='font-family:Arial'>The New Task Wizard is a fast and friendly way to define
+common tasks.<span style='mso-spacerun:yes'>  </span>Not all options are
+presented to you when running the New Task Wizard, but it is a great way to get
+started or to quickly define several tasks.<o:p></o:p></span></span></p>
+
+<p class=MsoNormal><span style='mso-bookmark:_Toc497375148'><span
+style='font-family:Arial'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=MsoNormal><span style='mso-bookmark:_Toc497375148'><span
+style='font-family:Arial'>The New Task Wizard will ask you to first define what
+you are using the Graphic Pump for.<span style='mso-spacerun:yes'>  </span>This
+includes using the Graphic Pump to update screen saver images, moving images to
+a Pocket PC, moving images to a Digital Picture Frame or other device, or
+simply writing images to a directory on the hard disk. <o:p></o:p></span></span></p>
+
+<p class=MsoNormal><span style='mso-bookmark:_Toc497375148'><span
+style='font-family:Arial'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=MsoNormal><span style='mso-bookmark:_Toc497375148'><span
+style='font-family:Arial'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=MsoNormal><span style='mso-bookmark:_Toc497375148'><span
+style='font-family:Arial'>Based on the answer, the Wizard will ask only a few
+more questions and fill in reasonable defaults for the rest of the settings.
+Finally the Wizard will ask you for the files you wish to have pumped as part
+of the task.<o:p></o:p></span></span></p>
+
+<p class=MsoNormal><span style='mso-bookmark:_Toc497375148'><span
+style='font-family:Arial'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=MsoNormal><span style='mso-bookmark:_Toc497375148'><span
+style='font-family:Arial'>All the advanced settings can be changed once the
+Wizard is run by selecting the task and choosing “Edit -&gt;
+Properties/Status”.<o:p></o:p></span></span></p>
+
+<span style='font-size:18.0pt;mso-bidi-font-size:12.0pt;font-family:Arial;
+mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA'><br clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal><span style='mso-bookmark:_Toc497375148'><b><span
+style='font-size:18.0pt;mso-bidi-font-size:12.0pt;font-family:Arial'>Task</span></b></span><b><span
+style='font-size:18.0pt;mso-bidi-font-size:12.0pt;font-family:Arial'><o:p></o:p></span></b></p>
+
+<p class=MsoFooter style='tab-stops:.5in center 3.0in right 6.0in'><span
+style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'>The task dialog is presented
+when the user clicks &quot;New&quot; or &quot;Edit&quot; from the main dialog,
+or chooses “File -&gt; New” or “Edit -&gt; Properties/Status” from the
+menus.<span style='mso-spacerun:yes'>  </span>This dialog contains the task name,
+the four main settings for configuration of a task, and a summary of the
+results of the last execution of the task.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoToc4><span style='font-weight:normal'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1030" type="#_x0000_t75" style='width:294.6pt;height:222.6pt'>
+ <v:imagedata src="graphicpump_files/image011.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=393 height=297
+src="graphicpump_files/image012.jpg" v:shapes="_x0000_i1030"><![endif]></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.5in;margin-bottom:0in;
+margin-left:.5in;margin-bottom:.0001pt'><span style='font-family:Arial'>Task
+Dialog<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-right:.5in;text-align:center'><span
+style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'>Task
+Name<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'>This
+is the name of the task.<span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'>Source</span></b><span
+style='font-family:Arial'> <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'>This
+allows you to define the source of the images for a task.<span
+style='mso-spacerun:yes'>  </span>Click the &quot;Source&quot; button to edit
+the source for images for the task.<span style='mso-spacerun:yes'>  </span>This
+is where the images are gotten from, and can be graphic files or graphics on
+the Internet.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'>Schedule</span></b><span
+style='font-family:Arial'> <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'>This
+allows you to define the schedule that the task should run on. Click the
+&quot;Schedule&quot; button to edit the schedule of the task.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'>Formatting<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'>This
+allows you to define the formatting rules for images processed by the
+task.<span style='mso-spacerun:yes'>  </span>Click the &quot;Format&quot;
+button to edit the format of the task.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'>Destination</span></b><span
+style='font-family:Arial'> <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'>This
+allows you to define the destination location for the target of the images
+processed and copied by the Graphic Pump.<span style='mso-spacerun:yes'> 
+</span>Click the &quot;Destination &quot; button to define the destination of
+the task.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<h1 style='margin-left:.5in'>Status</h1>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'>This
+area displays what happened the last time that this task was run.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'>OK</span></b><span
+style='font-family:Arial'> <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'>This
+accepts changes made in this and all child dialogs.<span
+style='mso-spacerun:yes'>  </span>Click the &quot;OK&quot; button to accept
+changes for the task.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'>Cancel</span></b><span
+style='font-family:Arial'> <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoBodyTextIndent>This cancels changes made in this and all child
+dialogs.<span style='mso-spacerun:yes'>  </span>Click the &quot;Cancel&quot;
+button to cancel changes for the task.</p>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<b><span style='font-size:12.0pt;font-family:Arial;mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA'><br clear=all style='page-break-before:always'>
+</span></b>
+
+<h1><a name="_Toc497375149"><span style='font-size:18.0pt;mso-bidi-font-size:
+12.0pt'>Source</span></a><span style='font-size:18.0pt;mso-bidi-font-size:12.0pt'><o:p></o:p></span></h1>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'>The Source dialog is present
+when the user clicks “Source while editing a task.<span
+style='mso-spacerun:yes'>  </span>This dialog allows the user to configure the
+images that should be processed by the Graphic Pump.<span
+style='mso-spacerun:yes'>  </span>These images can be files on the hard disk,
+or can be images off of the Internet.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'>The source of images can be
+either a list of individual image files, or can be a single Graphic Pump Album
+(.gpa) file.<span style='mso-spacerun:yes'>  </span>A list of individual images
+can be exported into a .gpa file.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'><br>
+The source is specified using the drop down on the left of the source dialog.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<h1><a name="_Toc497375150">Source: List of Image Files/URLs</a><span
+style='mso-bookmark:_Toc497375150'><span style='font-weight:normal'> <o:p></o:p></span></span></h1>
+
+<h1><span style='mso-bookmark:_Toc497375150'><span style='font-weight:normal'><o:p>&nbsp;</o:p></span></span></h1>
+
+<h1><span style='mso-bookmark:_Toc497375150'><span style='font-weight:normal'>When
+the source is a list of image files or URLs, the images for processing by the
+Graphic Pump are specified individually.<span style='mso-spacerun:yes'> 
+</span>There are additional settings for this configuration.</span></span><span
+style='font-weight:normal'><o:p></o:p></span></h1>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoToc4><span style='font-weight:normal'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1031" type="#_x0000_t75" style='width:427.2pt;height:276.6pt'>
+ <v:imagedata src="graphicpump_files/image013.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=570 height=369
+src="graphicpump_files/image014.jpg" v:shapes="_x0000_i1031"><![endif]></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-.5in;margin-bottom:0in;
+margin-left:.5in;margin-bottom:.0001pt'><span style='font-family:Arial'>Source
+Dialog: List of images<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<h4>Album Name</h4>
+
+<h4><o:p>&nbsp;</o:p></h4>
+
+<p class=MsoBodyTextIndent>This is the name of the album.<span
+style='mso-spacerun:yes'>  </span>To change the name of the album, type in the
+name in this field.</p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<h4>New</h4>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoBodyTextIndent>This brings up the dialog to create a new image for
+processing by this task.<span style='mso-spacerun:yes'>  </span>An image
+consists of a name, and the file name (such as c:\myphotos\photo.jpg) or web
+address of the image (such as http://www.mysite.com/photos/myphoto.jpg)</p>
+
+<p class=MsoBodyTextIndent><o:p>&nbsp;</o:p></p>
+
+<p class=MsoBodyTextIndent>To create a new image, click the “New” button and
+fill in the name and the file name or web address of the image in the resulting
+dialog.<span style='mso-spacerun:yes'>  </span>This dialog also has a “Browse”
+button to find an image from the hard disk.</p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><span
+style='mso-spacerun:yes'> </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'>Edit<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoBodyTextIndent>This brings up the dialog to edit an existing image
+for processing by this task.</p>
+
+<p class=MsoBodyTextIndent><o:p>&nbsp;</o:p></p>
+
+<p class=MsoBodyTextIndent>To edit an image, select the image and click the
+“Edit” button. Edit the name and the file name or web address of the image in
+the dialog.</p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'>Delete<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoBodyTextIndent>This deletes an existing image that should be
+processed by this task.</p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'>To
+delete an image, select the image and click the “Delete” button. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'>Move
+Up<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoBodyTextIndent>This moves the selected image earlier in order.</p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'>To move
+an image up, select the image and click the “Move Up” button.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'>Move
+Down<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoBodyTextIndent>This moves the select image later in order.</p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'>To
+move an image down, select the image and click the “Move Down” button.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'>Export<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoBodyTextIndent>This exports the list of images into a Graphic Pump
+Album (.gpa) file.<span style='mso-spacerun:yes'>  </span>This file can then be
+re-imported, or can be used as an Album file for publishing on a different
+task.</p>
+
+<p class=MsoBodyTextIndent><o:p>&nbsp;</o:p></p>
+
+<p class=MsoBodyTextIndent>To export the list of images, click the “Export”
+button and type in a file name.</p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'>Import<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoBodyTextIndent>This imports a Graphic Pump Album (.gpa) file into
+the task.<span style='mso-spacerun:yes'>  </span>The individual files in the
+album file are then listed individually and can be edited inside the dialog.</p>
+
+<p class=MsoToc4><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'>Note
+that this “adds” images to an existing task.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'>To import
+a list of images, click the “Import” button and type in a file name.<o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-family:Arial'>Album File/URL</span></b><span
+style='font-family:Arial'> <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'>.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'>When the source is an album
+file or URL, the images for processing by the Graphic Pump are specified in a
+single Graphic Pump Album (.gpa) file.<span style='mso-spacerun:yes'> 
+</span>This file can be on the local hard disk, or can be gotten from the
+Internet.<span style='mso-spacerun:yes'>  </span>To specify the Album file,
+type in the file name (e.g. c:\myphotos\myalbum.gpa), or type in a URL to an
+album file (http://www.mysite.com/myalbum.gpa) in the edit field.<span
+style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'>You can also select a file
+from the hard disk by clicking on the “Browse” button and opening a .gpa file.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoToc4><span style='font-weight:normal'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1032" type="#_x0000_t75" style='width:427.2pt;height:276.6pt'>
+ <v:imagedata src="graphicpump_files/image015.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=570 height=369
+src="graphicpump_files/image016.jpg" v:shapes="_x0000_i1032"><![endif]></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-.5in;margin-bottom:0in;
+margin-left:.5in;margin-bottom:.0001pt'><span style='font-family:Arial'>Source
+Dialog: Album File/URL<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-.5in;margin-bottom:0in;
+margin-left:.5in;margin-bottom:.0001pt'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<h6>Album File/URL</h6>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-.5in;margin-bottom:0in;
+margin-left:.5in;margin-bottom:.0001pt'><b><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoBlockText>This is the name of the album file on the hard disk or
+the URL to the album file off the internet.</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-.5in;margin-bottom:0in;
+margin-left:.5in;margin-bottom:.0001pt'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<h6>Browse</h6>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-.5in;margin-bottom:0in;
+margin-left:.5in;margin-bottom:.0001pt'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoBlockText>Clicking the browse button will allow you to find and
+select a .gpa file from the hard disk. </p>
+
+<b><span style='font-size:12.0pt;font-family:Arial;mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA'><br clear=all style='page-break-before:always'>
+</span></b>
+
+<h1><a name="_Toc497375151"><span style='font-size:18.0pt;mso-bidi-font-size:
+12.0pt'>Schedule</span></a><span style='font-size:18.0pt;mso-bidi-font-size:
+12.0pt'><o:p></o:p></span></h1>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'>The Schedule dialog is
+presented when the user clicks “Schedule” while editing a task. Scheduling
+allows you to configure how often the Graphic Pump will execute the task.<span
+style='mso-spacerun:yes'>  </span>This allows you to repeat a task regularly.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'>For example, I’ve setup a
+task on my parent’s computer to get the latest photos of my son from my website
+every week at 2:00 AM on Sundays.<span style='mso-spacerun:yes'>  </span>The
+theory being that sometime during the day (or week) I’ve updated these photos
+on my website, and that when they awake on Monday they will see brand new
+images of their grandson.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'>The schedule is specified
+using the drop down on the left of the schedule dialog.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'>Note: When the application is
+first executed, any tasks that missed their scheduled execution time are
+run.<span style='mso-spacerun:yes'>  </span>So if the application has been
+shutdown for a week and several tasks scheduled execution time has passed,
+these tasks will run the next time the application is run.<span
+style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-family:Arial'>None <o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal><span style='font-family:Arial'>Selecting none for the
+schedule tells the Graphic Pump to not run the task on a schedule.<span
+style='mso-spacerun:yes'>  </span>The task will only run when the “Run” button
+is clicked in the Main Dialog.<span style='mso-spacerun:yes'>  </span>There are
+no other options when this is selected.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoToc4><span style='font-weight:normal'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1033" type="#_x0000_t75" style='width:391.8pt;height:199.8pt'>
+ <v:imagedata src="graphicpump_files/image017.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=522 height=266
+src="graphicpump_files/image018.jpg" v:shapes="_x0000_i1033"><![endif]></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.25in;margin-bottom:0in;
+margin-left:.5in;margin-bottom:.0001pt'><span style='font-family:Arial'>Schedule
+Dialog: No Schedule<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-family:Arial'>Hourly <o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal><span style='font-family:Arial'>Selecting hourly tells the
+Graphic Pump to run the task every hour at a specific time past the hour.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoToc4><span style='font-weight:normal'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1034" type="#_x0000_t75" style='width:391.8pt;height:199.8pt'>
+ <v:imagedata src="graphicpump_files/image019.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=522 height=266
+src="graphicpump_files/image020.jpg" v:shapes="_x0000_i1034"><![endif]></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.25in;margin-bottom:0in;
+margin-left:.5in;margin-bottom:.0001pt'><span style='font-family:Arial'>Schedule
+Dialog: Hourly Schedule<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-family:Arial'>Daily <o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal><span style='font-family:Arial'>Selecting daily tells the
+Graphic Pump to run the task once a day at a specific time.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoToc4><span style='font-weight:normal'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1035" type="#_x0000_t75" style='width:391.8pt;height:199.8pt'>
+ <v:imagedata src="graphicpump_files/image021.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=522 height=266
+src="graphicpump_files/image022.jpg" v:shapes="_x0000_i1035"><![endif]></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.25in;margin-bottom:0in;
+margin-left:.5in;margin-bottom:.0001pt'><span style='font-family:Arial'>Schedule
+Dialog: Daily Schedule<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-family:Arial'>Weekly <o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal><span style='font-family:Arial'>Selecting weekly tells the
+Graphic Pump to run the task once a week on a specific day of the week at a
+specific time.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoToc4><span style='font-weight:normal'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1036" type="#_x0000_t75" style='width:391.8pt;height:199.8pt'>
+ <v:imagedata src="graphicpump_files/image023.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=522 height=266
+src="graphicpump_files/image024.jpg" v:shapes="_x0000_i1036"><![endif]></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.25in;margin-bottom:0in;
+margin-left:.5in;margin-bottom:.0001pt'><span style='font-family:Arial'>Schedule
+Dialog: Weekly Schedule<o:p></o:p></span></p>
+
+<p class=MsoToc4><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-family:Arial'>Monthly <o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal><span style='font-family:Arial'>Selecting monthly tells the Graphic
+Pump to run the task once a month on a specific day of the month at a specific
+time.<span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoToc4><span style='font-weight:normal'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1037" type="#_x0000_t75" style='width:391.8pt;height:199.8pt'>
+ <v:imagedata src="graphicpump_files/image025.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=522 height=266
+src="graphicpump_files/image026.jpg" v:shapes="_x0000_i1037"><![endif]></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.25in;margin-bottom:0in;
+margin-left:.5in;margin-bottom:.0001pt'><span style='font-family:Arial'>Schedule
+Dialog: Monthly Schedule<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-family:Arial'>Force connection if
+necessary <o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal><span style='font-family:Arial'>This tells the Graphic Pump
+to force an Internet connection when the scheduled time arrives.<span
+style='mso-spacerun:yes'>  </span>If this option is not set and the computer is
+not connected to the Internet, the task will not run until the computer is
+connected to the Internet.<span style='mso-spacerun:yes'>  </span>Note that for
+this option to work the computer must be configured properly to automatically
+connect to the Internet while unattended.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-family:Arial'>Disable</span></b><span
+style='font-family:Arial'> <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'>This tells the Graphic Pump
+to temporarily disable the schedule.<span style='mso-spacerun:yes'> 
+</span>Checking this option will cause the task to not run at its scheduled
+time.<o:p></o:p></span></p>
+
+<p class=MsoToc1><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<b><span style='font-size:12.0pt;font-family:Arial;mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA'><br clear=all style='page-break-before:always'>
+</span></b>
+
+<h1><a name="_Toc497375152"><span style='font-size:18.0pt;mso-bidi-font-size:
+12.0pt'>Format</span></a><span style='font-size:18.0pt;mso-bidi-font-size:12.0pt'><o:p></o:p></span></h1>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'>The format dialog is
+presented when the user clicks “Format” while editing a task.<span
+style='mso-spacerun:yes'>  </span>Formatting allows you to configure how the
+Graphic Pump will alter the image when moving it from one location to
+another.<span style='mso-spacerun:yes'>  </span>This allows you to optimize the
+image for the target device on which the image will be displayed.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'>For example, often
+high-resolution photographs are stored on sites for image processing.<span
+style='mso-spacerun:yes'>  </span>These images might be several million pixels
+in size, and be 2000 or more pixels wide or high.<span
+style='mso-spacerun:yes'>  </span>If these images are going to be displayed on
+a Pocket PC this large an image isn’t practical.<span
+style='mso-spacerun:yes'>  </span>Often these devices have a screen of 320 x
+240, and memory is not abundant.<span style='mso-spacerun:yes'>  </span>If you
+want to view the entire image on the screen it should be downsized for this
+device.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'>The other formatting options
+allow you to control other aspects of optimizing an image for a new device. <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1038" type="#_x0000_t75" style='width:191.4pt;height:118.8pt'>
+ <v:imagedata src="graphicpump_files/image027.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=255 height=158
+src="graphicpump_files/image028.jpg" v:shapes="_x0000_i1038"><![endif]><o:p></o:p></span></p>
+
+<p class=MsoFooter style='margin-left:.5in;tab-stops:.5in center 3.0in right 6.0in'><span
+style='font-family:Arial'>Format Dialog<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoToc4>Custom</p>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoBodyTextIndent>Choose this setting when the Task needs to have a
+custom set of Format options not contained in a Format Profile.<span
+style='mso-spacerun:yes'>  </span>To set the Format Settings, Click the “Format
+Settings” button.</p>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoToc4>Profile</p>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'>Choose
+this setting to use a saved Format Profile for the formatting for this
+task.<span style='mso-spacerun:yes'>  </span>To select the Format Profile,
+choose the Profile from the drop down box.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<h4>OK</h4>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoBodyTextIndent>This accepts the changes made to the format for this
+Task.</p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<h4>Cancel</h4>
+
+<p class=MsoNormal style='margin-left:.5in'><b><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoBodyTextIndent>This cancels the changes made to the format for this
+task.</p>
+
+<b><span style='font-size:12.0pt;font-family:Arial;mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA'><br clear=all style='page-break-before:always'>
+</span></b>
+
+<h1><a name="_Toc497375157"><span style='font-size:18.0pt;mso-bidi-font-size:
+12.0pt'>Destination</span></a><span style='font-size:18.0pt;mso-bidi-font-size:
+12.0pt'><o:p></o:p></span></h1>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoFooter style='tab-stops:.5in center 3.0in right 6.0in'><span
+style='font-family:Arial'>The destination dialog allows you to specify where
+the resulting images should be written, and how they should be written.<o:p></o:p></span></p>
+
+<p class=MsoFooter style='tab-stops:.5in center 3.0in right 6.0in'><span
+style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoFooter style='tab-stops:.5in center 3.0in right 6.0in'><span
+style='font-family:Arial'>There are two ways images can be written.<span
+style='mso-spacerun:yes'>  </span>They can be written to a directory in the
+file system or they can be written to a Digi-Frame digital picture frame
+through the serial port.<o:p></o:p></span></p>
+
+<p class=MsoFooter style='tab-stops:.5in center 3.0in right 6.0in'><span
+style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoFooter style='tab-stops:.5in center 3.0in right 6.0in'><span
+style='font-family:Arial'>With these simple ways of writing images, there are
+many ways that the images can be used.<span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoFooter style='tab-stops:.5in center 3.0in right 6.0in'><span
+style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoFooter style='tab-stops:.5in center 3.0in right 6.0in'><span
+style='font-family:Arial'>They can be used as your personal image screen saver.
+By writing the images to a directory and using the included Graphic Pump Screen
+Saver (which reads images from a directory), the images are shown whenever your
+PC is idle.<o:p></o:p></span></p>
+
+<p class=MsoFooter style='tab-stops:.5in center 3.0in right 6.0in'><span
+style='font-family:Arial'><span style='mso-spacerun:yes'> </span><o:p></o:p></span></p>
+
+<p class=MsoFooter style='tab-stops:.5in center 3.0in right 6.0in'><span
+style='font-family:Arial'>They can be displayed on a pocket PC.<span
+style='mso-spacerun:yes'>  </span>By writing the images to the sync directory
+of a pocket PC as a mini-web site, you can have a mini photo album that travels
+with you.<o:p></o:p></span></p>
+
+<p class=MsoFooter style='tab-stops:.5in center 3.0in right 6.0in'><span
+style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoFooter style='tab-stops:.5in center 3.0in right 6.0in'><span
+style='font-family:Arial'>They can be displayed on a digital picture frame or
+other hardware device.<span style='mso-spacerun:yes'>  </span>By writing
+directly to the Digi-Frame digital picture frame, the images are automatically
+rendered on the frame.<span style='mso-spacerun:yes'>  </span>Other brands of
+picture frames and other hardware devices such as the Sony picture frame or the
+VideoChip Photo Wallet can also the target destination by writing a directory
+of images onto a memory stick or compact flash card.<o:p></o:p></span></p>
+
+<p class=MsoFooter style='tab-stops:.5in center 3.0in right 6.0in'><span
+style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoFooter style='tab-stops:.5in center 3.0in right 6.0in'><span
+style='font-family:Arial'>There are several options with each destination type.<o:p></o:p></span></p>
+
+<p class=MsoFooter style='tab-stops:.5in center 3.0in right 6.0in'><span
+style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoFooter style='tab-stops:.5in center 3.0in right 6.0in'><span
+style='font-family:Arial'>The destination is specified using the drop down on
+the left of the destination dialog.<o:p></o:p></span></p>
+
+<p class=MsoFooter style='tab-stops:.5in center 3.0in right 6.0in'><span
+style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoFooter style='tab-stops:.5in center 3.0in right 6.0in'><b><span
+style='font-family:Arial'>Directory<o:p></o:p></span></b></p>
+
+<p class=MsoFooter style='tab-stops:.5in center 3.0in right 6.0in'><b><span
+style='font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoFooter style='tab-stops:.5in center 3.0in right 6.0in'><span
+style='font-family:Arial'>This option will write all the images into a directory
+on the hard disk.<o:p></o:p></span></p>
+
+<p class=MsoFooter style='margin-left:.5in;tab-stops:.5in center 3.0in right 6.0in'><span
+style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoFooter style='margin-left:.5in;tab-stops:.5in center 3.0in right 6.0in'><b><span
+style='font-family:Arial'><!--[if gte vml 1]><v:shape id="_x0000_i1039" type="#_x0000_t75"
+ style='width:441.6pt;height:194.4pt'>
+ <v:imagedata src="graphicpump_files/image029.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=589 height=259
+src="graphicpump_files/image030.jpg" v:shapes="_x0000_i1039"><![endif]><o:p></o:p></span></b></p>
+
+<p class=MsoFooter style='margin-top:0in;margin-right:-.5in;margin-bottom:0in;
+margin-left:.5in;margin-bottom:.0001pt;tab-stops:.5in center 3.0in right 6.0in'><span
+style='font-family:Arial'>Destination Dialog: Directory<o:p></o:p></span></p>
+
+<p class=MsoFooter style='tab-stops:.5in center 3.0in right 6.0in'><b><span
+style='font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoFooter style='margin-left:.5in;tab-stops:.5in center 3.0in right 6.0in'><b><span
+style='font-family:Arial'>Directory<o:p></o:p></span></b></p>
+
+<p class=MsoFooter style='margin-left:.5in;tab-stops:.5in center 3.0in right 6.0in'><b><span
+style='font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoFooter style='margin-left:.5in;tab-stops:.5in center 3.0in right 6.0in'><span
+style='font-family:Arial'>This is the directory in the file system to write the
+images into.<span style='mso-spacerun:yes'>  </span>Type in the full path of a
+directory, or click the “Browse” button to select a directory.<o:p></o:p></span></p>
+
+<p class=MsoFooter style='tab-stops:.5in center 3.0in right 6.0in'><b><span
+style='font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoFooter style='margin-left:.5in;tab-stops:.5in center 3.0in right 6.0in'><b><span
+style='font-family:Arial'>Delete Contents<o:p></o:p></span></b></p>
+
+<p class=MsoFooter style='margin-left:.5in;tab-stops:.5in center 3.0in right 6.0in'><b><span
+style='font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoFooter style='margin-left:.5in;tab-stops:.5in center 3.0in right 6.0in'><span
+style='font-family:Arial'>This tells the Graphic Pump to delete all files that
+may have been written by a previous execution of the Graphic Pump.<span
+style='mso-spacerun:yes'>  </span>Checking this option will cause the Graphic
+Pump to delete any files that match the file name specified.<o:p></o:p></span></p>
+
+<p class=MsoFooter style='margin-left:.5in;tab-stops:.5in center 3.0in right 6.0in'><span
+style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoFooter style='margin-left:.5in;tab-stops:.5in center 3.0in right 6.0in'><span
+style='font-family:Arial'>See “File Name” for more information.<o:p></o:p></span></p>
+
+<p class=MsoFooter style='margin-left:.5in;tab-stops:.5in center 3.0in right 6.0in'><b><span
+style='font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoFooter style='margin-left:.5in;tab-stops:.5in center 3.0in right 6.0in'><b><span
+style='font-family:Arial'>File Name<o:p></o:p></span></b></p>
+
+<p class=MsoFooter style='margin-left:.5in;tab-stops:.5in center 3.0in right 6.0in'><b><span
+style='font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoFooter style='margin-left:.5in;tab-stops:.5in center 3.0in right 6.0in'><span
+style='font-family:Arial'>This is a template name for the name of the file that
+the Graphic Pump should generate for the resulting images.<span
+style='mso-spacerun:yes'>  </span>This file name must contain the characters
+%i%.<span style='mso-spacerun:yes'>  </span>The Graphic pump will substitute a
+number for the %i% characters at run time.<o:p></o:p></span></p>
+
+<p class=MsoFooter style='margin-left:.5in;tab-stops:.5in center 3.0in right 6.0in'><span
+style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoFooter style='margin-left:.5in;tab-stops:.5in center 3.0in right 6.0in'><span
+style='font-family:Arial'>In other words, if there are three images in the task
+and the file name is file%i%.jpg, three files named file0000.jpg, file0001.jpg,
+and file0002.jpg will be written into the destination directory.<o:p></o:p></span></p>
+
+<p class=MsoFooter style='margin-left:.5in;tab-stops:.5in center 3.0in right 6.0in'><span
+style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoFooter style='margin-left:.5in;tab-stops:.5in center 3.0in right 6.0in'><span
+style='font-family:Arial'>If Delete Contents is checked, any file named file*.jpg
+where * is anything will be deleted when the task is run.<o:p></o:p></span></p>
+
+<p class=MsoFooter style='tab-stops:.5in center 3.0in right 6.0in'><b><span
+style='font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoFooter style='tab-stops:.5in center 3.0in right 6.0in'><b><span
+style='font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoFooter style='tab-stops:.5in center 3.0in right 6.0in'><b><span
+style='font-family:Arial'>Digi-Frame<o:p></o:p></span></b></p>
+
+<p class=MsoFooter style='tab-stops:.5in center 3.0in right 6.0in'><b><span
+style='font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoFooter style='tab-stops:.5in center 3.0in right 6.0in'><span
+style='font-family:Arial'>This will write images to the Digi-Frame digital
+picture frame. <o:p></o:p></span></p>
+
+<p class=MsoFooter style='tab-stops:.5in center 3.0in right 6.0in'><span
+style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoFooter style='margin-left:.5in;tab-stops:.5in center 3.0in right 6.0in'><span
+style='font-family:Arial'><!--[if gte vml 1]><v:shape id="_x0000_i1040" type="#_x0000_t75"
+ style='width:441.6pt;height:194.4pt'>
+ <v:imagedata src="graphicpump_files/image031.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=589 height=259
+src="graphicpump_files/image032.jpg" v:shapes="_x0000_i1040"><![endif]><o:p></o:p></span></p>
+
+<p class=MsoFooter style='margin-top:0in;margin-right:-.5in;margin-bottom:0in;
+margin-left:.5in;margin-bottom:.0001pt;tab-stops:.5in center 3.0in right 6.0in'><span
+style='font-family:Arial'>Schedule Dialog: Digi-Frame<o:p></o:p></span></p>
+
+<p class=MsoFooter style='tab-stops:.5in center 3.0in right 6.0in'><b><span
+style='font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoFooter style='margin-left:.5in;tab-stops:.5in center 3.0in right 6.0in'><b><span
+style='font-family:Arial'>Port<o:p></o:p></span></b></p>
+
+<p class=MsoFooter style='margin-left:.5in;tab-stops:.5in center 3.0in right 6.0in'><b><span
+style='font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoFooter style='margin-left:.5in;tab-stops:.5in center 3.0in right 6.0in'><span
+style='font-family:Arial'>This is the serial port that the Digi-Frame is
+connected to.<span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoFooter style='margin-left:.5in;tab-stops:.5in center 3.0in right 6.0in'><span
+style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoFooter style='margin-left:.5in;tab-stops:.5in center 3.0in right 6.0in'><b><span
+style='font-family:Arial'>Media<o:p></o:p></span></b></p>
+
+<p class=MsoFooter style='margin-left:.5in;tab-stops:.5in center 3.0in right 6.0in'><b><span
+style='font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoFooter style='margin-left:.5in;tab-stops:.5in center 3.0in right 6.0in'><span
+style='font-family:Arial'>This is the media on the Digi-Frame to write to. The
+Digi-Frame supports both Compact Flash and Smart Media.<span
+style='mso-spacerun:yes'>  </span>See the Digi-Frame documentation for more
+information.<o:p></o:p></span></p>
+
+<p class=MsoFooter style='margin-left:.5in;tab-stops:.5in center 3.0in right 6.0in'><span
+style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoFooter style='margin-left:.5in;tab-stops:.5in center 3.0in right 6.0in'><b><span
+style='font-family:Arial'>Detect<o:p></o:p></span></b></p>
+
+<p class=MsoFooter style='margin-left:.5in;tab-stops:.5in center 3.0in right 6.0in'><b><span
+style='font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoFooter style='margin-left:.5in;tab-stops:.5in center 3.0in right 6.0in'><span
+style='font-family:Arial'>Clicking this button will initiate an attempt to
+automatically detect the port and media for the Digi-Frame picture frame.<o:p></o:p></span></p>
+
+<p class=MsoFooter style='margin-left:.5in;tab-stops:.5in center 3.0in right 6.0in'><span
+style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoFooter style='margin-left:.5in;tab-stops:.5in center 3.0in right 6.0in'><b><span
+style='font-family:Arial'>File Name<o:p></o:p></span></b></p>
+
+<p class=MsoFooter style='margin-left:.5in;tab-stops:.5in center 3.0in right 6.0in'><span
+style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoFooter style='margin-left:.5in;tab-stops:.5in center 3.0in right 6.0in'><span
+style='font-family:Arial'>This is the name of the file on the digi-frame.<span
+style='mso-spacerun:yes'>  </span>Note that for this feature to work you need
+to have firmware version k or better for your frame.<span
+style='mso-spacerun:yes'>  </span>See <a href="http://www.digi-frame.com/">http://www.digi-frame.com</a>
+for more information on upgrading your firmware.<o:p></o:p></span></p>
+
+<span style='font-size:12.0pt;font-family:Arial;mso-fareast-font-family:"Times New Roman";
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<h1><a name="_Toc497375158"><span style='font-size:18.0pt;mso-bidi-font-size:
+12.0pt'>Sample Tasks<o:p></o:p></span></a></h1>
+
+<p class=MsoNormal><span style='mso-bookmark:_Toc497375158'><span
+style='font-family:Arial'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=MsoFooter style='tab-stops:.5in center 3.0in right 6.0in'><span
+style='mso-bookmark:_Toc497375158'><span style='font-family:Arial'>There are
+two sample tasks that ship with the Graphic Pump.<span
+style='mso-spacerun:yes'>  </span>These are installed by default, and can also
+be imported at any time from the two .gpt files in the TestSource subdirectory
+located in the directory where the Graphic Pump was installed.<o:p></o:p></span></span></p>
+
+<p class=MsoFooter style='tab-stops:.5in center 3.0in right 6.0in'><span
+style='mso-bookmark:_Toc497375158'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=MsoFooter style='tab-stops:.5in center 3.0in right 6.0in'><span
+style='mso-bookmark:_Toc497375158'><span style='font-family:Arial'>To import a
+.gpt file, select Import from the File menu in the main task dialog, and select
+the .gpt file.<o:p></o:p></span></span></p>
+
+<p class=MsoFooter style='tab-stops:.5in center 3.0in right 6.0in'><span
+style='mso-bookmark:_Toc497375158'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></span></p>
+
+<h1><span style='mso-bookmark:_Toc497375158'>Photos</span></h1>
+
+<h1><span style='mso-bookmark:_Toc497375158'><o:p>&nbsp;</o:p></span></h1>
+
+<p class=MsoNormal><span style='mso-bookmark:_Toc497375158'><span
+style='font-family:Arial'>This sample task processes four images.<span
+style='mso-spacerun:yes'>  </span>These images are gotten from image files on
+the hard disk and written to another directory.<o:p></o:p></span></span></p>
+
+<p class=MsoNormal><span style='mso-bookmark:_Toc497375158'><span
+style='font-family:Arial'><o:p>&nbsp;</o:p></span></span></p>
+
+<h1><span style='mso-bookmark:_Toc497375158'>Fun Informational Web Images</span></h1>
+
+<h1><span style='mso-bookmark:_Toc497375158'><o:p>&nbsp;</o:p></span></h1>
+
+<h1><span style='mso-bookmark:_Toc497375158'><span style='font-weight:normal'>This
+sample task processes an image from the Internet. This example gets a picture
+from a web camera of traffic information in the Seattle area.<o:p></o:p></span></span></h1>
+
+<h1><span style='mso-bookmark:_Toc497375158'><span style='font-weight:normal'><o:p>&nbsp;</o:p></span></span></h1>
+
+<h1><span style='mso-bookmark:_Toc497375158'><span style='font-weight:normal'>This
+task is scheduled to run every day at 7:00 AM before I go to work, and write
+them to a directory on the hard disk.<span style='mso-spacerun:yes'> 
+</span>This directory is used as my Screen Saver.<span
+style='mso-spacerun:yes'>  </span>Before I go to work I simply glance at my PC
+for my morning commute.<o:p></o:p></span></span></h1>
+
+<span style='font-size:12.0pt;font-family:Arial;mso-fareast-font-family:"Times New Roman";
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<h1><span style='mso-bookmark:_Toc497375158'><span style='font-size:18.0pt;
+mso-bidi-font-size:12.0pt'>Graphic Pump Screen Saver</span></span><span
+style='font-size:18.0pt;mso-bidi-font-size:12.0pt'><o:p></o:p></span></h1>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'>A simple screen saver is
+included and installed along with the application.<span
+style='mso-spacerun:yes'>  </span>This is mostly so there is something
+interesting to do with images processed by the Graphic Pump out of the
+box.<span style='mso-spacerun:yes'>  </span>Not everyone has a Pocket PC or a
+digital picture frame and would like to display their images somewhere.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'>The screen saver is simply a
+bonus and is included with all copies of the application in unrestricted form.
+There are better &quot;shareware&quot; image screen savers out there.<span
+style='mso-spacerun:yes'>  </span>By all means use them instead of the one included
+here.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'>The options and
+functionality for the Graphic Pump Screen Saver are simple.<span
+style='mso-spacerun:yes'>  </span>The screen saver can be configured with an
+individual image, or a directory of images.<span style='mso-spacerun:yes'> 
+</span>It will rotate through the images (if more than one), or display the
+image (if only one) with a background color and float around the screen.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'>To use the Graphic Pump
+Screen Saver, right click on the Windows Desktop and select
+&quot;Properties&quot; from the popup menu.<span style='mso-spacerun:yes'> 
+</span>The &quot;Display&quot; dialog should appear.<span
+style='mso-spacerun:yes'>  </span>Select the &quot;Screen Saver&quot; tab.<span
+style='mso-spacerun:yes'>  </span>Select &quot;Graphic Pump Screen Saver&quot;
+from the &quot;Screen Saver&quot; Dropdown.<span style='mso-spacerun:yes'> 
+</span>Click the &quot;Settings&quot; button and the &quot;Graphic Pump Screen
+Saver&quot; dialog should appear.<span style='mso-spacerun:yes'>  </span>To see
+what it will look like, click the &quot;Preview&quot; button.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoFooter style='tab-stops:.5in center 3.0in right 6.0in'><span
+style='font-family:Arial'><!--[if gte vml 1]><v:shape id="_x0000_i1041" type="#_x0000_t75"
+ style='width:247.8pt;height:281.4pt'>
+ <v:imagedata src="graphicpump_files/image033.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=330 height=375
+src="graphicpump_files/image034.jpg" v:shapes="_x0000_i1041"><![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:135.0pt'><span style='font-family:Arial'>Screen
+Saver Dialog<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-family:Arial'>Image/Path</span></b><span
+style='font-family:Arial'> - This is either a directory containing jpg images
+or an individual jpg image for display.<span style='mso-spacerun:yes'> 
+</span>Either type in the name of a directory or a jpg file, or click the
+&quot;Browse&quot; button to find one on your computer.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-family:Arial'>Background Color</span></b><span
+style='font-family:Arial'> - This is the color the rest of the screen should
+display in the background.<span style='mso-spacerun:yes'>  </span>To change the
+color, click the &quot;Change&quot; button and select a new color.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-family:Arial'>Movement: Speed</span></b><span
+style='font-family:Arial'> - This is the speed of movement in milliseconds
+(1000 = 1 second), or in other words how often the location of the image should
+be updated. Experiment with different settings here and see what works best on
+your computer and to your liking. To have a fixed static image that doesn't
+move input 0.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-family:Arial'>Movement: Horizontal
+Delta</span></b><span style='font-family:Arial'> - This is the number of pixels
+the image should travel horizontally for every move. To not have the image move
+horizontally, enter 0.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-family:Arial'>Movement: Vertical Delta</span></b><span
+style='font-family:Arial'> - This is the number of pixels the image should
+travel vertically for every move. To not have the image move vertically, enter
+0.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-family:Arial'>Flip: Time</span></b><span
+style='font-family:Arial'> - This is the time of flipping images in
+milliseconds (1000 = 1 second), or in other words how often the image should
+remain visible before switching to the next image.<span
+style='mso-spacerun:yes'>   </span><o:p></o:p></span></p>
+
+<h1><o:p>&nbsp;</o:p></h1>
+
+</div>
+
+</body>
+
+</html>

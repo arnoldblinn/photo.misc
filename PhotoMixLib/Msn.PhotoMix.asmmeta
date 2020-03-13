@@ -1,0 +1,3244 @@
+.assembly extern 'Msn.Framework'
+{
+  .publickeytoken = (1A 5B 96 3C 6F 0F BE AB)
+  .ver corext
+}
+.assembly extern 'System'
+{
+  .publickeytoken = (B7 7A 5C 56 19 34 E0 89)
+  .ver clr2.0
+}
+.assembly extern 'System.Data'
+{
+  .publickeytoken = (B7 7A 5C 56 19 34 E0 89)
+  .ver clr2.0
+}
+.assembly extern 'System.Drawing'
+{
+  .publickeytoken = (B0 3F 5F 7F 11 D5 0A 3A)
+  .ver clr2.0
+}
+.assembly extern 'System.Web'
+{
+  .publickeytoken = (B0 3F 5F 7F 11 D5 0A 3A)
+  .ver clr2.0
+}
+.assembly extern 'System.Web.Services'
+{
+  .publickeytoken = (B0 3F 5F 7F 11 D5 0A 3A)
+  .ver clr2.0
+}
+.assembly extern 'System.Xml'
+{
+  .publickeytoken = (B7 7A 5C 56 19 34 E0 89)
+  .ver clr2.0
+}
+.assembly extern 'mscorlib'
+{
+  .publickeytoken = (B7 7A 5C 56 19 34 E0 89)
+  .ver clr2.0
+}
+.assembly 'Msn.PhotoMix'
+{
+  .custom instance void ['mscorlib']'System.Runtime.InteropServices'.'ComVisibleAttribute'::.ctor(bool) = (01 00 00 00 00)
+  .publickey = (00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 27 A5 D4 1F 8F 8F A9 A5 A2 0C 02 33 92 96 72 C5 E6 6E 7F 1A 1D 83 AC 6E 63 AE 01 7B 7A 3D F1 4A 5D FE 96 30 DA 0B 45 F9 5A CA 9A FF 0A EE 36 A1 8F 3F DA 35 52 BD FB 52 85 09 40 83 B1 F7 CE 39 4E 93 3E 07 13 11 6F ED AD 31 20 F4 E8 E6 BA 9B FE CD C7 59 53 EE F2 05 44 8D 91 BF 46 C7 2C EC 6E 01 39 21 EC F5 7A 72 90 45 D9 58 22 A6 C3 31 D3 18 99 37 4C B2 71 72 10 9B DC 92 0D 98 14 C0)
+  .hash algorithm 0x00008004
+  .ver corext
+}
+.namespace 'Msn.PhotoMix'
+{
+  .class public 'ErrorLog'
+    extends ['mscorlib']'System'.'Object'
+  {
+    .method public static hidebysig 
+      void 'Init'()
+    {
+      ret
+    }
+    .method public static hidebysig 
+      void 'WriteEntry'(class ['mscorlib']'System'.'Exception' 'e')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void '.ctor'()
+    {
+      ret
+    }
+  }
+  .class public 'ImageUtil'
+    extends ['mscorlib']'System'.'Object'
+  {
+    .method public static hidebysig 
+      valuetype ['System.Drawing']'System.Drawing'.'Size' 'GetFinalSize'(valuetype ['System.Drawing']'System.Drawing'.'Size' 'targetSize', valuetype ['System.Drawing']'System.Drawing'.'Size' 'currentSize', bool 'grow', bool 'shrink')
+    {
+      ret
+    }
+    .method public static hidebysig 
+      void 'SaveJpeg'(string 'path', class ['System.Drawing']'System.Drawing'.'Bitmap' 'img', int64 'quality')
+    {
+      ret
+    }
+    .method public static hidebysig 
+      class ['System.Drawing']'System.Drawing'.'Bitmap' 'LoadImageFromUrl'(string 'url')
+    {
+      ret
+    }
+    .method public static hidebysig 
+      void 'ImageToAd16x9'(string 'imageName', string 'fileName')
+    {
+      ret
+    }
+    .method public static hidebysig 
+      void 'ImageToAd4x3'(string 'imageName', string 'fileName')
+    {
+      ret
+    }
+    .method public static hidebysig 
+      string 'GetCompiledImageDirectory'(string 'subdirectory')
+    {
+      ret
+    }
+    .method public static hidebysig 
+      void 'AddXmlElement'(class ['System.Xml']'System.Xml'.'XmlNode' 'node', string 'elementName', string 'elementValue')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void '.ctor'()
+    {
+      ret
+    }
+  }
+  .class public 'MiscUtil'
+    extends ['mscorlib']'System'.'Object'
+  {
+    .method public static hidebysig 
+      string 'TimeIndex'()
+    {
+      ret
+    }
+    .method public static hidebysig 
+      class ['System.Drawing']'System.Drawing'.'Bitmap' 'GetAd'()
+    {
+      ret
+    }
+    .method public static hidebysig 
+      bool 'TTLFileExists'(string 'fileName', int32 'ttl')
+    {
+      ret
+    }
+    .method public static hidebysig 
+      string 'EscapeJavascriptString'(string 'value')
+    {
+      ret
+    }
+    .method public static hidebysig 
+      string 'AppendQueryStringParameter'(string 'url', string 'parameter')
+    {
+      ret
+    }
+    .method public static hidebysig 
+      string 'GetFacebookApiKey'()
+    {
+      ret
+    }
+    .method public static hidebysig 
+      string 'GetFacebookSecret'()
+    {
+      ret
+    }
+    .method public static hidebysig 
+      string 'FacebookSignature'(class ['mscorlib']'System.Collections'.'ArrayList' 'args')
+    {
+      ret
+    }
+    .method public static hidebysig 
+      class ['Msn.Framework']'Msn.Framework'.'XmlDocumentEx' 'CallFacebook'(class ['mscorlib']'System.Collections'.'ArrayList' 'args')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void '.ctor'()
+    {
+      ret
+    }
+  }
+  .class public sealed 'PhotoMixError'
+    extends ['mscorlib']'System'.'Enum'
+  {
+    .field public rtspecialname specialname int32 'value__'
+    .field static public literal valuetype 'Msn.PhotoMix'.'PhotoMixError' 'BlockedDomainName' = int32(0x000007D2)
+    .field static public literal valuetype 'Msn.PhotoMix'.'PhotoMixError' 'DomainNotReserved' = int32(0x000007D4)
+    .field static public literal valuetype 'Msn.PhotoMix'.'PhotoMixError' 'DomainPendingChanges' = int32(0x000007D6)
+    .field static public literal valuetype 'Msn.PhotoMix'.'PhotoMixError' 'DomainPendingConfiguration' = int32(0x000007D8)
+    .field static public literal valuetype 'Msn.PhotoMix'.'PhotoMixError' 'DomainSuspended' = int32(0x000007D7)
+    .field static public literal valuetype 'Msn.PhotoMix'.'PhotoMixError' 'DomainUnavailable' = int32(0x000007D5)
+    .field static public literal valuetype 'Msn.PhotoMix'.'PhotoMixError' 'ExchangeError' = int32(0x0000232C)
+    .field static public literal valuetype 'Msn.PhotoMix'.'PhotoMixError' 'InternalError' = int32(0x00002329)
+    .field static public literal valuetype 'Msn.PhotoMix'.'PhotoMixError' 'InvalidDomainName' = int32(0x000007D1)
+    .field static public literal valuetype 'Msn.PhotoMix'.'PhotoMixError' 'InvalidManagementCertificate' = int32(0x000003ED)
+    .field static public literal valuetype 'Msn.PhotoMix'.'PhotoMixError' 'InvalidNetId' = int32(0x00000BCB)
+    .field static public literal valuetype 'Msn.PhotoMix'.'PhotoMixError' 'InvalidOffer' = int32(0x00000BCC)
+    .field static public literal valuetype 'Msn.PhotoMix'.'PhotoMixError' 'InvalidParameter' = int32(0x0000232A)
+    .field static public literal valuetype 'Msn.PhotoMix'.'PhotoMixError' 'InvalidPartner' = int32(0x000003E9)
+    .field static public literal valuetype 'Msn.PhotoMix'.'PhotoMixError' 'InvalidPartnerCert' = int32(0x000003EA)
+    .field static public literal valuetype 'Msn.PhotoMix'.'PhotoMixError' 'InvalidPhotoMixConfigId' = int32(0x000007D3)
+    .field static public literal valuetype 'Msn.PhotoMix'.'PhotoMixError' 'ManagedMemberExists' = int32(0x00000BC0)
+    .field static public literal valuetype 'Msn.PhotoMix'.'PhotoMixError' 'ManagedMemberNotExists' = int32(0x00000BC1)
+    .field static public literal valuetype 'Msn.PhotoMix'.'PhotoMixError' 'MaxMembershipLimit' = int32(0x00000BC4)
+    .field static public literal valuetype 'Msn.PhotoMix'.'PhotoMixError' 'MemberNameBlank' = int32(0x00000BBC)
+    .field static public literal valuetype 'Msn.PhotoMix'.'PhotoMixError' 'MemberNameBlocked' = int32(0x00000BBA)
+    .field static public literal valuetype 'Msn.PhotoMix'.'PhotoMixError' 'MemberNameInUse' = int32(0x00000BBF)
+    .field static public literal valuetype 'Msn.PhotoMix'.'PhotoMixError' 'MemberNameIncludesDots' = int32(0x00000BBE)
+    .field static public literal valuetype 'Msn.PhotoMix'.'PhotoMixError' 'MemberNameIncludesInvalidChars' = int32(0x00000BBD)
+    .field static public literal valuetype 'Msn.PhotoMix'.'PhotoMixError' 'MemberNameInvalid' = int32(0x00000BB9)
+    .field static public literal valuetype 'Msn.PhotoMix'.'PhotoMixError' 'MemberNameUnavailable' = int32(0x00000BBB)
+    .field static public literal valuetype 'Msn.PhotoMix'.'PhotoMixError' 'MemberNotAuthenticated' = int32(0x000003EE)
+    .field static public literal valuetype 'Msn.PhotoMix'.'PhotoMixError' 'MemberNotAuthorized' = int32(0x000003EC)
+    .field static public literal valuetype 'Msn.PhotoMix'.'PhotoMixError' 'NYI' = int32(0x00002711)
+    .field static public literal valuetype 'Msn.PhotoMix'.'PhotoMixError' 'NotPermittedForDomain' = int32(0x000007D9)
+    .field static public literal valuetype 'Msn.PhotoMix'.'PhotoMixError' 'PartnerNotAuthorized' = int32(0x000003EB)
+    .field static public literal valuetype 'Msn.PhotoMix'.'PhotoMixError' 'PassportError' = int32(0x0000232B)
+    .field static public literal valuetype 'Msn.PhotoMix'.'PhotoMixError' 'PasswordBlank' = int32(0x00000BC5)
+    .field static public literal valuetype 'Msn.PhotoMix'.'PhotoMixError' 'PasswordIncludesInvalidChars' = int32(0x00000BC9)
+    .field static public literal valuetype 'Msn.PhotoMix'.'PhotoMixError' 'PasswordIncludesMemberName' = int32(0x00000BC8)
+    .field static public literal valuetype 'Msn.PhotoMix'.'PhotoMixError' 'PasswordInvalid' = int32(0x00000BCA)
+    .field static public literal valuetype 'Msn.PhotoMix'.'PhotoMixError' 'PasswordTooLong' = int32(0x00000BC7)
+    .field static public literal valuetype 'Msn.PhotoMix'.'PhotoMixError' 'PasswordTooShort' = int32(0x00000BC6)
+    .field static public literal valuetype 'Msn.PhotoMix'.'PhotoMixError' 'ServiceDown' = int32(0x0000232F)
+    .field static public literal valuetype 'Msn.PhotoMix'.'PhotoMixError' 'SubscriptionServicesError' = int32(0x0000232D)
+    .field static public literal valuetype 'Msn.PhotoMix'.'PhotoMixError' 'TestForcedError' = int32(0x0000232E)
+    .field static public literal valuetype 'Msn.PhotoMix'.'PhotoMixError' 'UnmanagedMemberExists' = int32(0x00000BC2)
+    .field static public literal valuetype 'Msn.PhotoMix'.'PhotoMixError' 'UnmanagedMemberNotExists' = int32(0x00000BC3)
+  }
+  .class public 'PhotoMixErrorAttribute'
+    extends ['mscorlib']'System'.'Attribute'
+  {
+    .method public hidebysig specialname 
+      instance bool 'get_LogError'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void 'set_LogError'(bool 'value')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance string 'get_Message'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void 'set_Message'(string 'value')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void '.ctor'()
+    {
+      ret
+    }
+    .property instance bool 'LogError'()
+    {
+      .get instance bool 'Msn.PhotoMix'.'PhotoMixErrorAttribute'::'get_LogError'()
+      .set instance void 'Msn.PhotoMix'.'PhotoMixErrorAttribute'::'set_LogError'(bool)
+    }
+    .property instance string 'Message'()
+    {
+      .get instance string 'Msn.PhotoMix'.'PhotoMixErrorAttribute'::'get_Message'()
+      .set instance void 'Msn.PhotoMix'.'PhotoMixErrorAttribute'::'set_Message'(string)
+    }
+  }
+  .class public 'PhotoMixException'
+    extends ['mscorlib']'System'.'Exception'
+    implements ['Msn.Framework']'Msn.Framework'.'ISoapExceptionFormatter'
+  {
+    .method public hidebysig specialname 
+      instance void '.ctor'(string 'context', valuetype 'Msn.PhotoMix'.'PhotoMixError' 'photoMixError')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void '.ctor'(string 'context', valuetype 'Msn.PhotoMix'.'PhotoMixError' 'photoMixError', string 'message')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void '.ctor'(string 'context', valuetype 'Msn.PhotoMix'.'PhotoMixError' 'photoMixError', string 'partnerErrorCode', string 'partnerErrorDetail')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void '.ctor'(string 'context', valuetype 'Msn.PhotoMix'.'PhotoMixError' 'photoMixError', string 'message', class ['mscorlib']'System'.'Exception' 'innerException')
+    {
+      ret
+    }
+    .method public hidebysig 
+      instance void 'GetPhotoMixErrorAttributes'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance valuetype 'Msn.PhotoMix'.'PhotoMixError' 'get_PhotoMixError'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance bool 'get_LogError'()
+    {
+      ret
+    }
+    .method public virtual hidebysig 
+      instance string 'ToString'()
+    {
+      ret
+    }
+    .method public final virtual hidebysig newslot 
+      instance class ['System.Web.Services']'System.Web.Services.Protocols'.'SoapException' 'ToSoapException'(class ['System.Web.Services']'System.Web.Services.Protocols'.'SoapMessage' 'soapMessage', bool 'hidePrivateDetails')
+    {
+      ret
+    }
+    .property instance bool 'LogError'()
+    {
+      .get instance bool 'Msn.PhotoMix'.'PhotoMixException'::'get_LogError'()
+    }
+    .property instance valuetype 'Msn.PhotoMix'.'PhotoMixError' 'PhotoMixError'()
+    {
+      .get instance valuetype 'Msn.PhotoMix'.'PhotoMixError' 'Msn.PhotoMix'.'PhotoMixException'::'get_PhotoMixError'()
+    }
+  }
+  .class public 'PhotoMixLog'
+    extends ['mscorlib']'System'.'Object'
+  {
+    .class nested public sealed 'EventId'
+      extends ['mscorlib']'System'.'Enum'
+    {
+      .field public rtspecialname specialname int32 'value__'
+      .field static public literal valuetype 'Msn.PhotoMix'.'PhotoMixLog'/'EventId' 'ImportDomainActive' = int32(0x000000CA)
+      .field static public literal valuetype 'Msn.PhotoMix'.'PhotoMixLog'/'EventId' 'ImportDomainCancel' = int32(0x000000CC)
+      .field static public literal valuetype 'Msn.PhotoMix'.'PhotoMixLog'/'EventId' 'ImportDomainFailed' = int32(0x000000C9)
+      .field static public literal valuetype 'Msn.PhotoMix'.'PhotoMixLog'/'EventId' 'ImportDomainSuspend' = int32(0x000000CB)
+      .field static public literal valuetype 'Msn.PhotoMix'.'PhotoMixLog'/'EventId' 'ProcessDisablingExchange' = int32(0x0000000D)
+      .field static public literal valuetype 'Msn.PhotoMix'.'PhotoMixLog'/'EventId' 'ProcessDisablingHotmail' = int32(0x00000006)
+      .field static public literal valuetype 'Msn.PhotoMix'.'PhotoMixLog'/'EventId' 'ProcessEnablingExchange' = int32(0x0000000C)
+      .field static public literal valuetype 'Msn.PhotoMix'.'PhotoMixLog'/'EventId' 'ProcessEnablingHotmail' = int32(0x00000005)
+      .field static public literal valuetype 'Msn.PhotoMix'.'PhotoMixLog'/'EventId' 'ProcessFailed' = int32(0x00000002)
+      .field static public literal valuetype 'Msn.PhotoMix'.'PhotoMixLog'/'EventId' 'ProcessGrantNamespaceAdmin' = int32(0x0000000B)
+      .field static public literal valuetype 'Msn.PhotoMix'.'PhotoMixLog'/'EventId' 'ProcessMigrateOwnerEmail' = int32(0x00000009)
+      .field static public literal valuetype 'Msn.PhotoMix'.'PhotoMixLog'/'EventId' 'ProcessMigrateOwnerFailed' = int32(0x00000008)
+      .field static public literal valuetype 'Msn.PhotoMix'.'PhotoMixLog'/'EventId' 'ProcessMigrateOwnerRecycle' = int32(0x0000000A)
+      .field static public literal valuetype 'Msn.PhotoMix'.'PhotoMixLog'/'EventId' 'ProcessMigrateOwnerSucceeded' = int32(0x00000007)
+      .field static public literal valuetype 'Msn.PhotoMix'.'PhotoMixLog'/'EventId' 'ProcessReleasingDomain' = int32(0x00000003)
+      .field static public literal valuetype 'Msn.PhotoMix'.'PhotoMixLog'/'EventId' 'ProcessReservingNamespace' = int32(0x00000004)
+      .field static public literal valuetype 'Msn.PhotoMix'.'PhotoMixLog'/'EventId' 'ProcessSucceeded' = int32(0x00000001)
+      .field static public literal valuetype 'Msn.PhotoMix'.'PhotoMixLog'/'EventId' 'SignupBlockedEasiCount' = int32(0x00000065)
+      .field static public literal valuetype 'Msn.PhotoMix'.'PhotoMixLog'/'EventId' 'SignupBlockedIdn' = int32(0x0000006A)
+      .field static public literal valuetype 'Msn.PhotoMix'.'PhotoMixLog'/'EventId' 'SignupBlockedNamespace' = int32(0x00000069)
+      .field static public literal valuetype 'Msn.PhotoMix'.'PhotoMixLog'/'EventId' 'SignupBlockedRoot' = int32(0x00000067)
+      .field static public literal valuetype 'Msn.PhotoMix'.'PhotoMixLog'/'EventId' 'SignupBlockedSubDomain' = int32(0x00000068)
+      .field static public literal valuetype 'Msn.PhotoMix'.'PhotoMixLog'/'EventId' 'SignupBlockedWord' = int32(0x00000066)
+    }
+    .method public static hidebysig 
+      void 'CreateLogEntry'(string 'domainName', valuetype 'Msn.PhotoMix'.'PhotoMixLog'/'EventId' 'eventId')
+    {
+      ret
+    }
+    .method public static hidebysig 
+      void 'CreateLogEntry'(string 'domainName', valuetype 'Msn.PhotoMix'.'PhotoMixLog'/'EventId' 'eventId', string 'eventText')
+    {
+      ret
+    }
+    .method public static hidebysig 
+      void 'CreateLogEntry'(string 'domainName', valuetype 'Msn.PhotoMix'.'PhotoMixLog'/'EventId' 'eventId', class ['mscorlib']'System'.'Exception' 'e')
+    {
+      ret
+    }
+    .method public static hidebysig 
+      void 'CreateLogEntry'(string 'domainName', valuetype ['mscorlib']'System'.'DateTime' 'eventTime', valuetype 'Msn.PhotoMix'.'PhotoMixLog'/'EventId' 'eventId', string 'eventText')
+    {
+      ret
+    }
+    .method public static hidebysig 
+      void 'LogWebRequests'(string 'webRequestKey', string 'webRequestMethod')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void '.ctor'()
+    {
+      ret
+    }
+  }
+  .class public 'PhotoMixQuery'
+    extends ['mscorlib']'System'.'Object'
+    implements ['mscorlib']'System'.'IDisposable'
+  {
+    .method public final virtual hidebysig newslot 
+      instance void 'Dispose'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance class ['System.Data']'System.Data.SqlClient'.'SqlParameterCollection' 'get_Parameters'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void '.ctor'(string 'sql')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void '.ctor'(string 'sql', valuetype ['System.Data']'System.Data'.'CommandType' 'commandType')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void '.ctor'(string 'sql', valuetype ['System.Data']'System.Data'.'CommandType' 'commandType', bool 'forDataSet')
+    {
+      ret
+    }
+    .method public hidebysig 
+      instance class ['System.Data']'System.Data'.'DataSet' 'GetDataSet'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance class ['System.Data']'System.Data.SqlClient'.'SqlDataReader' 'get_Reader'()
+    {
+      ret
+    }
+    .method public hidebysig 
+      instance int32 'Execute'()
+    {
+      ret
+    }
+    .method public hidebysig 
+      instance void 'Close'()
+    {
+      ret
+    }
+    .field family class ['System.Data']'System.Data.SqlClient'.'SqlCommand' 'command'
+    .property instance class ['System.Data']'System.Data.SqlClient'.'SqlParameterCollection' 'Parameters'()
+    {
+      .get instance class ['System.Data']'System.Data.SqlClient'.'SqlParameterCollection' 'Msn.PhotoMix'.'PhotoMixQuery'::'get_Parameters'()
+    }
+    .property instance class ['System.Data']'System.Data.SqlClient'.'SqlDataReader' 'Reader'()
+    {
+      .get instance class ['System.Data']'System.Data.SqlClient'.'SqlDataReader' 'Msn.PhotoMix'.'PhotoMixQuery'::'get_Reader'()
+    }
+  }
+  .class public 'WebPageBitmap'
+    extends ['mscorlib']'System'.'Object'
+  {
+    .method public hidebysig specialname 
+      instance void '.ctor'(string 'url', class ['mscorlib']'System.IO'.'MemoryStream' 'stream', int32 'width', int32 'height', bool 'renderImage')
+    {
+      ret
+    }
+    .method public hidebysig 
+      instance void 'Dispose'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance class ['System.Drawing']'System.Drawing'.'Bitmap' 'get_Bitmap'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance class ['mscorlib']'System.Collections.Generic'.'List`1'<string> 'get_ImageSrc'()
+    {
+      ret
+    }
+    .method public static hidebysig 
+      class ['System.Drawing']'System.Drawing'.'Bitmap' 'Fetch'(string 'url', int32 'width', int32 'height')
+    {
+      ret
+    }
+    .method public static hidebysig 
+      class ['System.Drawing']'System.Drawing'.'Bitmap' 'LoadStream'(class ['mscorlib']'System.IO'.'MemoryStream' 'stream', int32 'width', int32 'height')
+    {
+      ret
+    }
+    .method public static hidebysig 
+      class ['mscorlib']'System.Collections.Generic'.'List`1'<string> 'LoadDocumentImages'(string 'url')
+    {
+      ret
+    }
+    .method public static hidebysig 
+      class ['System.Drawing']'System.Drawing'.'Bitmap' 'LoadXsl'(string 'fileName', class ['System.Xml']'System.Xml'.'XmlDocument' 'doc', int32 'width', int32 'height')
+    {
+      ret
+    }
+    .property instance class ['System.Drawing']'System.Drawing'.'Bitmap' 'Bitmap'()
+    {
+      .get instance class ['System.Drawing']'System.Drawing'.'Bitmap' 'Msn.PhotoMix'.'WebPageBitmap'::'get_Bitmap'()
+    }
+    .property instance class ['mscorlib']'System.Collections.Generic'.'List`1'<string> 'ImageSrc'()
+    {
+      .get instance class ['mscorlib']'System.Collections.Generic'.'List`1'<string> 'Msn.PhotoMix'.'WebPageBitmap'::'get_ImageSrc'()
+    }
+  }
+  .class public sealed 'WebPageBitmapCallback'
+    extends ['mscorlib']'System'.'MulticastDelegate'
+  {
+    .method public hidebysig specialname 
+      instance void '.ctor'(object 'object', native int 'method')
+      runtime 
+    {
+    }
+    .method public virtual hidebysig newslot 
+      instance void 'Invoke'(int32 'lineCount')
+      runtime 
+    {
+    }
+    .method public virtual hidebysig newslot 
+      instance class ['mscorlib']'System'.'IAsyncResult' 'BeginInvoke'(int32 'lineCount', class ['mscorlib']'System'.'AsyncCallback' 'callback', object 'object')
+      runtime 
+    {
+    }
+    .method public virtual hidebysig newslot 
+      instance void 'EndInvoke'(class ['mscorlib']'System'.'IAsyncResult' 'result')
+      runtime 
+    {
+    }
+  }
+}
+.namespace 'Msn.PhotoMix.Passport'
+{
+  .class public 'Puid'
+    extends ['mscorlib']'System'.'Object'
+  {
+    .method public hidebysig specialname 
+      instance void '.ctor'(int32 'puidLow', int32 'puidHigh')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void '.ctor'(string 'puid')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance int32 'get_PuidLow'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance int32 'get_PuidHigh'()
+    {
+      ret
+    }
+    .method public virtual hidebysig 
+      instance bool 'Equals'(object 'obj')
+    {
+      ret
+    }
+    .method public virtual hidebysig 
+      instance int32 'GetHashCode'()
+    {
+      ret
+    }
+    .method public hidebysig 
+      instance string 'ToHex'()
+    {
+      ret
+    }
+    .method public static hidebysig specialname 
+      bool 'op_Equality'(class 'Msn.PhotoMix.Passport'.'Puid' 'puid1', class 'Msn.PhotoMix.Passport'.'Puid' 'puid2')
+    {
+      ret
+    }
+    .method public static hidebysig specialname 
+      bool 'op_Inequality'(class 'Msn.PhotoMix.Passport'.'Puid' 'puid1', class 'Msn.PhotoMix.Passport'.'Puid' 'puid2')
+    {
+      ret
+    }
+    .field static public class 'Msn.PhotoMix.Passport'.'Puid' 'Empty'
+    .property instance int32 'PuidHigh'()
+    {
+      .get instance int32 'Msn.PhotoMix.Passport'.'Puid'::'get_PuidHigh'()
+    }
+    .property instance int32 'PuidLow'()
+    {
+      .get instance int32 'Msn.PhotoMix.Passport'.'Puid'::'get_PuidLow'()
+    }
+  }
+}
+.namespace 'Msn.PhotoMix.SlideShow'
+{
+  .class public sealed 'ActiveDay'
+    extends ['mscorlib']'System'.'Enum'
+  {
+    .custom instance void ['mscorlib']'System'.'FlagsAttribute'::.ctor() = (01 00 00 00)
+    .field public rtspecialname specialname uint8 'value__'
+    .field static public literal valuetype 'Msn.PhotoMix.SlideShow'.'ActiveDay' 'All' = uint8(0x7F)
+    .field static public literal valuetype 'Msn.PhotoMix.SlideShow'.'ActiveDay' 'Fri' = uint8(0x10)
+    .field static public literal valuetype 'Msn.PhotoMix.SlideShow'.'ActiveDay' 'Mon' = uint8(0x01)
+    .field static public literal valuetype 'Msn.PhotoMix.SlideShow'.'ActiveDay' 'None' = uint8(0x00)
+    .field static public literal valuetype 'Msn.PhotoMix.SlideShow'.'ActiveDay' 'Sat' = uint8(0x20)
+    .field static public literal valuetype 'Msn.PhotoMix.SlideShow'.'ActiveDay' 'Sun' = uint8(0x40)
+    .field static public literal valuetype 'Msn.PhotoMix.SlideShow'.'ActiveDay' 'Thu' = uint8(0x08)
+    .field static public literal valuetype 'Msn.PhotoMix.SlideShow'.'ActiveDay' 'Tue' = uint8(0x02)
+    .field static public literal valuetype 'Msn.PhotoMix.SlideShow'.'ActiveDay' 'Wed' = uint8(0x04)
+  }
+  .class public 'Channel'
+    extends ['mscorlib']'System'.'Object'
+    implements 'Msn.PhotoMix.SlideShow'.'ICompile'
+  {
+    .method public hidebysig specialname 
+      instance void '.ctor'(class 'Msn.PhotoMix.Passport'.'Puid' 'puid', valuetype ['mscorlib']'System'.'Guid' 'slideShowGuid', valuetype ['mscorlib']'System'.'Guid' 'channelGuid', valuetype 'Msn.PhotoMix.SlideShow'.'ChannelType' 'type')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void '.ctor'(class 'Msn.PhotoMix.Passport'.'Puid' 'puid', valuetype ['mscorlib']'System'.'Guid' 'slideShowGuid', valuetype 'Msn.PhotoMix.SlideShow'.'ChannelType' 'type')
+    {
+      ret
+    }
+    .method public hidebysig 
+      instance void 'UpdateDisplayOrder'(int32 'index')
+    {
+      ret
+    }
+    .method public hidebysig 
+      instance void 'InitDisplayOrder'(int32 'position')
+    {
+      ret
+    }
+    .method public hidebysig 
+      instance int32 'GetDisplayOrder'()
+    {
+      ret
+    }
+    .method public hidebysig 
+      instance valuetype ['mscorlib']'System'.'DateTime' 'GetActiveChangeDate'(valuetype ['mscorlib']'System'.'DateTime' 'currentDateTime', valuetype 'Msn.PhotoMix.Util'.'PMTimeZone' 'timeZone')
+    {
+      ret
+    }
+    .method public hidebysig 
+      instance bool 'IsActive'(valuetype ['mscorlib']'System'.'DateTime' 'currentDateTime', valuetype 'Msn.PhotoMix.Util'.'PMTimeZone' 'timeZone')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance bool 'get_Active'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void 'set_Active'(bool 'value')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance bool 'get_ActiveLimitTime'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void 'set_ActiveLimitTime'(bool 'value')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance int32 'get_ActiveStartMinutes'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void 'set_ActiveStartMinutes'(int32 'value')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance int32 'get_ActiveEndMinutes'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void 'set_ActiveEndMinutes'(int32 'value')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance bool 'get_ActiveLimitDays'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void 'set_ActiveLimitDays'(bool 'value')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance valuetype 'Msn.PhotoMix.SlideShow'.'ActiveDay' 'get_ActiveDays'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void 'set_ActiveDays'(valuetype 'Msn.PhotoMix.SlideShow'.'ActiveDay' 'value')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance bool 'get_ActiveExpire'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void 'set_ActiveExpire'(bool 'value')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance valuetype ['mscorlib']'System'.'DateTime' 'get_ActiveExpireDate'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void 'set_ActiveExpireDate'(valuetype ['mscorlib']'System'.'DateTime' 'value')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance string 'get_Name'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void 'set_Name'(string 'value')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance class 'Msn.PhotoMix.Passport'.'Puid' 'get_Puid'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance valuetype ['mscorlib']'System'.'Guid' 'get_SlideShowGuid'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance valuetype ['mscorlib']'System'.'Guid' 'get_ChannelGuid'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance valuetype 'Msn.PhotoMix.SlideShow'.'ChannelType' 'get_Type'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance valuetype ['mscorlib']'System'.'DateTime' 'get_CreationDate'()
+    {
+      ret
+    }
+    .method public virtual hidebysig newslot specialname 
+      instance bool 'get_IsFixedCount'()
+    {
+      ret
+    }
+    .method public final virtual hidebysig newslot specialname 
+      instance bool 'get_CompileAll'()
+    {
+      ret
+    }
+    .method public final virtual hidebysig newslot specialname 
+      instance void 'set_CompileAll'(bool 'value')
+    {
+      ret
+    }
+    .method public final virtual hidebysig newslot specialname 
+      instance int32 'get_CompileMaxCount'()
+    {
+      ret
+    }
+    .method public final virtual hidebysig newslot specialname 
+      instance void 'set_CompileMaxCount'(int32 'value')
+    {
+      ret
+    }
+    .method public final virtual hidebysig newslot specialname 
+      instance int32 'get_CompileMinCount'()
+    {
+      ret
+    }
+    .method public final virtual hidebysig newslot specialname 
+      instance void 'set_CompileMinCount'(int32 'value')
+    {
+      ret
+    }
+    .method public final virtual hidebysig newslot specialname 
+      instance valuetype 'Msn.PhotoMix.SlideShow'.'CompileOrder' 'get_CompileOrder'()
+    {
+      ret
+    }
+    .method public final virtual hidebysig newslot specialname 
+      instance void 'set_CompileOrder'(valuetype 'Msn.PhotoMix.SlideShow'.'CompileOrder' 'value')
+    {
+      ret
+    }
+    .method public final virtual hidebysig newslot specialname 
+      instance valuetype 'Msn.PhotoMix.SlideShow'.'CompileInclude' 'get_CompileInclude'()
+    {
+      ret
+    }
+    .method public final virtual hidebysig newslot specialname 
+      instance void 'set_CompileInclude'(valuetype 'Msn.PhotoMix.SlideShow'.'CompileInclude' 'value')
+    {
+      ret
+    }
+    .method public final virtual hidebysig newslot specialname 
+      instance int32 'get_CompileAge'()
+    {
+      ret
+    }
+    .method public final virtual hidebysig newslot specialname 
+      instance void 'set_CompileAge'(int32 'value')
+    {
+      ret
+    }
+    .method public virtual hidebysig newslot 
+      instance class 'Msn.PhotoMix.SlideShow'.'SlideShowItem' 'CreateSlideShowItem'(class ['mscorlib']'System.Collections'.'Hashtable' 'compileCache', valuetype ['mscorlib']'System'.'DateTime' 'dateContext', bool 'bypassCaches')
+    {
+      ret
+    }
+    .method public virtual hidebysig newslot 
+      instance bool 'FetchItemsEnabled'()
+    {
+      ret
+    }
+    .method public hidebysig 
+      instance void 'ChangedFetchItemsEnabled'()
+    {
+      ret
+    }
+    .method public virtual hidebysig newslot 
+      instance valuetype ['mscorlib']'System'.'TimeSpan' 'FetchItemsTTL'()
+    {
+      ret
+    }
+    .method public virtual hidebysig newslot 
+      instance class ['mscorlib']'System.Collections.Generic'.'List`1'<class 'Msn.PhotoMix.SlideShow'.'ListItem'> 'InitItems'(class ['mscorlib']'System.Collections.Generic'.'List`1'<valuetype ['mscorlib']'System'.'Guid'> 'guidContext', valuetype ['mscorlib']'System'.'DateTime' 'dateContext', bool 'bypassCaches', class ['mscorlib']'System.Collections'.'Hashtable' 'compileState')
+    {
+      ret
+    }
+    .method public virtual hidebysig newslot 
+      instance class ['mscorlib']'System.Collections.Generic'.'List`1'<class 'Msn.PhotoMix.SlideShow'.'ListItem'> 'FetchItems'(class ['mscorlib']'System.Collections.Generic'.'List`1'<valuetype ['mscorlib']'System'.'Guid'> 'guidContext', valuetype ['mscorlib']'System'.'DateTime' 'dateContext', bool 'bypassCaches')
+    {
+      ret
+    }
+    .method public hidebysig 
+      instance void 'ClearItems'()
+    {
+      ret
+    }
+    .method public hidebysig 
+      instance void 'DataDirty'()
+    {
+      ret
+    }
+    .method public hidebysig 
+      instance void 'ClearCompiledItemsCache'()
+    {
+      ret
+    }
+    .method public hidebysig 
+      instance class ['mscorlib']'System.Collections.Generic'.'List`1'<class 'Msn.PhotoMix.SlideShow'.'ListItem'> 'GetCompiledItems'(class ['mscorlib']'System.Collections.Generic'.'List`1'<valuetype ['mscorlib']'System'.'Guid'> 'guidContext', valuetype ['mscorlib']'System'.'DateTime' 'dateContext', bool 'bypassCaches', class ['mscorlib']'System.Collections'.'Hashtable' 'compileState')
+    {
+      ret
+    }
+    .method public hidebysig 
+      instance bool 'IsCompileDirty'()
+    {
+      ret
+    }
+    .method public hidebysig 
+      instance valuetype ['mscorlib']'System'.'DateTime' 'GetCompiledItemsInvalidDate'()
+    {
+      ret
+    }
+    .method public hidebysig 
+      instance valuetype ['mscorlib']'System'.'DateTime' 'GetCompiledItemsDate'()
+    {
+      ret
+    }
+    .method public virtual hidebysig newslot 
+      instance int32 'CompileTTL'()
+    {
+      ret
+    }
+    .method public hidebysig 
+      instance void 'Compile'()
+    {
+      ret
+    }
+    .method public hidebysig 
+      instance void 'Compile'(class ['mscorlib']'System.Collections.Generic'.'List`1'<valuetype ['mscorlib']'System'.'Guid'> 'guidContext', valuetype ['mscorlib']'System'.'DateTime' 'dateContext', bool 'bypassCaches', class ['mscorlib']'System.Collections'.'Hashtable' 'compileState')
+    {
+      ret
+    }
+    .method public virtual hidebysig newslot 
+      instance void 'SaveDataToString'(class ['mscorlib']'System.Text'.'StringBuilder' 'sb')
+    {
+      ret
+    }
+    .method public virtual hidebysig newslot 
+      instance void 'LoadDataFromXmlNode'(class ['System.Xml']'System.Xml'.'XmlNode' 'node')
+    {
+      ret
+    }
+    .method public virtual hidebysig newslot 
+      instance void 'LoadDataFromQueryString'(class ['System.Web']'System.Web'.'HttpRequest' 'request')
+    {
+      ret
+    }
+    .method public static hidebysig 
+      class 'Msn.PhotoMix.SlideShow'.'Channel' 'ChannelFromType'(class 'Msn.PhotoMix.Passport'.'Puid' 'puid', valuetype ['mscorlib']'System'.'Guid' 'slideShowGuid', valuetype ['mscorlib']'System'.'Guid' 'channelGuid', valuetype 'Msn.PhotoMix.SlideShow'.'ChannelType' 'type')
+    {
+      ret
+    }
+    .method public static hidebysig 
+      class 'Msn.PhotoMix.SlideShow'.'Channel' 'LoadFromDB'(class ['System.Data']'System.Data.SqlClient'.'SqlDataReader' 'reader')
+    {
+      ret
+    }
+    .method public static hidebysig 
+      class 'Msn.PhotoMix.SlideShow'.'Channel' 'LoadFromDb'(class 'Msn.PhotoMix.Passport'.'Puid' 'puid', valuetype ['mscorlib']'System'.'Guid' 'slideShowGuid', valuetype ['mscorlib']'System'.'Guid' 'channelGuid')
+    {
+      ret
+    }
+    .method public static hidebysig 
+      class ['mscorlib']'System.Collections.Generic'.'List`1'<class 'Msn.PhotoMix.SlideShow'.'Channel'> 'CloneChannelsFromDbToPuid'(class 'Msn.PhotoMix.Passport'.'Puid' 'oldPuid', valuetype ['mscorlib']'System'.'Guid' 'oldSlideShowGuid', class 'Msn.PhotoMix.Passport'.'Puid' 'newPuid', valuetype ['mscorlib']'System'.'Guid' 'newSlideShowGuid')
+    {
+      ret
+    }
+    .method public static hidebysig 
+      class ['mscorlib']'System.Collections.Generic'.'List`1'<class 'Msn.PhotoMix.SlideShow'.'Channel'> 'LoadChannelsFromDb'(class 'Msn.PhotoMix.Passport'.'Puid' 'puid', valuetype ['mscorlib']'System'.'Guid' 'slideShowGuid')
+    {
+      ret
+    }
+    .method public hidebysig 
+      instance void 'DeleteFromDb'()
+    {
+      ret
+    }
+    .method public virtual hidebysig newslot specialname 
+      instance bool 'get_ItemsNeedCompileState'()
+    {
+      ret
+    }
+    .method public hidebysig 
+      instance void 'ChangedItemsNeedCompileState'()
+    {
+      ret
+    }
+    .method public hidebysig 
+      instance void 'SaveToDb'()
+    {
+      ret
+    }
+    .method public static hidebysig 
+      int32 'UserChannelCount'(class 'Msn.PhotoMix.Passport'.'Puid' 'puid')
+    {
+      ret
+    }
+    .method public static hidebysig specialname 
+      int32 'get_TotalCountChannels'()
+    {
+      ret
+    }
+    .method public static hidebysig 
+      bool 'ProcessOne'()
+    {
+      ret
+    }
+    .property instance bool 'Active'()
+    {
+      .get instance bool 'Msn.PhotoMix.SlideShow'.'Channel'::'get_Active'()
+      .set instance void 'Msn.PhotoMix.SlideShow'.'Channel'::'set_Active'(bool)
+    }
+    .property instance valuetype 'Msn.PhotoMix.SlideShow'.'ActiveDay' 'ActiveDays'()
+    {
+      .get instance valuetype 'Msn.PhotoMix.SlideShow'.'ActiveDay' 'Msn.PhotoMix.SlideShow'.'Channel'::'get_ActiveDays'()
+      .set instance void 'Msn.PhotoMix.SlideShow'.'Channel'::'set_ActiveDays'(valuetype 'Msn.PhotoMix.SlideShow'.'ActiveDay')
+    }
+    .property instance int32 'ActiveEndMinutes'()
+    {
+      .get instance int32 'Msn.PhotoMix.SlideShow'.'Channel'::'get_ActiveEndMinutes'()
+      .set instance void 'Msn.PhotoMix.SlideShow'.'Channel'::'set_ActiveEndMinutes'(int32)
+    }
+    .property instance bool 'ActiveExpire'()
+    {
+      .get instance bool 'Msn.PhotoMix.SlideShow'.'Channel'::'get_ActiveExpire'()
+      .set instance void 'Msn.PhotoMix.SlideShow'.'Channel'::'set_ActiveExpire'(bool)
+    }
+    .property instance valuetype ['mscorlib']'System'.'DateTime' 'ActiveExpireDate'()
+    {
+      .get instance valuetype ['mscorlib']'System'.'DateTime' 'Msn.PhotoMix.SlideShow'.'Channel'::'get_ActiveExpireDate'()
+      .set instance void 'Msn.PhotoMix.SlideShow'.'Channel'::'set_ActiveExpireDate'(valuetype ['mscorlib']'System'.'DateTime')
+    }
+    .property instance bool 'ActiveLimitDays'()
+    {
+      .get instance bool 'Msn.PhotoMix.SlideShow'.'Channel'::'get_ActiveLimitDays'()
+      .set instance void 'Msn.PhotoMix.SlideShow'.'Channel'::'set_ActiveLimitDays'(bool)
+    }
+    .property instance bool 'ActiveLimitTime'()
+    {
+      .get instance bool 'Msn.PhotoMix.SlideShow'.'Channel'::'get_ActiveLimitTime'()
+      .set instance void 'Msn.PhotoMix.SlideShow'.'Channel'::'set_ActiveLimitTime'(bool)
+    }
+    .property instance int32 'ActiveStartMinutes'()
+    {
+      .get instance int32 'Msn.PhotoMix.SlideShow'.'Channel'::'get_ActiveStartMinutes'()
+      .set instance void 'Msn.PhotoMix.SlideShow'.'Channel'::'set_ActiveStartMinutes'(int32)
+    }
+    .property instance valuetype ['mscorlib']'System'.'Guid' 'ChannelGuid'()
+    {
+      .get instance valuetype ['mscorlib']'System'.'Guid' 'Msn.PhotoMix.SlideShow'.'Channel'::'get_ChannelGuid'()
+    }
+    .property instance int32 'CompileAge'()
+    {
+      .get instance int32 'Msn.PhotoMix.SlideShow'.'Channel'::'get_CompileAge'()
+      .set instance void 'Msn.PhotoMix.SlideShow'.'Channel'::'set_CompileAge'(int32)
+    }
+    .property instance bool 'CompileAll'()
+    {
+      .get instance bool 'Msn.PhotoMix.SlideShow'.'Channel'::'get_CompileAll'()
+      .set instance void 'Msn.PhotoMix.SlideShow'.'Channel'::'set_CompileAll'(bool)
+    }
+    .property instance valuetype 'Msn.PhotoMix.SlideShow'.'CompileInclude' 'CompileInclude'()
+    {
+      .get instance valuetype 'Msn.PhotoMix.SlideShow'.'CompileInclude' 'Msn.PhotoMix.SlideShow'.'Channel'::'get_CompileInclude'()
+      .set instance void 'Msn.PhotoMix.SlideShow'.'Channel'::'set_CompileInclude'(valuetype 'Msn.PhotoMix.SlideShow'.'CompileInclude')
+    }
+    .property instance int32 'CompileMaxCount'()
+    {
+      .get instance int32 'Msn.PhotoMix.SlideShow'.'Channel'::'get_CompileMaxCount'()
+      .set instance void 'Msn.PhotoMix.SlideShow'.'Channel'::'set_CompileMaxCount'(int32)
+    }
+    .property instance int32 'CompileMinCount'()
+    {
+      .get instance int32 'Msn.PhotoMix.SlideShow'.'Channel'::'get_CompileMinCount'()
+      .set instance void 'Msn.PhotoMix.SlideShow'.'Channel'::'set_CompileMinCount'(int32)
+    }
+    .property instance valuetype 'Msn.PhotoMix.SlideShow'.'CompileOrder' 'CompileOrder'()
+    {
+      .get instance valuetype 'Msn.PhotoMix.SlideShow'.'CompileOrder' 'Msn.PhotoMix.SlideShow'.'Channel'::'get_CompileOrder'()
+      .set instance void 'Msn.PhotoMix.SlideShow'.'Channel'::'set_CompileOrder'(valuetype 'Msn.PhotoMix.SlideShow'.'CompileOrder')
+    }
+    .property instance valuetype ['mscorlib']'System'.'DateTime' 'CreationDate'()
+    {
+      .get instance valuetype ['mscorlib']'System'.'DateTime' 'Msn.PhotoMix.SlideShow'.'Channel'::'get_CreationDate'()
+    }
+    .property instance bool 'IsFixedCount'()
+    {
+      .get instance bool 'Msn.PhotoMix.SlideShow'.'Channel'::'get_IsFixedCount'()
+    }
+    .property instance bool 'ItemsNeedCompileState'()
+    {
+      .get instance bool 'Msn.PhotoMix.SlideShow'.'Channel'::'get_ItemsNeedCompileState'()
+    }
+    .property instance string 'Name'()
+    {
+      .get instance string 'Msn.PhotoMix.SlideShow'.'Channel'::'get_Name'()
+      .set instance void 'Msn.PhotoMix.SlideShow'.'Channel'::'set_Name'(string)
+    }
+    .property instance class 'Msn.PhotoMix.Passport'.'Puid' 'Puid'()
+    {
+      .get instance class 'Msn.PhotoMix.Passport'.'Puid' 'Msn.PhotoMix.SlideShow'.'Channel'::'get_Puid'()
+    }
+    .property instance valuetype ['mscorlib']'System'.'Guid' 'SlideShowGuid'()
+    {
+      .get instance valuetype ['mscorlib']'System'.'Guid' 'Msn.PhotoMix.SlideShow'.'Channel'::'get_SlideShowGuid'()
+    }
+    .property int32 'TotalCountChannels'()
+    {
+      .get int32 'Msn.PhotoMix.SlideShow'.'Channel'::'get_TotalCountChannels'()
+    }
+    .property instance valuetype 'Msn.PhotoMix.SlideShow'.'ChannelType' 'Type'()
+    {
+      .get instance valuetype 'Msn.PhotoMix.SlideShow'.'ChannelType' 'Msn.PhotoMix.SlideShow'.'Channel'::'get_Type'()
+    }
+  }
+  .class public 'ChannelItem'
+    extends 'Msn.PhotoMix.SlideShow'.'ListItem'
+  {
+    .method public hidebysig specialname 
+      instance void '.ctor'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void '.ctor'(valuetype ['mscorlib']'System'.'DateTime' 'expDate', valuetype ['mscorlib']'System'.'DateTime' 'pubDate')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void '.ctor'(valuetype 'Msn.PhotoMix.SlideShow'.'ListItemType' 'type')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void '.ctor'(valuetype ['mscorlib']'System'.'DateTime' 'pubDate', valuetype 'Msn.PhotoMix.SlideShow'.'ListItemType' 'type')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void '.ctor'(valuetype ['mscorlib']'System'.'DateTime' 'pubDate')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void '.ctor'(valuetype ['mscorlib']'System'.'DateTime' 'expDate', valuetype ['mscorlib']'System'.'DateTime' 'pubDate', valuetype 'Msn.PhotoMix.SlideShow'.'ListItemType' 'type')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance class 'Msn.PhotoMix.SlideShow'.'Channel' 'get_Channel'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void 'set_Channel'(class 'Msn.PhotoMix.SlideShow'.'Channel' 'value')
+    {
+      ret
+    }
+    .method public virtual hidebysig 
+      instance class 'Msn.PhotoMix.SlideShow'.'SlideShowItem' 'CreateSlideShowItem'(class ['mscorlib']'System.Collections'.'Hashtable' 'compileCache', valuetype ['mscorlib']'System'.'DateTime' 'dateContext', bool 'bypassCaches')
+    {
+      ret
+    }
+    .property instance class 'Msn.PhotoMix.SlideShow'.'Channel' 'Channel'()
+    {
+      .get instance class 'Msn.PhotoMix.SlideShow'.'Channel' 'Msn.PhotoMix.SlideShow'.'ChannelItem'::'get_Channel'()
+      .set instance void 'Msn.PhotoMix.SlideShow'.'ChannelItem'::'set_Channel'(class 'Msn.PhotoMix.SlideShow'.'Channel')
+    }
+  }
+  .class public sealed 'ChannelType'
+    extends ['mscorlib']'System'.'Enum'
+  {
+    .field public rtspecialname specialname int32 'value__'
+    .field static public literal valuetype 'Msn.PhotoMix.SlideShow'.'ChannelType' 'Count' = int32(0x0000000D)
+    .field static public literal valuetype 'Msn.PhotoMix.SlideShow'.'ChannelType' 'Facebook' = int32(0x00000001)
+    .field static public literal valuetype 'Msn.PhotoMix.SlideShow'.'ChannelType' 'FixedReference' = int32(0x0000000C)
+    .field static public literal valuetype 'Msn.PhotoMix.SlideShow'.'ChannelType' 'Flickr' = int32(0x0000000A)
+    .field static public literal valuetype 'Msn.PhotoMix.SlideShow'.'ChannelType' 'Max' = int32(0x0000000C)
+    .field static public literal valuetype 'Msn.PhotoMix.SlideShow'.'ChannelType' 'Reference' = int32(0x00000004)
+    .field static public literal valuetype 'Msn.PhotoMix.SlideShow'.'ChannelType' 'Rss' = int32(0x00000008)
+    .field static public literal valuetype 'Msn.PhotoMix.SlideShow'.'ChannelType' 'SmugMug' = int32(0x0000000B)
+    .field static public literal valuetype 'Msn.PhotoMix.SlideShow'.'ChannelType' 'Space' = int32(0x00000003)
+    .field static public literal valuetype 'Msn.PhotoMix.SlideShow'.'ChannelType' 'Static' = int32(0x00000005)
+    .field static public literal valuetype 'Msn.PhotoMix.SlideShow'.'ChannelType' 'USTraffic' = int32(0x00000009)
+    .field static public literal valuetype 'Msn.PhotoMix.SlideShow'.'ChannelType' 'Unknown' = int32(0x00000000)
+    .field static public literal valuetype 'Msn.PhotoMix.SlideShow'.'ChannelType' 'Unused' = int32(0x00000002)
+    .field static public literal valuetype 'Msn.PhotoMix.SlideShow'.'ChannelType' 'Weather' = int32(0x00000006)
+    .field static public literal valuetype 'Msn.PhotoMix.SlideShow'.'ChannelType' 'WebPage' = int32(0x00000007)
+  }
+  .class public sealed 'CompileInclude'
+    extends ['mscorlib']'System'.'Enum'
+  {
+    .field public rtspecialname specialname int32 'value__'
+    .field static public literal valuetype 'Msn.PhotoMix.SlideShow'.'CompileInclude' 'All' = int32(0x00000000)
+    .field static public literal valuetype 'Msn.PhotoMix.SlideShow'.'CompileInclude' 'Days' = int32(0x00000001)
+  }
+  .class public sealed 'CompileOrder'
+    extends ['mscorlib']'System'.'Enum'
+  {
+    .field public rtspecialname specialname int32 'value__'
+    .field static public literal valuetype 'Msn.PhotoMix.SlideShow'.'CompileOrder' 'DailyInterval' = int32(0x00000003)
+    .field static public literal valuetype 'Msn.PhotoMix.SlideShow'.'CompileOrder' 'Listed' = int32(0x00000000)
+    .field static public literal valuetype 'Msn.PhotoMix.SlideShow'.'CompileOrder' 'Random' = int32(0x00000002)
+    .field static public literal valuetype 'Msn.PhotoMix.SlideShow'.'CompileOrder' 'Sorted' = int32(0x00000001)
+  }
+  .class public 'CompileUtil'
+    extends ['mscorlib']'System'.'Object'
+  {
+    .method public static hidebysig 
+      void 'PruneList'(class ['mscorlib']'System.Collections.Generic'.'List`1'<class 'Msn.PhotoMix.SlideShow'.'ListItem'> 'inputList', bool 'all', int32 'maxCount', int32 'minCount', valuetype 'Msn.PhotoMix.SlideShow'.'CompileOrder' 'order', valuetype 'Msn.PhotoMix.SlideShow'.'CompileInclude' 'includeSince', int32 'ageCutoff', valuetype ['mscorlib']'System'.'DateTime' 'currentDate', valuetype ['mscorlib']'System'.'DateTime' 'seedDate')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void '.ctor'()
+    {
+      ret
+    }
+  }
+  .class public 'CompiledTextFeed'
+    extends ['mscorlib']'System'.'Object'
+  {
+    .method public hidebysig specialname 
+      instance void '.ctor'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance string 'get_TextFeedUrl'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance string 'get_LogoImageUrl'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance string 'get_Title'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance bool 'get_RenderAd'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance int32 'get_CompiledTextFeedHash'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance valuetype ['mscorlib']'System'.'Guid' 'get_CompiledTextFeedGuid'()
+    {
+      ret
+    }
+    .method public static hidebysig 
+      class 'Msn.PhotoMix.SlideShow'.'CompiledTextFeed' 'Load'(string 'textFeedUrl', string 'logoImageUrl', string 'title', bool 'renderAd', int32 'compiledTextFeedHash', valuetype ['mscorlib']'System'.'Guid' 'compiledTextFeedGuid')
+    {
+      ret
+    }
+    .method public static hidebysig 
+      class 'Msn.PhotoMix.SlideShow'.'CompiledTextFeed' 'LoadForCompile'(string 'textFeedUrl', string 'logoImageUrl', string 'title', bool 'renderAd')
+    {
+      ret
+    }
+    .method public static hidebysig 
+      class 'Msn.PhotoMix.SlideShow'.'CompiledTextFeed' 'LoadForImage'(int32 'compiledTextFeedHash', valuetype ['mscorlib']'System'.'Guid' 'compiledTextFeedGuid')
+    {
+      ret
+    }
+    .method public static hidebysig 
+      class 'Msn.PhotoMix.SlideShow'.'CompiledTextFeed' 'GetCompiledTextFeed'(int32 'compiledTextFeedHash', valuetype ['mscorlib']'System'.'Guid' 'compiledTextFeedGuid')
+    {
+      ret
+    }
+    .property instance valuetype ['mscorlib']'System'.'Guid' 'CompiledTextFeedGuid'()
+    {
+      .get instance valuetype ['mscorlib']'System'.'Guid' 'Msn.PhotoMix.SlideShow'.'CompiledTextFeed'::'get_CompiledTextFeedGuid'()
+    }
+    .property instance int32 'CompiledTextFeedHash'()
+    {
+      .get instance int32 'Msn.PhotoMix.SlideShow'.'CompiledTextFeed'::'get_CompiledTextFeedHash'()
+    }
+    .property instance string 'LogoImageUrl'()
+    {
+      .get instance string 'Msn.PhotoMix.SlideShow'.'CompiledTextFeed'::'get_LogoImageUrl'()
+    }
+    .property instance bool 'RenderAd'()
+    {
+      .get instance bool 'Msn.PhotoMix.SlideShow'.'CompiledTextFeed'::'get_RenderAd'()
+    }
+    .property instance string 'TextFeedUrl'()
+    {
+      .get instance string 'Msn.PhotoMix.SlideShow'.'CompiledTextFeed'::'get_TextFeedUrl'()
+    }
+    .property instance string 'Title'()
+    {
+      .get instance string 'Msn.PhotoMix.SlideShow'.'CompiledTextFeed'::'get_Title'()
+    }
+  }
+  .class public 'CompiledTextFeedItem'
+    extends ['mscorlib']'System'.'Object'
+  {
+    .method public hidebysig specialname 
+      instance string 'get_Title'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance string 'get_Description'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance int32 'get_CompiledTextFeedItemHash'()
+    {
+      ret
+    }
+    .method public static hidebysig 
+      class 'Msn.PhotoMix.SlideShow'.'CompiledTextFeedItem' 'Load'(int32 'compiledTextFeedHash', valuetype ['mscorlib']'System'.'Guid' 'compiledTextFeedGuid', string 'title', string 'description', int32 'compiledTextFeedItemHash')
+    {
+      ret
+    }
+    .method public static hidebysig 
+      class 'Msn.PhotoMix.SlideShow'.'CompiledTextFeedItem' 'LoadForCompile'(int32 'compiledTextFeedHash', valuetype ['mscorlib']'System'.'Guid' 'compiledTextFeedGuid', string 'title', string 'description')
+    {
+      ret
+    }
+    .method public static hidebysig 
+      class 'Msn.PhotoMix.SlideShow'.'CompiledTextFeedItem' 'LoadForImage'(int32 'compiledTextFeedItemHash', int32 'compiledTextFeedHash', valuetype ['mscorlib']'System'.'Guid' 'compiledTextFeedGuid')
+    {
+      ret
+    }
+    .method public hidebysig 
+      instance class ['System.Drawing']'System.Drawing'.'Bitmap' 'GenerateImage'(string 'fileName', valuetype 'Msn.PhotoMix.SlideShow'.'SlideShowImageSize' 'imageSize', string 'templateDirectory')
+    {
+      ret
+    }
+    .method public static hidebysig 
+      string 'GetImageFileName'(int32 'compiledTextFeedHash', valuetype ['mscorlib']'System'.'Guid' 'compiledTextFeedGuid', int32 'compiledTextFeedItemHash', valuetype 'Msn.PhotoMix.SlideShow'.'SlideShowImageSize' 'imageSize', string 'templateDirectory', bool 'bypassCaches')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void '.ctor'()
+    {
+      ret
+    }
+    .property instance int32 'CompiledTextFeedItemHash'()
+    {
+      .get instance int32 'Msn.PhotoMix.SlideShow'.'CompiledTextFeedItem'::'get_CompiledTextFeedItemHash'()
+    }
+    .property instance string 'Description'()
+    {
+      .get instance string 'Msn.PhotoMix.SlideShow'.'CompiledTextFeedItem'::'get_Description'()
+    }
+    .property instance string 'Title'()
+    {
+      .get instance string 'Msn.PhotoMix.SlideShow'.'CompiledTextFeedItem'::'get_Title'()
+    }
+  }
+  .class public 'CompiledWeather'
+    extends ['mscorlib']'System'.'Object'
+  {
+    .method public hidebysig specialname 
+      instance void '.ctor'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance string 'get_Language'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance string 'get_Location'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance class ['System.Xml']'System.Xml'.'XmlNode' 'get_WeatherData'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance valuetype ['mscorlib']'System'.'DateTime' 'get_FetchDataDate'()
+    {
+      ret
+    }
+    .method public static hidebysig 
+      class ['System.Xml']'System.Xml'.'XmlNode' 'FetchWeatherData'(string 'language', string 'location')
+    {
+      ret
+    }
+    .method public static hidebysig 
+      class 'Msn.PhotoMix.SlideShow'.'CompiledWeather' 'Load'(string 'language', string 'location', class ['System.Xml']'System.Xml'.'XmlNode' 'weatherData')
+    {
+      ret
+    }
+    .method public static hidebysig 
+      class 'Msn.PhotoMix.SlideShow'.'CompiledWeather' 'LoadForCompile'(string 'language', string 'location')
+    {
+      ret
+    }
+    .method public static hidebysig 
+      class 'Msn.PhotoMix.SlideShow'.'CompiledWeather' 'LoadForImage'(string 'language', string 'location')
+    {
+      ret
+    }
+    .method public static hidebysig 
+      string 'GetImageFileName'(string 'language', string 'location', string 'templateDirectory', string 'weatherImageDirectory', valuetype 'Msn.PhotoMix.SlideShow'.'SlideShowImageSize' 'imageSize', bool 'bypassCaches')
+    {
+      ret
+    }
+    .method public hidebysig 
+      instance class ['System.Drawing']'System.Drawing'.'Bitmap' 'GenerateImage'(string 'fileName', string 'templateDirectory', string 'weatherImageDirectory', valuetype 'Msn.PhotoMix.SlideShow'.'SlideShowImageSize' 'imageSize')
+    {
+      ret
+    }
+    .property instance valuetype ['mscorlib']'System'.'DateTime' 'FetchDataDate'()
+    {
+      .get instance valuetype ['mscorlib']'System'.'DateTime' 'Msn.PhotoMix.SlideShow'.'CompiledWeather'::'get_FetchDataDate'()
+    }
+    .property instance string 'Language'()
+    {
+      .get instance string 'Msn.PhotoMix.SlideShow'.'CompiledWeather'::'get_Language'()
+    }
+    .property instance string 'Location'()
+    {
+      .get instance string 'Msn.PhotoMix.SlideShow'.'CompiledWeather'::'get_Location'()
+    }
+    .property instance class ['System.Xml']'System.Xml'.'XmlNode' 'WeatherData'()
+    {
+      .get instance class ['System.Xml']'System.Xml'.'XmlNode' 'Msn.PhotoMix.SlideShow'.'CompiledWeather'::'get_WeatherData'()
+    }
+  }
+  .class public 'CompiledWebPage'
+    extends ['mscorlib']'System'.'Object'
+  {
+    .method public hidebysig specialname 
+      instance void '.ctor'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance int32 'get_CompiledWebPageHash'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance valuetype ['mscorlib']'System'.'Guid' 'get_CompiledWebPageGuid'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance string 'get_Url'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance valuetype ['mscorlib']'System'.'DateTime' 'get_FetchDataDate'()
+    {
+      ret
+    }
+    .method public static hidebysig 
+      void 'FetchWebPageData'(string 'url', valuetype ['mscorlib']'System'.'Guid' 'compiledWebPageGuid')
+    {
+      ret
+    }
+    .method public static hidebysig 
+      class 'Msn.PhotoMix.SlideShow'.'CompiledWebPage' 'Load'(string 'url', int32 'compiledWebPageHash', valuetype ['mscorlib']'System'.'Guid' 'compiledWebPageGuid')
+    {
+      ret
+    }
+    .method public static hidebysig 
+      class 'Msn.PhotoMix.SlideShow'.'CompiledWebPage' 'LoadForCompile'(string 'url')
+    {
+      ret
+    }
+    .method public static hidebysig 
+      class 'Msn.PhotoMix.SlideShow'.'CompiledWebPage' 'LoadForImage'(int32 'compiledWebPageHash', valuetype ['mscorlib']'System'.'Guid' 'compiledWebPageGuid')
+    {
+      ret
+    }
+    .method public static hidebysig 
+      string 'GetImageFileName'(int32 'compiledWebPageHash', valuetype ['mscorlib']'System'.'Guid' 'compiledWebPageGuid', bool 'bypassCaches')
+    {
+      ret
+    }
+    .method public hidebysig 
+      instance class ['System.Drawing']'System.Drawing'.'Bitmap' 'GenerateImage'(string 'fileName')
+    {
+      ret
+    }
+    .property instance valuetype ['mscorlib']'System'.'Guid' 'CompiledWebPageGuid'()
+    {
+      .get instance valuetype ['mscorlib']'System'.'Guid' 'Msn.PhotoMix.SlideShow'.'CompiledWebPage'::'get_CompiledWebPageGuid'()
+    }
+    .property instance int32 'CompiledWebPageHash'()
+    {
+      .get instance int32 'Msn.PhotoMix.SlideShow'.'CompiledWebPage'::'get_CompiledWebPageHash'()
+    }
+    .property instance valuetype ['mscorlib']'System'.'DateTime' 'FetchDataDate'()
+    {
+      .get instance valuetype ['mscorlib']'System'.'DateTime' 'Msn.PhotoMix.SlideShow'.'CompiledWebPage'::'get_FetchDataDate'()
+    }
+    .property instance string 'Url'()
+    {
+      .get instance string 'Msn.PhotoMix.SlideShow'.'CompiledWebPage'::'get_Url'()
+    }
+  }
+  .class public 'FacebookChannel'
+    extends 'Msn.PhotoMix.SlideShow'.'Channel'
+  {
+    .method public hidebysig specialname 
+      instance void '.ctor'(class 'Msn.PhotoMix.Passport'.'Puid' 'puid', valuetype ['mscorlib']'System'.'Guid' 'slideShowGuid', valuetype ['mscorlib']'System'.'Guid' 'channelGuid')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void '.ctor'(class 'Msn.PhotoMix.Passport'.'Puid' 'puid', valuetype ['mscorlib']'System'.'Guid' 'slideShowGuid')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance string 'get_SessionKey'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void 'set_SessionKey'(string 'value')
+    {
+      ret
+    }
+    .method public virtual hidebysig 
+      instance void 'SaveDataToString'(class ['mscorlib']'System.Text'.'StringBuilder' 'sb')
+    {
+      ret
+    }
+    .method public virtual hidebysig 
+      instance void 'LoadDataFromXmlNode'(class ['System.Xml']'System.Xml'.'XmlNode' 'node')
+    {
+      ret
+    }
+    .method public virtual hidebysig 
+      instance class ['mscorlib']'System.Collections.Generic'.'List`1'<class 'Msn.PhotoMix.SlideShow'.'ListItem'> 'FetchItems'(class ['mscorlib']'System.Collections.Generic'.'List`1'<valuetype ['mscorlib']'System'.'Guid'> 'guidContext', valuetype ['mscorlib']'System'.'DateTime' 'dateContext', bool 'bypassCaches')
+    {
+      ret
+    }
+    .property instance string 'SessionKey'()
+    {
+      .get instance string 'Msn.PhotoMix.SlideShow'.'FacebookChannel'::'get_SessionKey'()
+      .set instance void 'Msn.PhotoMix.SlideShow'.'FacebookChannel'::'set_SessionKey'(string)
+    }
+  }
+  .class public 'FixedReferenceChannel'
+    extends 'Msn.PhotoMix.SlideShow'.'ReferenceChannel'
+  {
+    .method public hidebysig specialname 
+      instance void '.ctor'(class 'Msn.PhotoMix.Passport'.'Puid' 'puid', valuetype ['mscorlib']'System'.'Guid' 'slideShowGuid', valuetype ['mscorlib']'System'.'Guid' 'channelGuid')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void '.ctor'(class 'Msn.PhotoMix.Passport'.'Puid' 'puid', valuetype ['mscorlib']'System'.'Guid' 'slideShowGuid')
+    {
+      ret
+    }
+    .method public virtual hidebysig 
+      instance void 'SaveDataToString'(class ['mscorlib']'System.Text'.'StringBuilder' 'sb')
+    {
+      ret
+    }
+    .method public virtual hidebysig 
+      instance void 'LoadDataFromXmlNode'(class ['System.Xml']'System.Xml'.'XmlNode' 'node')
+    {
+      ret
+    }
+    .method public virtual hidebysig specialname 
+      instance bool 'get_IsFixedCount'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance bool 'get_FixedReferenceHasCount'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void 'set_FixedReferenceHasCount'(bool 'value')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance bool 'get_FixedReferenceHasImage'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void 'set_FixedReferenceHasImage'(bool 'value')
+    {
+      ret
+    }
+    .property instance bool 'FixedReferenceHasCount'()
+    {
+      .get instance bool 'Msn.PhotoMix.SlideShow'.'FixedReferenceChannel'::'get_FixedReferenceHasCount'()
+      .set instance void 'Msn.PhotoMix.SlideShow'.'FixedReferenceChannel'::'set_FixedReferenceHasCount'(bool)
+    }
+    .property instance bool 'FixedReferenceHasImage'()
+    {
+      .get instance bool 'Msn.PhotoMix.SlideShow'.'FixedReferenceChannel'::'get_FixedReferenceHasImage'()
+      .set instance void 'Msn.PhotoMix.SlideShow'.'FixedReferenceChannel'::'set_FixedReferenceHasImage'(bool)
+    }
+    .property instance bool 'IsFixedCount'()
+    {
+      .get instance bool 'Msn.PhotoMix.SlideShow'.'FixedReferenceChannel'::'get_IsFixedCount'()
+    }
+  }
+  .class public 'FlickrChannel'
+    extends 'Msn.PhotoMix.SlideShow'.'Channel'
+  {
+    .method public hidebysig specialname 
+      instance void '.ctor'(class 'Msn.PhotoMix.Passport'.'Puid' 'puid', valuetype ['mscorlib']'System'.'Guid' 'slideShowGuid', valuetype ['mscorlib']'System'.'Guid' 'channelGuid')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void '.ctor'(class 'Msn.PhotoMix.Passport'.'Puid' 'puid', valuetype ['mscorlib']'System'.'Guid' 'slideShowGuid')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance string 'get_UserName'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void 'set_UserName'(string 'value')
+    {
+      ret
+    }
+    .method public virtual hidebysig 
+      instance void 'SaveDataToString'(class ['mscorlib']'System.Text'.'StringBuilder' 'sb')
+    {
+      ret
+    }
+    .method public virtual hidebysig 
+      instance void 'LoadDataFromXmlNode'(class ['System.Xml']'System.Xml'.'XmlNode' 'node')
+    {
+      ret
+    }
+    .method public virtual hidebysig 
+      instance class ['mscorlib']'System.Collections.Generic'.'List`1'<class 'Msn.PhotoMix.SlideShow'.'ListItem'> 'FetchItems'(class ['mscorlib']'System.Collections.Generic'.'List`1'<valuetype ['mscorlib']'System'.'Guid'> 'guidContext', valuetype ['mscorlib']'System'.'DateTime' 'dateContext', bool 'bypassCaches')
+    {
+      ret
+    }
+    .property instance string 'UserName'()
+    {
+      .get instance string 'Msn.PhotoMix.SlideShow'.'FlickrChannel'::'get_UserName'()
+      .set instance void 'Msn.PhotoMix.SlideShow'.'FlickrChannel'::'set_UserName'(string)
+    }
+  }
+  .class public 'FriendlyName'
+    extends ['mscorlib']'System'.'Object'
+  {
+    .method public static hidebysig 
+      bool 'CheckFriendlyNameAvailable'(string 'friendlyName')
+    {
+      ret
+    }
+    .method public static hidebysig 
+      void 'DeleteFriendlyName'(string 'friendlyName', valuetype ['mscorlib']'System'.'Guid' 'slideShowGuid', int32 'puidHash')
+    {
+      ret
+    }
+    .method public static hidebysig 
+      void 'UpdateFriendlyName'(string 'newFriendlyName', string 'oldFriendlyName', valuetype ['mscorlib']'System'.'Guid' 'slideShowGuid', int32 'puidHash')
+    {
+      ret
+    }
+    .method public static hidebysig 
+      valuetype ['mscorlib']'System'.'Guid' 'LookupFriendlyName'(string 'friendlyName', [out] int32& 'puidHash')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void '.ctor'()
+    {
+      ret
+    }
+  }
+  .class public interface abstract 'ICompile'
+  {
+    .method public virtual hidebysig newslot abstract specialname 
+      instance bool 'get_IsFixedCount'()
+    {
+    }
+    .method public virtual hidebysig newslot abstract specialname 
+      instance bool 'get_CompileAll'()
+    {
+    }
+    .method public virtual hidebysig newslot abstract specialname 
+      instance void 'set_CompileAll'(bool 'value')
+    {
+    }
+    .method public virtual hidebysig newslot abstract specialname 
+      instance int32 'get_CompileMaxCount'()
+    {
+    }
+    .method public virtual hidebysig newslot abstract specialname 
+      instance void 'set_CompileMaxCount'(int32 'value')
+    {
+    }
+    .method public virtual hidebysig newslot abstract specialname 
+      instance int32 'get_CompileMinCount'()
+    {
+    }
+    .method public virtual hidebysig newslot abstract specialname 
+      instance void 'set_CompileMinCount'(int32 'value')
+    {
+    }
+    .method public virtual hidebysig newslot abstract specialname 
+      instance valuetype 'Msn.PhotoMix.SlideShow'.'CompileOrder' 'get_CompileOrder'()
+    {
+    }
+    .method public virtual hidebysig newslot abstract specialname 
+      instance void 'set_CompileOrder'(valuetype 'Msn.PhotoMix.SlideShow'.'CompileOrder' 'value')
+    {
+    }
+    .method public virtual hidebysig newslot abstract specialname 
+      instance valuetype 'Msn.PhotoMix.SlideShow'.'CompileInclude' 'get_CompileInclude'()
+    {
+    }
+    .method public virtual hidebysig newslot abstract specialname 
+      instance void 'set_CompileInclude'(valuetype 'Msn.PhotoMix.SlideShow'.'CompileInclude' 'value')
+    {
+    }
+    .method public virtual hidebysig newslot abstract specialname 
+      instance int32 'get_CompileAge'()
+    {
+    }
+    .method public virtual hidebysig newslot abstract specialname 
+      instance void 'set_CompileAge'(int32 'value')
+    {
+    }
+    .property instance int32 'CompileAge'()
+    {
+      .get instance int32 'Msn.PhotoMix.SlideShow'.'ICompile'::'get_CompileAge'()
+      .set instance void 'Msn.PhotoMix.SlideShow'.'ICompile'::'set_CompileAge'(int32)
+    }
+    .property instance bool 'CompileAll'()
+    {
+      .get instance bool 'Msn.PhotoMix.SlideShow'.'ICompile'::'get_CompileAll'()
+      .set instance void 'Msn.PhotoMix.SlideShow'.'ICompile'::'set_CompileAll'(bool)
+    }
+    .property instance valuetype 'Msn.PhotoMix.SlideShow'.'CompileInclude' 'CompileInclude'()
+    {
+      .get instance valuetype 'Msn.PhotoMix.SlideShow'.'CompileInclude' 'Msn.PhotoMix.SlideShow'.'ICompile'::'get_CompileInclude'()
+      .set instance void 'Msn.PhotoMix.SlideShow'.'ICompile'::'set_CompileInclude'(valuetype 'Msn.PhotoMix.SlideShow'.'CompileInclude')
+    }
+    .property instance int32 'CompileMaxCount'()
+    {
+      .get instance int32 'Msn.PhotoMix.SlideShow'.'ICompile'::'get_CompileMaxCount'()
+      .set instance void 'Msn.PhotoMix.SlideShow'.'ICompile'::'set_CompileMaxCount'(int32)
+    }
+    .property instance int32 'CompileMinCount'()
+    {
+      .get instance int32 'Msn.PhotoMix.SlideShow'.'ICompile'::'get_CompileMinCount'()
+      .set instance void 'Msn.PhotoMix.SlideShow'.'ICompile'::'set_CompileMinCount'(int32)
+    }
+    .property instance valuetype 'Msn.PhotoMix.SlideShow'.'CompileOrder' 'CompileOrder'()
+    {
+      .get instance valuetype 'Msn.PhotoMix.SlideShow'.'CompileOrder' 'Msn.PhotoMix.SlideShow'.'ICompile'::'get_CompileOrder'()
+      .set instance void 'Msn.PhotoMix.SlideShow'.'ICompile'::'set_CompileOrder'(valuetype 'Msn.PhotoMix.SlideShow'.'CompileOrder')
+    }
+    .property instance bool 'IsFixedCount'()
+    {
+      .get instance bool 'Msn.PhotoMix.SlideShow'.'ICompile'::'get_IsFixedCount'()
+    }
+  }
+  .class public 'ListItem'
+    extends ['mscorlib']'System'.'Object'
+    implements ['mscorlib']'System'.'IComparable'
+  {
+    .method private final virtual hidebysig newslot 
+      instance int32 'System.IComparable.CompareTo'(object 'obj')
+    {
+      .override ['mscorlib']'System'.'IComparable'::'CompareTo'
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void '.ctor'(valuetype 'Msn.PhotoMix.SlideShow'.'ListItemType' 'type')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void '.ctor'(valuetype ['mscorlib']'System'.'DateTime' 'pubDate', valuetype 'Msn.PhotoMix.SlideShow'.'ListItemType' 'type')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void '.ctor'(valuetype ['mscorlib']'System'.'DateTime' 'expDate', valuetype ['mscorlib']'System'.'DateTime' 'pubDate', valuetype 'Msn.PhotoMix.SlideShow'.'ListItemType' 'type')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance valuetype 'Msn.PhotoMix.SlideShow'.'ListItemType' 'get_Type'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance valuetype ['mscorlib']'System'.'DateTime' 'get_PubDate'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void 'set_PubDate'(valuetype ['mscorlib']'System'.'DateTime' 'value')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance valuetype ['mscorlib']'System'.'DateTime' 'get_ExpDate'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void 'set_ExpDate'(valuetype ['mscorlib']'System'.'DateTime' 'value')
+    {
+      ret
+    }
+    .method public virtual hidebysig newslot 
+      instance void 'SaveDataToString'(class ['mscorlib']'System.Text'.'StringBuilder' 'sb')
+    {
+      ret
+    }
+    .method public virtual hidebysig newslot 
+      instance class 'Msn.PhotoMix.SlideShow'.'SlideShowItem' 'CreateSlideShowItem'(class ['mscorlib']'System.Collections'.'Hashtable' 'compileCache', valuetype ['mscorlib']'System'.'DateTime' 'dateContext', bool 'bypassCaches')
+    {
+      ret
+    }
+    .method public hidebysig 
+      instance void 'SaveToString'(class ['mscorlib']'System.Text'.'StringBuilder' 'sb')
+    {
+      ret
+    }
+    .method public virtual hidebysig newslot 
+      instance void 'LoadDataFromXmlNode'(class ['System.Xml']'System.Xml'.'XmlNode' 'node')
+    {
+      ret
+    }
+    .method public static hidebysig 
+      class 'Msn.PhotoMix.SlideShow'.'ListItem' 'LoadFromXmlNode'(class ['System.Xml']'System.Xml'.'XmlNode' 'node')
+    {
+      ret
+    }
+    .method public static hidebysig 
+      class ['mscorlib']'System.Collections.Generic'.'List`1'<class 'Msn.PhotoMix.SlideShow'.'ListItem'> 'RootLoadListFromString'(string 'input')
+    {
+      ret
+    }
+    .method public static hidebysig 
+      void 'RootSaveListToString'(class ['mscorlib']'System.Text'.'StringBuilder' 'sb', class ['mscorlib']'System.Collections.Generic'.'List`1'<class 'Msn.PhotoMix.SlideShow'.'ListItem'> 'items')
+    {
+      ret
+    }
+    .property instance valuetype ['mscorlib']'System'.'DateTime' 'ExpDate'()
+    {
+      .get instance valuetype ['mscorlib']'System'.'DateTime' 'Msn.PhotoMix.SlideShow'.'ListItem'::'get_ExpDate'()
+      .set instance void 'Msn.PhotoMix.SlideShow'.'ListItem'::'set_ExpDate'(valuetype ['mscorlib']'System'.'DateTime')
+    }
+    .property instance valuetype ['mscorlib']'System'.'DateTime' 'PubDate'()
+    {
+      .get instance valuetype ['mscorlib']'System'.'DateTime' 'Msn.PhotoMix.SlideShow'.'ListItem'::'get_PubDate'()
+      .set instance void 'Msn.PhotoMix.SlideShow'.'ListItem'::'set_PubDate'(valuetype ['mscorlib']'System'.'DateTime')
+    }
+    .property instance valuetype 'Msn.PhotoMix.SlideShow'.'ListItemType' 'Type'()
+    {
+      .get instance valuetype 'Msn.PhotoMix.SlideShow'.'ListItemType' 'Msn.PhotoMix.SlideShow'.'ListItem'::'get_Type'()
+    }
+  }
+  .class public sealed 'ListItemType'
+    extends ['mscorlib']'System'.'Enum'
+  {
+    .field public rtspecialname specialname int32 'value__'
+    .field static public literal valuetype 'Msn.PhotoMix.SlideShow'.'ListItemType' 'ChannelItem' = int32(0x00000002)
+    .field static public literal valuetype 'Msn.PhotoMix.SlideShow'.'ListItemType' 'ListItem' = int32(0x00000000)
+    .field static public literal valuetype 'Msn.PhotoMix.SlideShow'.'ListItemType' 'SlideShowItem' = int32(0x00000001)
+    .field static public literal valuetype 'Msn.PhotoMix.SlideShow'.'ListItemType' 'TextRssChannelItem' = int32(0x00000003)
+    .field static public literal valuetype 'Msn.PhotoMix.SlideShow'.'ListItemType' 'Unknown' = int32(0x00000000)
+    .field static public literal valuetype 'Msn.PhotoMix.SlideShow'.'ListItemType' 'UrlChannelItem' = int32(0x00000004)
+  }
+  .class public 'ReferenceChannel'
+    extends 'Msn.PhotoMix.SlideShow'.'Channel'
+  {
+    .method public hidebysig specialname 
+      instance void '.ctor'(class 'Msn.PhotoMix.Passport'.'Puid' 'puid', valuetype ['mscorlib']'System'.'Guid' 'slideShowGuid', valuetype ['mscorlib']'System'.'Guid' 'channelGuid', valuetype 'Msn.PhotoMix.SlideShow'.'ChannelType' 'channelType')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void '.ctor'(class 'Msn.PhotoMix.Passport'.'Puid' 'puid', valuetype ['mscorlib']'System'.'Guid' 'slideShowGuid', valuetype ['mscorlib']'System'.'Guid' 'channelGuid')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void '.ctor'(class 'Msn.PhotoMix.Passport'.'Puid' 'puid', valuetype ['mscorlib']'System'.'Guid' 'slideShowGuid', valuetype 'Msn.PhotoMix.SlideShow'.'ChannelType' 'channelType')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void '.ctor'(class 'Msn.PhotoMix.Passport'.'Puid' 'puid', valuetype ['mscorlib']'System'.'Guid' 'slideShowGuid')
+    {
+      ret
+    }
+    .method public virtual hidebysig 
+      instance void 'SaveDataToString'(class ['mscorlib']'System.Text'.'StringBuilder' 'sb')
+    {
+      ret
+    }
+    .method public virtual hidebysig 
+      instance void 'LoadDataFromXmlNode'(class ['System.Xml']'System.Xml'.'XmlNode' 'node')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance string 'get_ReferenceId'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void 'set_ReferenceId'(string 'value')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance valuetype ['mscorlib']'System'.'Guid' 'get_ReferenceGuid'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void 'set_ReferenceGuid'(valuetype ['mscorlib']'System'.'Guid' 'value')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance int32 'get_ReferenceHash'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void 'set_ReferenceHash'(int32 'value')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance string 'get_Pin'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void 'set_Pin'(string 'value')
+    {
+      ret
+    }
+    .method public virtual hidebysig 
+      instance bool 'FetchItemsEnabled'()
+    {
+      ret
+    }
+    .method public hidebysig 
+      instance class 'Msn.PhotoMix.SlideShow'.'SlideShow' 'GetSlideShow'()
+    {
+      ret
+    }
+    .method public virtual hidebysig 
+      instance class ['mscorlib']'System.Collections.Generic'.'List`1'<class 'Msn.PhotoMix.SlideShow'.'ListItem'> 'InitItems'(class ['mscorlib']'System.Collections.Generic'.'List`1'<valuetype ['mscorlib']'System'.'Guid'> 'guidContext', valuetype ['mscorlib']'System'.'DateTime' 'dateContext', bool 'bypassCaches', class ['mscorlib']'System.Collections'.'Hashtable' 'compileState')
+    {
+      ret
+    }
+    .property instance string 'Pin'()
+    {
+      .get instance string 'Msn.PhotoMix.SlideShow'.'ReferenceChannel'::'get_Pin'()
+      .set instance void 'Msn.PhotoMix.SlideShow'.'ReferenceChannel'::'set_Pin'(string)
+    }
+    .property instance valuetype ['mscorlib']'System'.'Guid' 'ReferenceGuid'()
+    {
+      .get instance valuetype ['mscorlib']'System'.'Guid' 'Msn.PhotoMix.SlideShow'.'ReferenceChannel'::'get_ReferenceGuid'()
+      .set instance void 'Msn.PhotoMix.SlideShow'.'ReferenceChannel'::'set_ReferenceGuid'(valuetype ['mscorlib']'System'.'Guid')
+    }
+    .property instance int32 'ReferenceHash'()
+    {
+      .get instance int32 'Msn.PhotoMix.SlideShow'.'ReferenceChannel'::'get_ReferenceHash'()
+      .set instance void 'Msn.PhotoMix.SlideShow'.'ReferenceChannel'::'set_ReferenceHash'(int32)
+    }
+    .property instance string 'ReferenceId'()
+    {
+      .get instance string 'Msn.PhotoMix.SlideShow'.'ReferenceChannel'::'get_ReferenceId'()
+      .set instance void 'Msn.PhotoMix.SlideShow'.'ReferenceChannel'::'set_ReferenceId'(string)
+    }
+  }
+  .class public 'RssChannel'
+    extends 'Msn.PhotoMix.SlideShow'.'Channel'
+  {
+    .method public hidebysig specialname 
+      instance void '.ctor'(class 'Msn.PhotoMix.Passport'.'Puid' 'puid', valuetype ['mscorlib']'System'.'Guid' 'slideShowGuid', valuetype ['mscorlib']'System'.'Guid' 'channelGuid', valuetype 'Msn.PhotoMix.SlideShow'.'ChannelType' 'type')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void '.ctor'(class 'Msn.PhotoMix.Passport'.'Puid' 'puid', valuetype ['mscorlib']'System'.'Guid' 'slideShowGuid', valuetype ['mscorlib']'System'.'Guid' 'channelGuid')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void '.ctor'(class 'Msn.PhotoMix.Passport'.'Puid' 'puid', valuetype ['mscorlib']'System'.'Guid' 'slideShowGuid', valuetype 'Msn.PhotoMix.SlideShow'.'ChannelType' 'type')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void '.ctor'(class 'Msn.PhotoMix.Passport'.'Puid' 'puid', valuetype ['mscorlib']'System'.'Guid' 'slideShowGuid')
+    {
+      ret
+    }
+    .method public virtual hidebysig 
+      instance void 'SaveDataToString'(class ['mscorlib']'System.Text'.'StringBuilder' 'sb')
+    {
+      ret
+    }
+    .method public virtual hidebysig 
+      instance void 'LoadDataFromXmlNode'(class ['System.Xml']'System.Xml'.'XmlNode' 'node')
+    {
+      ret
+    }
+    .method public virtual hidebysig 
+      instance void 'LoadDataFromQueryString'(class ['System.Web']'System.Web'.'HttpRequest' 'request')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance string 'get_RssFeedUrl'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void 'set_RssFeedUrl'(string 'value')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance valuetype 'Msn.PhotoMix.SlideShow'.'RssChannelPriority' 'get_RssChannelPriority'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void 'set_RssChannelPriority'(valuetype 'Msn.PhotoMix.SlideShow'.'RssChannelPriority' 'value')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance bool 'get_RenderChannelImage'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void 'set_RenderChannelImage'(bool 'value')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance bool 'get_RenderChannelTitle'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void 'set_RenderChannelTitle'(bool 'value')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance bool 'get_RenderItemTitles'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void 'set_RenderItemTitles'(bool 'value')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance bool 'get_RenderItemDescriptions'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void 'set_RenderItemDescriptions'(bool 'value')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance bool 'get_RenderAd'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void 'set_RenderAd'(bool 'value')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance string 'get_ChannelTitle'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance string 'get_ChannelImageUrl'()
+    {
+      ret
+    }
+    .method public virtual hidebysig specialname 
+      instance bool 'get_ItemsNeedCompileState'()
+    {
+      ret
+    }
+    .method public virtual hidebysig 
+      instance class ['mscorlib']'System.Collections.Generic'.'List`1'<class 'Msn.PhotoMix.SlideShow'.'ListItem'> 'FetchItems'(class ['mscorlib']'System.Collections.Generic'.'List`1'<valuetype ['mscorlib']'System'.'Guid'> 'guidContext', valuetype ['mscorlib']'System'.'DateTime' 'dateContext', bool 'bypassCaches')
+    {
+      ret
+    }
+    .method public static hidebysig 
+      void 'AddRssImageItems'(class 'Msn.PhotoMix.SlideShow'.'Channel' 'channel', string 'feedUrl', class ['mscorlib']'System.Collections.Generic'.'List`1'<class 'Msn.PhotoMix.SlideShow'.'ListItem'> 'items', valuetype ['mscorlib']'System'.'DateTime' 'dateContext')
+    {
+      ret
+    }
+    .field family string 'channelImageUrl'
+    .field family string 'channelTitle'
+    .field family string 'rssFeedUrl'
+    .property instance string 'ChannelImageUrl'()
+    {
+      .get instance string 'Msn.PhotoMix.SlideShow'.'RssChannel'::'get_ChannelImageUrl'()
+    }
+    .property instance string 'ChannelTitle'()
+    {
+      .get instance string 'Msn.PhotoMix.SlideShow'.'RssChannel'::'get_ChannelTitle'()
+    }
+    .property instance bool 'ItemsNeedCompileState'()
+    {
+      .get instance bool 'Msn.PhotoMix.SlideShow'.'RssChannel'::'get_ItemsNeedCompileState'()
+    }
+    .property instance bool 'RenderAd'()
+    {
+      .get instance bool 'Msn.PhotoMix.SlideShow'.'RssChannel'::'get_RenderAd'()
+      .set instance void 'Msn.PhotoMix.SlideShow'.'RssChannel'::'set_RenderAd'(bool)
+    }
+    .property instance bool 'RenderChannelImage'()
+    {
+      .get instance bool 'Msn.PhotoMix.SlideShow'.'RssChannel'::'get_RenderChannelImage'()
+      .set instance void 'Msn.PhotoMix.SlideShow'.'RssChannel'::'set_RenderChannelImage'(bool)
+    }
+    .property instance bool 'RenderChannelTitle'()
+    {
+      .get instance bool 'Msn.PhotoMix.SlideShow'.'RssChannel'::'get_RenderChannelTitle'()
+      .set instance void 'Msn.PhotoMix.SlideShow'.'RssChannel'::'set_RenderChannelTitle'(bool)
+    }
+    .property instance bool 'RenderItemDescriptions'()
+    {
+      .get instance bool 'Msn.PhotoMix.SlideShow'.'RssChannel'::'get_RenderItemDescriptions'()
+      .set instance void 'Msn.PhotoMix.SlideShow'.'RssChannel'::'set_RenderItemDescriptions'(bool)
+    }
+    .property instance bool 'RenderItemTitles'()
+    {
+      .get instance bool 'Msn.PhotoMix.SlideShow'.'RssChannel'::'get_RenderItemTitles'()
+      .set instance void 'Msn.PhotoMix.SlideShow'.'RssChannel'::'set_RenderItemTitles'(bool)
+    }
+    .property instance valuetype 'Msn.PhotoMix.SlideShow'.'RssChannelPriority' 'RssChannelPriority'()
+    {
+      .get instance valuetype 'Msn.PhotoMix.SlideShow'.'RssChannelPriority' 'Msn.PhotoMix.SlideShow'.'RssChannel'::'get_RssChannelPriority'()
+      .set instance void 'Msn.PhotoMix.SlideShow'.'RssChannel'::'set_RssChannelPriority'(valuetype 'Msn.PhotoMix.SlideShow'.'RssChannelPriority')
+    }
+    .property instance string 'RssFeedUrl'()
+    {
+      .get instance string 'Msn.PhotoMix.SlideShow'.'RssChannel'::'get_RssFeedUrl'()
+      .set instance void 'Msn.PhotoMix.SlideShow'.'RssChannel'::'set_RssFeedUrl'(string)
+    }
+  }
+  .class public sealed 'RssChannelPriority'
+    extends ['mscorlib']'System'.'Enum'
+  {
+    .field public rtspecialname specialname int32 'value__'
+    .field static public literal valuetype 'Msn.PhotoMix.SlideShow'.'RssChannelPriority' 'Image' = int32(0x00000001)
+    .field static public literal valuetype 'Msn.PhotoMix.SlideShow'.'RssChannelPriority' 'Max' = int32(0x00000001)
+    .field static public literal valuetype 'Msn.PhotoMix.SlideShow'.'RssChannelPriority' 'Text' = int32(0x00000000)
+  }
+  .class public 'SlideShow'
+    extends ['mscorlib']'System'.'Object'
+    implements 'Msn.PhotoMix.SlideShow'.'ICompile'
+  {
+    .method public hidebysig specialname 
+      instance void '.ctor'()
+    {
+      ret
+    }
+    .method public static hidebysig 
+      class 'Msn.PhotoMix.SlideShow'.'SlideShow' 'InitNew'(class 'Msn.PhotoMix.Passport'.'Puid' 'puid', string 'name', string 'pin', string 'description', valuetype 'Msn.PhotoMix.Util'.'PMTimeZone' 'timeZone', valuetype 'Msn.PhotoMix.SlideShow'.'SlideShowImageSize' 'defaultImageSize', valuetype 'Msn.PhotoMix.SlideShow'.'SlideShowRssMediaType' 'defaultRssMediaType')
+    {
+      ret
+    }
+    .method public static hidebysig 
+      class 'Msn.PhotoMix.SlideShow'.'SlideShow' 'LoadFromReader'(class ['System.Data']'System.Data.SqlClient'.'SqlDataReader' 'reader')
+    {
+      ret
+    }
+    .method public static hidebysig 
+      class ['mscorlib']'System.Collections.Generic'.'List`1'<class 'Msn.PhotoMix.SlideShow'.'SlideShow'> 'LoadSlideShowsFromDb'(class 'Msn.PhotoMix.Passport'.'Puid' 'puid')
+    {
+      ret
+    }
+    .method public static hidebysig 
+      class ['mscorlib']'System.Collections.Generic'.'List`1'<valuetype 'Msn.PhotoMix.SlideShow'.'SlideShowInfo'> 'GetSlideShowInfoList'(class 'Msn.PhotoMix.Passport'.'Puid' 'puid')
+    {
+      ret
+    }
+    .method public static hidebysig 
+      class 'Msn.PhotoMix.SlideShow'.'SlideShow' 'LoadFromDb'(class 'Msn.PhotoMix.Passport'.'Puid' 'puid', valuetype ['mscorlib']'System'.'Guid' 'guid')
+    {
+      ret
+    }
+    .method public static hidebysig 
+      class 'Msn.PhotoMix.SlideShow'.'SlideShow' 'LoadFromDb'(int32 'puidHash', valuetype ['mscorlib']'System'.'Guid' 'guid')
+    {
+      ret
+    }
+    .method public static hidebysig 
+      class 'Msn.PhotoMix.SlideShow'.'SlideShow' 'CloneToPuid'(string 'id', class 'Msn.PhotoMix.Passport'.'Puid' 'newPuid')
+    {
+      ret
+    }
+    .method public static hidebysig 
+      class 'Msn.PhotoMix.SlideShow'.'SlideShow' 'LoadFromDb'(string 'id')
+    {
+      ret
+    }
+    .method public static hidebysig 
+      class 'Msn.PhotoMix.SlideShow'.'SlideShow' 'LoadFromFriendlyName'(string 'friendlyName')
+    {
+      ret
+    }
+    .method public static hidebysig 
+      valuetype ['mscorlib']'System'.'Guid' 'LookupId'(string 'id', [out] int32& 'slideShowHash')
+    {
+      ret
+    }
+    .method public static hidebysig 
+      string 'GenerateId'(valuetype ['mscorlib']'System'.'Guid' 'slideShowGuid', int32 'hash')
+    {
+      ret
+    }
+    .method public hidebysig 
+      instance string 'GenerateId'()
+    {
+      ret
+    }
+    .method public static hidebysig 
+      class 'Msn.PhotoMix.SlideShow'.'SlideShow' 'LoadFromId'(string 'id')
+    {
+      ret
+    }
+    .method public static hidebysig 
+      class 'Msn.PhotoMix.SlideShow'.'SlideShow' 'LoadFromRssFeedQueryString'(class ['System']'System.Collections.Specialized'.'NameValueCollection' 'queryString')
+    {
+      ret
+    }
+    .method public hidebysig 
+      instance string 'GetRssFeedUrl'(bool 'useFriendlyName', string 'host', class ['System.Web']'System.Web'.'HttpRequest' 'request')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance string 'get_Name'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void 'set_Name'(string 'value')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance valuetype 'Msn.PhotoMix.SlideShow'.'SlideShowImageSize' 'get_DefaultImageSize'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void 'set_DefaultImageSize'(valuetype 'Msn.PhotoMix.SlideShow'.'SlideShowImageSize' 'value')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance valuetype 'Msn.PhotoMix.SlideShow'.'SlideShowRssMediaType' 'get_DefaultRssMediaType'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void 'set_DefaultRssMediaType'(valuetype 'Msn.PhotoMix.SlideShow'.'SlideShowRssMediaType' 'value')
+    {
+      ret
+    }
+    .method public hidebysig 
+      instance bool 'SetFriendlyName'(string 'friendlyName')
+    {
+      ret
+    }
+    .method public hidebysig 
+      instance string 'GetFriendlyName'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance class 'Msn.PhotoMix.Passport'.'Puid' 'get_Puid'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance valuetype ['mscorlib']'System'.'Guid' 'get_Guid'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance string 'get_Pin'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void 'set_Pin'(string 'value')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance string 'get_Description'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void 'set_Description'(string 'value')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance valuetype 'Msn.PhotoMix.Util'.'PMTimeZone' 'get_PMTimeZone'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void 'set_PMTimeZone'(valuetype 'Msn.PhotoMix.Util'.'PMTimeZone' 'value')
+    {
+      ret
+    }
+    .method public final virtual hidebysig newslot specialname 
+      instance bool 'get_IsFixedCount'()
+    {
+      ret
+    }
+    .method public final virtual hidebysig newslot specialname 
+      instance bool 'get_CompileAll'()
+    {
+      ret
+    }
+    .method public final virtual hidebysig newslot specialname 
+      instance void 'set_CompileAll'(bool 'value')
+    {
+      ret
+    }
+    .method public final virtual hidebysig newslot specialname 
+      instance int32 'get_CompileMaxCount'()
+    {
+      ret
+    }
+    .method public final virtual hidebysig newslot specialname 
+      instance void 'set_CompileMaxCount'(int32 'value')
+    {
+      ret
+    }
+    .method public final virtual hidebysig newslot specialname 
+      instance int32 'get_CompileMinCount'()
+    {
+      ret
+    }
+    .method public final virtual hidebysig newslot specialname 
+      instance void 'set_CompileMinCount'(int32 'value')
+    {
+      ret
+    }
+    .method public final virtual hidebysig newslot specialname 
+      instance valuetype 'Msn.PhotoMix.SlideShow'.'CompileOrder' 'get_CompileOrder'()
+    {
+      ret
+    }
+    .method public final virtual hidebysig newslot specialname 
+      instance void 'set_CompileOrder'(valuetype 'Msn.PhotoMix.SlideShow'.'CompileOrder' 'value')
+    {
+      ret
+    }
+    .method public final virtual hidebysig newslot specialname 
+      instance valuetype 'Msn.PhotoMix.SlideShow'.'CompileInclude' 'get_CompileInclude'()
+    {
+      ret
+    }
+    .method public final virtual hidebysig newslot specialname 
+      instance void 'set_CompileInclude'(valuetype 'Msn.PhotoMix.SlideShow'.'CompileInclude' 'value')
+    {
+      ret
+    }
+    .method public final virtual hidebysig newslot specialname 
+      instance int32 'get_CompileAge'()
+    {
+      ret
+    }
+    .method public final virtual hidebysig newslot specialname 
+      instance void 'set_CompileAge'(int32 'value')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance class ['mscorlib']'System.Collections.Generic'.'List`1'<class 'Msn.PhotoMix.SlideShow'.'ListItem'> 'get_CompiledItemsCache'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance valuetype ['mscorlib']'System'.'DateTime' 'get_CompiledItemsCacheDate'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance valuetype ['mscorlib']'System'.'DateTime' 'get_CompiledItemsCacheInvalidDate'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance bool 'get_CompiledItemsCacheDirty'()
+    {
+      ret
+    }
+    .method public hidebysig 
+      instance class ['mscorlib']'System.Collections.Generic'.'List`1'<class 'Msn.PhotoMix.SlideShow'.'Channel'> 'GetChannels'()
+    {
+      ret
+    }
+    .method public hidebysig 
+      instance void 'DeleteChannel'(class 'Msn.PhotoMix.SlideShow'.'Channel' 'targetChannel')
+    {
+      ret
+    }
+    .method public hidebysig 
+      instance void 'DeleteChannel'(valuetype ['mscorlib']'System'.'Guid' 'channelGuid')
+    {
+      ret
+    }
+    .method public hidebysig 
+      instance void 'AddChannel'(class 'Msn.PhotoMix.SlideShow'.'Channel' 'channel')
+    {
+      ret
+    }
+    .method public hidebysig 
+      instance void 'UpdateDisplayOrderUp'(valuetype ['mscorlib']'System'.'Guid' 'channelGuid')
+    {
+      ret
+    }
+    .method public hidebysig 
+      instance void 'UpdateDisplayOrderDown'(valuetype ['mscorlib']'System'.'Guid' 'channelGuid')
+    {
+      ret
+    }
+    .method public hidebysig 
+      instance void 'UpdateDisplayOrder'(valuetype ['mscorlib']'System'.'Guid' 'channelGuid', int32 'newPosition')
+    {
+      ret
+    }
+    .method public hidebysig 
+      instance void 'LogRss'(string 'trackId')
+    {
+      ret
+    }
+    .method public hidebysig 
+      instance void 'GenerateRss'(class ['mscorlib']'System.Text'.'StringBuilder' 'sb')
+    {
+      ret
+    }
+    .method public hidebysig 
+      instance void 'GenerateRss'(class ['mscorlib']'System.Text'.'StringBuilder' 'sb', valuetype 'Msn.PhotoMix.SlideShow'.'SlideShowRssMediaType' 'rssType', valuetype 'Msn.PhotoMix.SlideShow'.'SlideShowImageSize' 'targetImageSize', bool 'insertSizes', bool 'bypassCaches', bool 'debug')
+    {
+      ret
+    }
+    .method public hidebysig 
+      instance void 'GenerateRss'(class ['mscorlib']'System.Text'.'StringBuilder' 'sb', valuetype 'Msn.PhotoMix.SlideShow'.'SlideShowRssMediaType' 'rssType', valuetype 'Msn.PhotoMix.SlideShow'.'SlideShowImageSize' 'targetImageSize', bool 'insertSizes', bool 'bypassCaches', bool 'debug', valuetype ['mscorlib']'System'.'Guid' 'channelGuid')
+    {
+      ret
+    }
+    .method public hidebysig 
+      instance void 'Compile'()
+    {
+      ret
+    }
+    .method public hidebysig 
+      instance void 'Compile'(class ['mscorlib']'System.Collections.Generic'.'List`1'<valuetype ['mscorlib']'System'.'Guid'> 'guidContext', valuetype ['mscorlib']'System'.'DateTime' 'dateContext', bool 'bypassCaches', class ['mscorlib']'System.Collections'.'Hashtable' 'compileState')
+    {
+      ret
+    }
+    .method public hidebysig 
+      instance void 'ClearCompiledItemsCache'()
+    {
+      ret
+    }
+    .method public hidebysig 
+      instance class ['mscorlib']'System.Collections.Generic'.'List`1'<class 'Msn.PhotoMix.SlideShow'.'ListItem'> 'GetCompiledItems'(class ['mscorlib']'System.Collections.Generic'.'List`1'<valuetype ['mscorlib']'System'.'Guid'> 'guidContext', valuetype ['mscorlib']'System'.'DateTime' 'dateContext', bool 'bypassCaches', class ['mscorlib']'System.Collections'.'Hashtable' 'compileState')
+    {
+      ret
+    }
+    .method public hidebysig 
+      instance void 'SaveCompiledItemsCacheToDb'()
+    {
+      ret
+    }
+    .method public hidebysig 
+      instance void 'DeleteFromDb'()
+    {
+      ret
+    }
+    .method public hidebysig 
+      instance void 'SaveChannelsToDb'()
+    {
+      ret
+    }
+    .method public hidebysig 
+      instance void 'SaveToDb'()
+    {
+      ret
+    }
+    .field static public int32[] 'slideShowImageHeights'
+    .field static public int32[] 'slideShowImageWidths'
+    .property instance int32 'CompileAge'()
+    {
+      .get instance int32 'Msn.PhotoMix.SlideShow'.'SlideShow'::'get_CompileAge'()
+      .set instance void 'Msn.PhotoMix.SlideShow'.'SlideShow'::'set_CompileAge'(int32)
+    }
+    .property instance bool 'CompileAll'()
+    {
+      .get instance bool 'Msn.PhotoMix.SlideShow'.'SlideShow'::'get_CompileAll'()
+      .set instance void 'Msn.PhotoMix.SlideShow'.'SlideShow'::'set_CompileAll'(bool)
+    }
+    .property instance valuetype 'Msn.PhotoMix.SlideShow'.'CompileInclude' 'CompileInclude'()
+    {
+      .get instance valuetype 'Msn.PhotoMix.SlideShow'.'CompileInclude' 'Msn.PhotoMix.SlideShow'.'SlideShow'::'get_CompileInclude'()
+      .set instance void 'Msn.PhotoMix.SlideShow'.'SlideShow'::'set_CompileInclude'(valuetype 'Msn.PhotoMix.SlideShow'.'CompileInclude')
+    }
+    .property instance int32 'CompileMaxCount'()
+    {
+      .get instance int32 'Msn.PhotoMix.SlideShow'.'SlideShow'::'get_CompileMaxCount'()
+      .set instance void 'Msn.PhotoMix.SlideShow'.'SlideShow'::'set_CompileMaxCount'(int32)
+    }
+    .property instance int32 'CompileMinCount'()
+    {
+      .get instance int32 'Msn.PhotoMix.SlideShow'.'SlideShow'::'get_CompileMinCount'()
+      .set instance void 'Msn.PhotoMix.SlideShow'.'SlideShow'::'set_CompileMinCount'(int32)
+    }
+    .property instance valuetype 'Msn.PhotoMix.SlideShow'.'CompileOrder' 'CompileOrder'()
+    {
+      .get instance valuetype 'Msn.PhotoMix.SlideShow'.'CompileOrder' 'Msn.PhotoMix.SlideShow'.'SlideShow'::'get_CompileOrder'()
+      .set instance void 'Msn.PhotoMix.SlideShow'.'SlideShow'::'set_CompileOrder'(valuetype 'Msn.PhotoMix.SlideShow'.'CompileOrder')
+    }
+    .property instance class ['mscorlib']'System.Collections.Generic'.'List`1'<class 'Msn.PhotoMix.SlideShow'.'ListItem'> 'CompiledItemsCache'()
+    {
+      .get instance class ['mscorlib']'System.Collections.Generic'.'List`1'<class 'Msn.PhotoMix.SlideShow'.'ListItem'> 'Msn.PhotoMix.SlideShow'.'SlideShow'::'get_CompiledItemsCache'()
+    }
+    .property instance valuetype ['mscorlib']'System'.'DateTime' 'CompiledItemsCacheDate'()
+    {
+      .get instance valuetype ['mscorlib']'System'.'DateTime' 'Msn.PhotoMix.SlideShow'.'SlideShow'::'get_CompiledItemsCacheDate'()
+    }
+    .property instance bool 'CompiledItemsCacheDirty'()
+    {
+      .get instance bool 'Msn.PhotoMix.SlideShow'.'SlideShow'::'get_CompiledItemsCacheDirty'()
+    }
+    .property instance valuetype ['mscorlib']'System'.'DateTime' 'CompiledItemsCacheInvalidDate'()
+    {
+      .get instance valuetype ['mscorlib']'System'.'DateTime' 'Msn.PhotoMix.SlideShow'.'SlideShow'::'get_CompiledItemsCacheInvalidDate'()
+    }
+    .property instance valuetype 'Msn.PhotoMix.SlideShow'.'SlideShowImageSize' 'DefaultImageSize'()
+    {
+      .get instance valuetype 'Msn.PhotoMix.SlideShow'.'SlideShowImageSize' 'Msn.PhotoMix.SlideShow'.'SlideShow'::'get_DefaultImageSize'()
+      .set instance void 'Msn.PhotoMix.SlideShow'.'SlideShow'::'set_DefaultImageSize'(valuetype 'Msn.PhotoMix.SlideShow'.'SlideShowImageSize')
+    }
+    .property instance valuetype 'Msn.PhotoMix.SlideShow'.'SlideShowRssMediaType' 'DefaultRssMediaType'()
+    {
+      .get instance valuetype 'Msn.PhotoMix.SlideShow'.'SlideShowRssMediaType' 'Msn.PhotoMix.SlideShow'.'SlideShow'::'get_DefaultRssMediaType'()
+      .set instance void 'Msn.PhotoMix.SlideShow'.'SlideShow'::'set_DefaultRssMediaType'(valuetype 'Msn.PhotoMix.SlideShow'.'SlideShowRssMediaType')
+    }
+    .property instance string 'Description'()
+    {
+      .get instance string 'Msn.PhotoMix.SlideShow'.'SlideShow'::'get_Description'()
+      .set instance void 'Msn.PhotoMix.SlideShow'.'SlideShow'::'set_Description'(string)
+    }
+    .property instance valuetype ['mscorlib']'System'.'Guid' 'Guid'()
+    {
+      .get instance valuetype ['mscorlib']'System'.'Guid' 'Msn.PhotoMix.SlideShow'.'SlideShow'::'get_Guid'()
+    }
+    .property instance bool 'IsFixedCount'()
+    {
+      .get instance bool 'Msn.PhotoMix.SlideShow'.'SlideShow'::'get_IsFixedCount'()
+    }
+    .property instance string 'Name'()
+    {
+      .get instance string 'Msn.PhotoMix.SlideShow'.'SlideShow'::'get_Name'()
+      .set instance void 'Msn.PhotoMix.SlideShow'.'SlideShow'::'set_Name'(string)
+    }
+    .property instance valuetype 'Msn.PhotoMix.Util'.'PMTimeZone' 'PMTimeZone'()
+    {
+      .get instance valuetype 'Msn.PhotoMix.Util'.'PMTimeZone' 'Msn.PhotoMix.SlideShow'.'SlideShow'::'get_PMTimeZone'()
+      .set instance void 'Msn.PhotoMix.SlideShow'.'SlideShow'::'set_PMTimeZone'(valuetype 'Msn.PhotoMix.Util'.'PMTimeZone')
+    }
+    .property instance string 'Pin'()
+    {
+      .get instance string 'Msn.PhotoMix.SlideShow'.'SlideShow'::'get_Pin'()
+      .set instance void 'Msn.PhotoMix.SlideShow'.'SlideShow'::'set_Pin'(string)
+    }
+    .property instance class 'Msn.PhotoMix.Passport'.'Puid' 'Puid'()
+    {
+      .get instance class 'Msn.PhotoMix.Passport'.'Puid' 'Msn.PhotoMix.SlideShow'.'SlideShow'::'get_Puid'()
+    }
+  }
+  .class public sealed 'SlideShowImageSize'
+    extends ['mscorlib']'System'.'Enum'
+  {
+    .field public rtspecialname specialname int32 'value__'
+    .field static public literal valuetype 'Msn.PhotoMix.SlideShow'.'SlideShowImageSize' 'Size1024x768' = int32(0x00000003)
+    .field static public literal valuetype 'Msn.PhotoMix.SlideShow'.'SlideShowImageSize' 'Size1600x900' = int32(0x00000002)
+    .field static public literal valuetype 'Msn.PhotoMix.SlideShow'.'SlideShowImageSize' 'Size640x480' = int32(0x00000000)
+    .field static public literal valuetype 'Msn.PhotoMix.SlideShow'.'SlideShowImageSize' 'Size800x600' = int32(0x00000001)
+    .field static public literal valuetype 'Msn.PhotoMix.SlideShow'.'SlideShowImageSize' 'SizeMax' = int32(0x00000003)
+    .field static public literal valuetype 'Msn.PhotoMix.SlideShow'.'SlideShowImageSize' 'SizeUnknown' = int32(0x7FFFFFFF)
+  }
+  .class public sequential sealed 'SlideShowInfo'
+    extends ['mscorlib']'System'.'ValueType'
+  {
+    .field public valuetype ['mscorlib']'System'.'Guid' 'slideShowGuid'
+    .field public string 'name'
+  }
+  .class public 'SlideShowItem'
+    extends 'Msn.PhotoMix.SlideShow'.'ListItem'
+  {
+    .method public hidebysig specialname 
+      instance void '.ctor'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void '.ctor'(valuetype ['mscorlib']'System'.'DateTime' 'expDate', valuetype ['mscorlib']'System'.'DateTime' 'pubDate', string 'title', string 'url')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void '.ctor'(valuetype ['mscorlib']'System'.'DateTime' 'expDate', valuetype ['mscorlib']'System'.'DateTime' 'pubDate', string 'title', string 'url', bool 'urlSizeAware')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void '.ctor'(valuetype ['mscorlib']'System'.'DateTime' 'expDate', valuetype ['mscorlib']'System'.'DateTime' 'pubDate', string 'title', string 'url', int32 'width', int32 'height')
+    {
+      ret
+    }
+    .method public virtual hidebysig 
+      instance void 'SaveDataToString'(class ['mscorlib']'System.Text'.'StringBuilder' 'sb')
+    {
+      ret
+    }
+    .method public virtual hidebysig 
+      instance void 'LoadDataFromXmlNode'(class ['System.Xml']'System.Xml'.'XmlNode' 'node')
+    {
+      ret
+    }
+    .method public virtual hidebysig 
+      instance class 'Msn.PhotoMix.SlideShow'.'SlideShowItem' 'CreateSlideShowItem'(class ['mscorlib']'System.Collections'.'Hashtable' 'compileCache', valuetype ['mscorlib']'System'.'DateTime' 'dateContext', bool 'bypassCaches')
+    {
+      ret
+    }
+    .method public hidebysig 
+      instance void 'GenerateRss'(class ['mscorlib']'System.Text'.'StringBuilder' 'sb', valuetype 'Msn.PhotoMix.SlideShow'.'SlideShowRssMediaType' 'rssType', valuetype 'Msn.PhotoMix.SlideShow'.'SlideShowImageSize' 'targetImageSize', bool 'insertSizes', bool 'debug')
+    {
+      ret
+    }
+  }
+  .class public sealed 'SlideShowRssMediaType'
+    extends ['mscorlib']'System'.'Enum'
+  {
+    .field public rtspecialname specialname int32 'value__'
+    .field static public literal valuetype 'Msn.PhotoMix.SlideShow'.'SlideShowRssMediaType' 'EnclosureRss' = int32(0x00000001)
+    .field static public literal valuetype 'Msn.PhotoMix.SlideShow'.'SlideShowRssMediaType' 'LinkMedia' = int32(0x00000002)
+    .field static public literal valuetype 'Msn.PhotoMix.SlideShow'.'SlideShowRssMediaType' 'Max' = int32(0x00000003)
+    .field static public literal valuetype 'Msn.PhotoMix.SlideShow'.'SlideShowRssMediaType' 'MediaRss' = int32(0x00000000)
+    .field static public literal valuetype 'Msn.PhotoMix.SlideShow'.'SlideShowRssMediaType' 'Unknown' = int32(0x7FFFFFFF)
+  }
+  .class public 'SmugMugChannel'
+    extends 'Msn.PhotoMix.SlideShow'.'Channel'
+  {
+    .method public hidebysig specialname 
+      instance void '.ctor'(class 'Msn.PhotoMix.Passport'.'Puid' 'puid', valuetype ['mscorlib']'System'.'Guid' 'slideShowGuid', valuetype ['mscorlib']'System'.'Guid' 'channelGuid')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void '.ctor'(class 'Msn.PhotoMix.Passport'.'Puid' 'puid', valuetype ['mscorlib']'System'.'Guid' 'slideShowGuid')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance string 'get_UserName'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void 'set_UserName'(string 'value')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance int32 'get_FeedType'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void 'set_FeedType'(int32 'value')
+    {
+      ret
+    }
+    .method public virtual hidebysig 
+      instance void 'SaveDataToString'(class ['mscorlib']'System.Text'.'StringBuilder' 'sb')
+    {
+      ret
+    }
+    .method public virtual hidebysig 
+      instance void 'LoadDataFromXmlNode'(class ['System.Xml']'System.Xml'.'XmlNode' 'node')
+    {
+      ret
+    }
+    .method public virtual hidebysig 
+      instance class ['mscorlib']'System.Collections.Generic'.'List`1'<class 'Msn.PhotoMix.SlideShow'.'ListItem'> 'FetchItems'(class ['mscorlib']'System.Collections.Generic'.'List`1'<valuetype ['mscorlib']'System'.'Guid'> 'guidContext', valuetype ['mscorlib']'System'.'DateTime' 'dateContext', bool 'bypassCaches')
+    {
+      ret
+    }
+    .property instance int32 'FeedType'()
+    {
+      .get instance int32 'Msn.PhotoMix.SlideShow'.'SmugMugChannel'::'get_FeedType'()
+      .set instance void 'Msn.PhotoMix.SlideShow'.'SmugMugChannel'::'set_FeedType'(int32)
+    }
+    .property instance string 'UserName'()
+    {
+      .get instance string 'Msn.PhotoMix.SlideShow'.'SmugMugChannel'::'get_UserName'()
+      .set instance void 'Msn.PhotoMix.SlideShow'.'SmugMugChannel'::'set_UserName'(string)
+    }
+  }
+  .class public 'SpaceChannel'
+    extends 'Msn.PhotoMix.SlideShow'.'Channel'
+  {
+    .method public hidebysig specialname 
+      instance void '.ctor'(class 'Msn.PhotoMix.Passport'.'Puid' 'puid', valuetype ['mscorlib']'System'.'Guid' 'slideShowGuid', valuetype ['mscorlib']'System'.'Guid' 'channelGuid')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void '.ctor'(class 'Msn.PhotoMix.Passport'.'Puid' 'puid', valuetype ['mscorlib']'System'.'Guid' 'slideShowGuid')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance string 'get_SpaceName'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void 'set_SpaceName'(string 'value')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance string 'get_AlbumId'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void 'set_AlbumId'(string 'value')
+    {
+      ret
+    }
+    .method public virtual hidebysig 
+      instance void 'SaveDataToString'(class ['mscorlib']'System.Text'.'StringBuilder' 'sb')
+    {
+      ret
+    }
+    .method public virtual hidebysig 
+      instance void 'LoadDataFromXmlNode'(class ['System.Xml']'System.Xml'.'XmlNode' 'node')
+    {
+      ret
+    }
+    .method public virtual hidebysig 
+      instance void 'LoadDataFromQueryString'(class ['System.Web']'System.Web'.'HttpRequest' 'request')
+    {
+      ret
+    }
+    .method public static hidebysig 
+      class ['mscorlib']'System.Collections.Generic'.'Dictionary`2'<string,string> 'GetAlbums'(string 'spaceName')
+    {
+      ret
+    }
+    .method public virtual hidebysig 
+      instance class ['mscorlib']'System.Collections.Generic'.'List`1'<class 'Msn.PhotoMix.SlideShow'.'ListItem'> 'FetchItems'(class ['mscorlib']'System.Collections.Generic'.'List`1'<valuetype ['mscorlib']'System'.'Guid'> 'guidContext', valuetype ['mscorlib']'System'.'DateTime' 'dateContext', bool 'bypassCaches')
+    {
+      ret
+    }
+    .property instance string 'AlbumId'()
+    {
+      .get instance string 'Msn.PhotoMix.SlideShow'.'SpaceChannel'::'get_AlbumId'()
+      .set instance void 'Msn.PhotoMix.SlideShow'.'SpaceChannel'::'set_AlbumId'(string)
+    }
+    .property instance string 'SpaceName'()
+    {
+      .get instance string 'Msn.PhotoMix.SlideShow'.'SpaceChannel'::'get_SpaceName'()
+      .set instance void 'Msn.PhotoMix.SlideShow'.'SpaceChannel'::'set_SpaceName'(string)
+    }
+  }
+  .class public 'StaticChannel'
+    extends 'Msn.PhotoMix.SlideShow'.'Channel'
+  {
+    .method public hidebysig specialname 
+      instance void '.ctor'(class 'Msn.PhotoMix.Passport'.'Puid' 'puid', valuetype ['mscorlib']'System'.'Guid' 'slideShowGuid', valuetype ['mscorlib']'System'.'Guid' 'channelGuid')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void '.ctor'(class 'Msn.PhotoMix.Passport'.'Puid' 'puid', valuetype ['mscorlib']'System'.'Guid' 'slideShowGuid')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance bool 'get_AddTimeIndex'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void 'set_AddTimeIndex'(bool 'value')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance string 'get_ImageUrl'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void 'set_ImageUrl'(string 'value')
+    {
+      ret
+    }
+    .method public virtual hidebysig specialname 
+      instance bool 'get_IsFixedCount'()
+    {
+      ret
+    }
+    .method public virtual hidebysig 
+      instance bool 'FetchItemsEnabled'()
+    {
+      ret
+    }
+    .method public virtual hidebysig 
+      instance class ['mscorlib']'System.Collections.Generic'.'List`1'<class 'Msn.PhotoMix.SlideShow'.'ListItem'> 'InitItems'(class ['mscorlib']'System.Collections.Generic'.'List`1'<valuetype ['mscorlib']'System'.'Guid'> 'guidContext', valuetype ['mscorlib']'System'.'DateTime' 'dateContext', bool 'bypassCaches', class ['mscorlib']'System.Collections'.'Hashtable' 'compileState')
+    {
+      ret
+    }
+    .method public virtual hidebysig 
+      instance void 'SaveDataToString'(class ['mscorlib']'System.Text'.'StringBuilder' 'sb')
+    {
+      ret
+    }
+    .method public virtual hidebysig 
+      instance void 'LoadDataFromXmlNode'(class ['System.Xml']'System.Xml'.'XmlNode' 'node')
+    {
+      ret
+    }
+    .method public virtual hidebysig 
+      instance void 'LoadDataFromQueryString'(class ['System.Web']'System.Web'.'HttpRequest' 'request')
+    {
+      ret
+    }
+    .property instance bool 'AddTimeIndex'()
+    {
+      .get instance bool 'Msn.PhotoMix.SlideShow'.'StaticChannel'::'get_AddTimeIndex'()
+      .set instance void 'Msn.PhotoMix.SlideShow'.'StaticChannel'::'set_AddTimeIndex'(bool)
+    }
+    .property instance string 'ImageUrl'()
+    {
+      .get instance string 'Msn.PhotoMix.SlideShow'.'StaticChannel'::'get_ImageUrl'()
+      .set instance void 'Msn.PhotoMix.SlideShow'.'StaticChannel'::'set_ImageUrl'(string)
+    }
+    .property instance bool 'IsFixedCount'()
+    {
+      .get instance bool 'Msn.PhotoMix.SlideShow'.'StaticChannel'::'get_IsFixedCount'()
+    }
+  }
+  .class public 'TextRssChannelItem'
+    extends 'Msn.PhotoMix.SlideShow'.'ChannelItem'
+  {
+    .method public hidebysig specialname 
+      instance void '.ctor'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void '.ctor'(valuetype ['mscorlib']'System'.'DateTime' 'pubDate', string 'title', string 'description')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance string 'get_Title'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance string 'get_Description'()
+    {
+      ret
+    }
+    .method public virtual hidebysig 
+      instance void 'SaveDataToString'(class ['mscorlib']'System.Text'.'StringBuilder' 'sb')
+    {
+      ret
+    }
+    .method public virtual hidebysig 
+      instance void 'LoadDataFromXmlNode'(class ['System.Xml']'System.Xml'.'XmlNode' 'node')
+    {
+      ret
+    }
+    .method public virtual hidebysig 
+      instance class 'Msn.PhotoMix.SlideShow'.'SlideShowItem' 'CreateSlideShowItem'(class ['mscorlib']'System.Collections'.'Hashtable' 'compileCache', valuetype ['mscorlib']'System'.'DateTime' 'dateContext', bool 'bypassCaches')
+    {
+      ret
+    }
+    .property instance string 'Description'()
+    {
+      .get instance string 'Msn.PhotoMix.SlideShow'.'TextRssChannelItem'::'get_Description'()
+    }
+    .property instance string 'Title'()
+    {
+      .get instance string 'Msn.PhotoMix.SlideShow'.'TextRssChannelItem'::'get_Title'()
+    }
+  }
+  .class public 'USTrafficChannel'
+    extends 'Msn.PhotoMix.SlideShow'.'Channel'
+  {
+    .method public hidebysig specialname 
+      instance void '.ctor'(class 'Msn.PhotoMix.Passport'.'Puid' 'puid', valuetype ['mscorlib']'System'.'Guid' 'slideShowGuid', valuetype ['mscorlib']'System'.'Guid' 'channelGuid')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void '.ctor'(class 'Msn.PhotoMix.Passport'.'Puid' 'puid', valuetype ['mscorlib']'System'.'Guid' 'slideShowGuid')
+    {
+      ret
+    }
+    .method public virtual hidebysig specialname 
+      instance bool 'get_IsFixedCount'()
+    {
+      ret
+    }
+    .method public virtual hidebysig 
+      instance bool 'FetchItemsEnabled'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance int32 'get_TrafficRegion'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void 'set_TrafficRegion'(int32 'value')
+    {
+      ret
+    }
+    .method public virtual hidebysig 
+      instance class ['mscorlib']'System.Collections.Generic'.'List`1'<class 'Msn.PhotoMix.SlideShow'.'ListItem'> 'InitItems'(class ['mscorlib']'System.Collections.Generic'.'List`1'<valuetype ['mscorlib']'System'.'Guid'> 'guidContext', valuetype ['mscorlib']'System'.'DateTime' 'dateContext', bool 'bypassCaches', class ['mscorlib']'System.Collections'.'Hashtable' 'compileState')
+    {
+      ret
+    }
+    .method public virtual hidebysig 
+      instance void 'SaveDataToString'(class ['mscorlib']'System.Text'.'StringBuilder' 'sb')
+    {
+      ret
+    }
+    .method public virtual hidebysig 
+      instance void 'LoadDataFromXmlNode'(class ['System.Xml']'System.Xml'.'XmlNode' 'node')
+    {
+      ret
+    }
+    .method public virtual hidebysig 
+      instance void 'LoadDataFromQueryString'(class ['System.Web']'System.Web'.'HttpRequest' 'request')
+    {
+      ret
+    }
+    .method public static hidebysig 
+      string 'GetImageFileName'(int32 'trafficRegion', valuetype 'Msn.PhotoMix.SlideShow'.'SlideShowImageSize' 'imageSize', bool 'bypassCaches')
+    {
+      ret
+    }
+    .method public virtual hidebysig 
+      instance class 'Msn.PhotoMix.SlideShow'.'SlideShowItem' 'CreateSlideShowItem'(class ['mscorlib']'System.Collections'.'Hashtable' 'compileCache', valuetype ['mscorlib']'System'.'DateTime' 'dateContext', bool 'bypassCaches')
+    {
+      ret
+    }
+    .field static public string[0...,0...] 'USTrafficRegionData'
+    .property instance bool 'IsFixedCount'()
+    {
+      .get instance bool 'Msn.PhotoMix.SlideShow'.'USTrafficChannel'::'get_IsFixedCount'()
+    }
+    .property instance int32 'TrafficRegion'()
+    {
+      .get instance int32 'Msn.PhotoMix.SlideShow'.'USTrafficChannel'::'get_TrafficRegion'()
+      .set instance void 'Msn.PhotoMix.SlideShow'.'USTrafficChannel'::'set_TrafficRegion'(int32)
+    }
+  }
+  .class public 'UrlChannelItem'
+    extends 'Msn.PhotoMix.SlideShow'.'ChannelItem'
+  {
+    .method public hidebysig specialname 
+      instance void '.ctor'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void '.ctor'(valuetype ['mscorlib']'System'.'DateTime' 'pubDate', string 'url', int32 'width', int32 'height')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance string 'get_Url'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance int32 'get_Width'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance int32 'get_Height'()
+    {
+      ret
+    }
+    .method public virtual hidebysig 
+      instance void 'SaveDataToString'(class ['mscorlib']'System.Text'.'StringBuilder' 'sb')
+    {
+      ret
+    }
+    .method public virtual hidebysig 
+      instance void 'LoadDataFromXmlNode'(class ['System.Xml']'System.Xml'.'XmlNode' 'node')
+    {
+      ret
+    }
+    .method public virtual hidebysig 
+      instance class 'Msn.PhotoMix.SlideShow'.'SlideShowItem' 'CreateSlideShowItem'(class ['mscorlib']'System.Collections'.'Hashtable' 'compileCache', valuetype ['mscorlib']'System'.'DateTime' 'dateContext', bool 'bypassCaches')
+    {
+      ret
+    }
+    .property instance int32 'Height'()
+    {
+      .get instance int32 'Msn.PhotoMix.SlideShow'.'UrlChannelItem'::'get_Height'()
+    }
+    .property instance string 'Url'()
+    {
+      .get instance string 'Msn.PhotoMix.SlideShow'.'UrlChannelItem'::'get_Url'()
+    }
+    .property instance int32 'Width'()
+    {
+      .get instance int32 'Msn.PhotoMix.SlideShow'.'UrlChannelItem'::'get_Width'()
+    }
+  }
+  .class public 'WeatherChannel'
+    extends 'Msn.PhotoMix.SlideShow'.'Channel'
+  {
+    .method public hidebysig specialname 
+      instance void '.ctor'(class 'Msn.PhotoMix.Passport'.'Puid' 'puid', valuetype ['mscorlib']'System'.'Guid' 'slideShowGuid', valuetype ['mscorlib']'System'.'Guid' 'channelGuid')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void '.ctor'(class 'Msn.PhotoMix.Passport'.'Puid' 'puid', valuetype ['mscorlib']'System'.'Guid' 'slideShowGuid')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance string 'get_Language'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void 'set_Language'(string 'value')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance string 'get_Location'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void 'set_Location'(string 'value')
+    {
+      ret
+    }
+    .method public virtual hidebysig specialname 
+      instance bool 'get_IsFixedCount'()
+    {
+      ret
+    }
+    .method public virtual hidebysig specialname 
+      instance bool 'get_ItemsNeedCompileState'()
+    {
+      ret
+    }
+    .method public virtual hidebysig 
+      instance bool 'FetchItemsEnabled'()
+    {
+      ret
+    }
+    .method public virtual hidebysig 
+      instance class ['mscorlib']'System.Collections.Generic'.'List`1'<class 'Msn.PhotoMix.SlideShow'.'ListItem'> 'InitItems'(class ['mscorlib']'System.Collections.Generic'.'List`1'<valuetype ['mscorlib']'System'.'Guid'> 'guidContext', valuetype ['mscorlib']'System'.'DateTime' 'dateContext', bool 'bypassCaches', class ['mscorlib']'System.Collections'.'Hashtable' 'compileState')
+    {
+      ret
+    }
+    .method public virtual hidebysig 
+      instance void 'SaveDataToString'(class ['mscorlib']'System.Text'.'StringBuilder' 'sb')
+    {
+      ret
+    }
+    .method public virtual hidebysig 
+      instance void 'LoadDataFromXmlNode'(class ['System.Xml']'System.Xml'.'XmlNode' 'node')
+    {
+      ret
+    }
+    .method public virtual hidebysig 
+      instance void 'LoadDataFromQueryString'(class ['System.Web']'System.Web'.'HttpRequest' 'request')
+    {
+      ret
+    }
+    .method public virtual hidebysig 
+      instance class 'Msn.PhotoMix.SlideShow'.'SlideShowItem' 'CreateSlideShowItem'(class ['mscorlib']'System.Collections'.'Hashtable' 'compileCache', valuetype ['mscorlib']'System'.'DateTime' 'dateContext', bool 'bypassCaches')
+    {
+      ret
+    }
+    .property instance bool 'IsFixedCount'()
+    {
+      .get instance bool 'Msn.PhotoMix.SlideShow'.'WeatherChannel'::'get_IsFixedCount'()
+    }
+    .property instance bool 'ItemsNeedCompileState'()
+    {
+      .get instance bool 'Msn.PhotoMix.SlideShow'.'WeatherChannel'::'get_ItemsNeedCompileState'()
+    }
+    .property instance string 'Language'()
+    {
+      .get instance string 'Msn.PhotoMix.SlideShow'.'WeatherChannel'::'get_Language'()
+      .set instance void 'Msn.PhotoMix.SlideShow'.'WeatherChannel'::'set_Language'(string)
+    }
+    .property instance string 'Location'()
+    {
+      .get instance string 'Msn.PhotoMix.SlideShow'.'WeatherChannel'::'get_Location'()
+      .set instance void 'Msn.PhotoMix.SlideShow'.'WeatherChannel'::'set_Location'(string)
+    }
+  }
+  .class public 'WebPageChannel'
+    extends 'Msn.PhotoMix.SlideShow'.'Channel'
+  {
+    .method public hidebysig specialname 
+      instance void '.ctor'(class 'Msn.PhotoMix.Passport'.'Puid' 'puid', valuetype ['mscorlib']'System'.'Guid' 'slideShowGuid', valuetype ['mscorlib']'System'.'Guid' 'channelGuid')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void '.ctor'(class 'Msn.PhotoMix.Passport'.'Puid' 'puid', valuetype ['mscorlib']'System'.'Guid' 'slideShowGuid')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance string 'get_Url'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void 'set_Url'(string 'value')
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance valuetype 'Msn.PhotoMix.SlideShow'.'WebPageType' 'get_WebPageType'()
+    {
+      ret
+    }
+    .method public hidebysig specialname 
+      instance void 'set_WebPageType'(valuetype 'Msn.PhotoMix.SlideShow'.'WebPageType' 'value')
+    {
+      ret
+    }
+    .method public virtual hidebysig specialname 
+      instance bool 'get_ItemsNeedCompileState'()
+    {
+      ret
+    }
+    .method public virtual hidebysig 
+      instance bool 'FetchItemsEnabled'()
+    {
+      ret
+    }
+    .method public virtual hidebysig 
+      instance class ['mscorlib']'System.Collections.Generic'.'List`1'<class 'Msn.PhotoMix.SlideShow'.'ListItem'> 'InitItems'(class ['mscorlib']'System.Collections.Generic'.'List`1'<valuetype ['mscorlib']'System'.'Guid'> 'guidContext', valuetype ['mscorlib']'System'.'DateTime' 'dateContext', bool 'bypassCaches', class ['mscorlib']'System.Collections'.'Hashtable' 'compileState')
+    {
+      ret
+    }
+    .method public virtual hidebysig 
+      instance class ['mscorlib']'System.Collections.Generic'.'List`1'<class 'Msn.PhotoMix.SlideShow'.'ListItem'> 'FetchItems'(class ['mscorlib']'System.Collections.Generic'.'List`1'<valuetype ['mscorlib']'System'.'Guid'> 'guidContext', valuetype ['mscorlib']'System'.'DateTime' 'dateContext', bool 'bypassCaches')
+    {
+      ret
+    }
+    .method public virtual hidebysig 
+      instance void 'SaveDataToString'(class ['mscorlib']'System.Text'.'StringBuilder' 'sb')
+    {
+      ret
+    }
+    .method public virtual hidebysig 
+      instance void 'LoadDataFromXmlNode'(class ['System.Xml']'System.Xml'.'XmlNode' 'node')
+    {
+      ret
+    }
+    .method public virtual hidebysig 
+      instance void 'LoadDataFromQueryString'(class ['System.Web']'System.Web'.'HttpRequest' 'request')
+    {
+      ret
+    }
+    .method public virtual hidebysig 
+      instance class 'Msn.PhotoMix.SlideShow'.'SlideShowItem' 'CreateSlideShowItem'(class ['mscorlib']'System.Collections'.'Hashtable' 'compileCache', valuetype ['mscorlib']'System'.'DateTime' 'dateContext', bool 'bypassCaches')
+    {
+      ret
+    }
+    .property instance bool 'ItemsNeedCompileState'()
+    {
+      .get instance bool 'Msn.PhotoMix.SlideShow'.'WebPageChannel'::'get_ItemsNeedCompileState'()
+    }
+    .property instance string 'Url'()
+    {
+      .get instance string 'Msn.PhotoMix.SlideShow'.'WebPageChannel'::'get_Url'()
+      .set instance void 'Msn.PhotoMix.SlideShow'.'WebPageChannel'::'set_Url'(string)
+    }
+    .property instance valuetype 'Msn.PhotoMix.SlideShow'.'WebPageType' 'WebPageType'()
+    {
+      .get instance valuetype 'Msn.PhotoMix.SlideShow'.'WebPageType' 'Msn.PhotoMix.SlideShow'.'WebPageChannel'::'get_WebPageType'()
+      .set instance void 'Msn.PhotoMix.SlideShow'.'WebPageChannel'::'set_WebPageType'(valuetype 'Msn.PhotoMix.SlideShow'.'WebPageType')
+    }
+  }
+  .class public sealed 'WebPageType'
+    extends ['mscorlib']'System'.'Enum'
+  {
+    .field public rtspecialname specialname int32 'value__'
+    .field static public literal valuetype 'Msn.PhotoMix.SlideShow'.'WebPageType' 'FullPage' = int32(0x00000000)
+    .field static public literal valuetype 'Msn.PhotoMix.SlideShow'.'WebPageType' 'ImagesOnly' = int32(0x00000001)
+    .field static public literal valuetype 'Msn.PhotoMix.SlideShow'.'WebPageType' 'Max' = int32(0x00000001)
+  }
+}
+.namespace 'Msn.PhotoMix.Util'
+{
+  .class public sealed 'PMTimeZone'
+    extends ['mscorlib']'System'.'Enum'
+  {
+    .field public rtspecialname specialname int32 'value__'
+    .field static public literal valuetype 'Msn.PhotoMix.Util'.'PMTimeZone' 'CDT' = int32(0x00000004)
+    .field static public literal valuetype 'Msn.PhotoMix.Util'.'PMTimeZone' 'CST' = int32(0x00000003)
+    .field static public literal valuetype 'Msn.PhotoMix.Util'.'PMTimeZone' 'EDT' = int32(0x00000002)
+    .field static public literal valuetype 'Msn.PhotoMix.Util'.'PMTimeZone' 'EST' = int32(0x00000001)
+    .field static public literal valuetype 'Msn.PhotoMix.Util'.'PMTimeZone' 'GMT' = int32(0x00000000)
+    .field static public literal valuetype 'Msn.PhotoMix.Util'.'PMTimeZone' 'MDT' = int32(0x00000006)
+    .field static public literal valuetype 'Msn.PhotoMix.Util'.'PMTimeZone' 'MST' = int32(0x00000005)
+    .field static public literal valuetype 'Msn.PhotoMix.Util'.'PMTimeZone' 'PDT' = int32(0x00000008)
+    .field static public literal valuetype 'Msn.PhotoMix.Util'.'PMTimeZone' 'PST' = int32(0x00000007)
+  }
+}
+

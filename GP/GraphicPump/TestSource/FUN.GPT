@@ -1,0 +1,8 @@
+<Task Version="1">
+    <Name>Fun Informational Web Images</Name>
+    <Status><LastRun></LastRun><Failed></Failed><Reason></Reason></Status>
+    <Source><Type>1</Type><Album Version="1"><Name/><PictureList/></Album><AlbumURI>http://www.graphicpump.com/fun.gpa</AlbumURI></Source>
+    <Schedule><Type>0</Type><Disable>0</Disable><Connect>1</Connect><Hours>0</Hours><Minutes>0</Minutes><Weekday>0</Weekday><Monthday>1</Monthday></Schedule>
+    <Format><Name></Name><FormatSettings><Width>320</Width><Height>240</Height><Grow>1</Grow><Shrink>1</Shrink><Rotate>0</Rotate><RotateDirection>0</RotateDirection><Pad>0</Pad><PadColor>0</PadColor><VerticalAlign>1</VerticalAlign><HorizontalAlign>1</HorizontalAlign><Margins>0</Margins><TopMargin>5</TopMargin><LeftMargin>5</LeftMargin><RightMargin>5</RightMargin><BottomMargin>5</BottomMargin><MarginColor>0</MarginColor><Compression>52</Compression><Thumbnail>0</Thumbnail><ThumbWidth>0</ThumbWidth><ThumbHeight>0</ThumbHeight></FormatSettings></Format>
+    <Destination><Type>0</Type><Directory>%sd%TestDest</Directory><DirectoryDelete>1</DirectoryDelete><FileTemplate>fun%i%.jpg</FileTemplate><DigiFramePort>0</DigiFramePort><DigiFrameMedia>0</DigiFrameMedia></Destination>
+</Task>

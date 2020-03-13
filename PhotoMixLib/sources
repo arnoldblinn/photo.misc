@@ -1,0 +1,85 @@
+
+!INCLUDE $(INETROOT)\build\paths.all
+!INCLUDE $(INETROOT)\build\sources.all
+
+MAJORCOMP = PHOTOMIX
+MINORCOMP = Msn.PhotoMix
+
+TARGETNAME = Msn.PhotoMix
+TARGETTYPE = DYNLINK
+
+MANAGED_CODE = 1
+PASS1_LINK = 1
+# SYNCHRONIZE_BLOCK = 1
+BUILD_NO_SYMCHK = 1
+
+#
+#handle multi-proc synchronization
+#
+
+ALLOW_DLL_REFERENCES = 1
+BUILD_PRODUCES	= Msn.PhotoMix
+
+SOURCES			= \
+	Passport\Puid.cs	\
+	Services\FacebookChannel.cs	\
+	Services\FlickrChannel.cs	\
+	Services\SmugMugChannel.cs	\
+	SlideShow\Channel.cs \
+	SlideShow\ChannelItem.cs \
+	SlideShow\CompiledTextFeed.cs	\
+	SlideShow\CompiledTextFeedItem.cs	\
+	SlideShow\CompileUtil.cs \
+	SlideShow\FixedReferenceChannel.cs \
+	SlideShow\FriendlyName.cs	\
+	SlideShow\ListItem.cs	\
+	SlideShow\ReferenceChannel.cs \
+	SlideShow\RssChannel.cs \
+	SlideShow\SlideShow.cs \
+	SlideShow\SlideShowItem.cs	\
+	SlideShow\SpaceChannel.cs \
+	SlideShow\StaticChannel.cs	\
+	SlideShow\TextRssChannelItem.cs	\
+	SlideShow\UrlChannelItem.cs	\
+	USTraffic\USTrafficChannel.cs	\
+	Util\ImageUtil.cs \
+	Util\MiscUtil.cs	\
+	Util\TimeUtil.cs	\
+	Util\WebPageBitmap.cs	\
+	Weather\CompiledWeather.cs	\
+	Weather\WeatherChannel.cs	\
+	WebPage\CompiledWebPage.cs	\
+	WebPage\WebPageChannel.cs	\
+	ErrorLog.cs \
+	PhotoMixError.cs \
+	PhotoMixErrorAttribute.cs \
+	PhotoMixException.cs \
+	PhotoMixLog.cs \
+        PhotoMixQuery.cs \
+
+REFERENCES	= 	$(CLR_REF_PATH)\System.metadata_dll; \
+			$(CLR_REF_PATH)\System.Data.metadata_dll; \
+			$(CLR_REF_PATH)\System.Drawing.metadata_dll; \
+			$(CLR_REF_PATH)\System.Web.metadata_dll; \
+			$(CLR_REF_PATH)\System.Windows.Forms.metadata_dll; \
+			$(CLR_REF_PATH)\System.Xml.metadata_dll; \
+			..\FrameworkLib\$(_OBJ_DIR)\i386\Msn.Framework.metadata_dll; \
+			..\dependencies\passport5.0\$(PROCESSOR_ARCHITECTURE)\interop\Microsoft.Passport.RPS.metadata_dll; \
+			..\dependencies\passport\interop\Interop.PASSPORTLib.metadata_dll; \
+			..\dependencies\mshtml\interop\Microsoft.mshtml.dll
+#			..\FrameworkWstLib\$(_OBJ_DIR)\i386\Msn.Framework.Webstore.dll;\
+#			..\dependencies\WebStore\wstclient.dll
+			
+USER_CS_FLAGS   = $(USER_CS_FLAGS) /define:COMMAND_LINE_BUILD /define:TRACE
+
+# lets build locally, then the build can sign it in this location
+# .\$(_OBJ_DIR)\$(0)\ means build into .\objd\i386 for debug
+TARGETPATH 	= .\$(_OBJ_DIR)$(0)\
+
+BINPLACE_FLAGS   =$(BINPLACE_FLAGS) -R $(_OUTPUTENV)\i386
+BINPLACE_PLACEFILE = placefil.txt
+MISCFILES =	..\dependencies\passport5.0\x86\interop\Microsoft.Passport.RPS.dll \
+		..\dependencies\passport5.0\x86\interop\Microsoft.Passport.RPS.Native.dll \
+		..\dependencies\AntiXssLibrary\AntiXssLibrary.dll \
+		..\dependencies\mshtml\interop\Microsoft.mshtml.dll
+#			..\dependencies\WebStore\wstclient.dll

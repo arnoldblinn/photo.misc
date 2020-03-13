@@ -1,0 +1,224 @@
+[Root]
+Most Recent Package=Standard Setup Package 1
+
+
+[Package|Standard Setup Package 1|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=C:\personal\GraphicPump\Package
+
+[Package|Standard Setup Package 1|Configure DAO ISAMs]
+Applicable=No
+
+[Package|Standard Setup Package 1|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Standard Setup Package 1|Files Found]
+
+[Package|Standard Setup Package 1|Files Released]
+
+[Package|Standard Setup Package 1|Missing Dependency Information]
+C:\WINDOWS\SYSTEM\ltocx12n.ocx=
+C:\WINDOWS\SYSTEM\MSXML.DLL=
+C:\WINDOWS\SYSTEM\WININET.DLL=
+C:\personal\ScreenSave\Graphic Pump Saver.scr=
+C:\Program Files\LEAD Technologies, Inc\LEADTOOLS 12.0 Win32\redist\lfgif12n.dll=
+C:\Program Files\LEAD Technologies, Inc\LEADTOOLS 12.0 Win32\redist\lftif12n.dll=
+C:\Program Files\LEAD Technologies, Inc\LEADTOOLS 12.0 Win32\redist\LFCMP12n.DLL=
+C:\Program Files\LEAD Technologies, Inc\LEADTOOLS 12.0 Win32\redist\LTDIS12n.dll=
+C:\Program Files\LEAD Technologies, Inc\LEADTOOLS 12.0 Win32\redist\ltefx12n.dll=
+C:\Program Files\LEAD Technologies, Inc\LEADTOOLS 12.0 Win32\redist\ltfil12n.DLL=
+C:\Program Files\LEAD Technologies, Inc\LEADTOOLS 12.0 Win32\redist\ltimg12n.dll=
+C:\Program Files\LEAD Technologies, Inc\LEADTOOLS 12.0 Win32\redist\NoNagLTKRN\ltkrn12n.dll=
+C:\Program Files\LEAD Technologies, Inc\LEADTOOLS 12.0 Win32\redist\lttwn12n.dll=
+C:\Program Files\LEAD Technologies, Inc\LEADTOOLS 12.0 Win32\redist\Ltwvc12n.dll=
+
+[Package|Standard Setup Package 1|Out-of-Date Dependency Information]
+C:\WINDOWS\SYSTEM\mscomct2.ocx=
+C:\WINDOWS\SYSTEM\comct332.ocx=
+C:\WINDOWS\SYSTEM\mscomctl.ocx=
+C:\WINDOWS\SYSTEM\comdlg32.ocx=
+C:\WINDOWS\SYSTEM\SCRRUN.DLL=
+
+[Package|Standard Setup Package 1|Files Added]
+C:\personal\ScreenSave\Graphic Pump Saver.scr=
+C:\personal\GraphicPump\TestDest\blank.txt=
+C:\personal\GraphicPump\readme.txt=
+C:\personal\GraphicPump\graphicpump.doc=
+C:\personal\GraphicPump\TestSource\elephant.jpg=
+C:\personal\GraphicPump\TestSource\flower.jpg=
+C:\personal\GraphicPump\TestSource\fun.gpa=
+C:\personal\GraphicPump\TestSource\fun.gpt=
+C:\personal\GraphicPump\TestSource\gpdata.xml=
+C:\personal\GraphicPump\TestSource\m&m.jpg=
+C:\personal\GraphicPump\TestSource\photos.gpt=
+C:\personal\GraphicPump\pumpschema.xml=
+C:\Program Files\LEAD Technologies, Inc\LEADTOOLS 12.0 Win32\redist\lfgif12n.dll=
+C:\Program Files\LEAD Technologies, Inc\LEADTOOLS 12.0 Win32\redist\lftif12n.dll=
+C:\Program Files\LEAD Technologies, Inc\LEADTOOLS 12.0 Win32\redist\LFCMP12n.DLL=
+C:\Program Files\LEAD Technologies, Inc\LEADTOOLS 12.0 Win32\redist\LTDIS12n.dll=
+C:\Program Files\LEAD Technologies, Inc\LEADTOOLS 12.0 Win32\redist\ltefx12n.dll=
+C:\Program Files\LEAD Technologies, Inc\LEADTOOLS 12.0 Win32\redist\ltfil12n.DLL=
+C:\Program Files\LEAD Technologies, Inc\LEADTOOLS 12.0 Win32\redist\ltimg12n.dll=
+C:\Program Files\LEAD Technologies, Inc\LEADTOOLS 12.0 Win32\redist\NoNagLTKRN\ltkrn12n.dll=
+C:\Program Files\LEAD Technologies, Inc\LEADTOOLS 12.0 Win32\redist\lttwn12n.dll=
+C:\Program Files\LEAD Technologies, Inc\LEADTOOLS 12.0 Win32\redist\Ltwvc12n.dll=
+
+[Package|Standard Setup Package 1|Files Removed]
+
+[Package|Standard Setup Package 1|Files In Project]
+C:\personal\GraphicPump\GraphicPump.exe=Yes
+C:\WINDOWS\SYSTEM\MSVBVM60.DLL=Yes
+C:\WINDOWS\SYSTEM\OLEAUT32.DLL=Yes
+C:\WINDOWS\SYSTEM\OLEPRO32.DLL=Yes
+C:\WINDOWS\SYSTEM\ASYCFILT.DLL=Yes
+C:\WINDOWS\SYSTEM\STDOLE2.TLB=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\WINDOWS\SYSTEM\WSC32.DLL=Yes
+C:\WINDOWS\SYSTEM\XYDRV32.DLL=Yes
+C:\WINDOWS\SYSTEM\WININET.DLL=Yes
+C:\WINDOWS\SYSTEM\MSXML.DLL=Yes
+C:\WINDOWS\SYSTEM\SCRRUN.DLL=Yes
+C:\WINDOWS\SYSTEM\MSVCRT.DLL=Yes
+C:\WINDOWS\SYSTEM\comdlg32.ocx=Yes
+C:\WINDOWS\SYSTEM\mscomctl.ocx=Yes
+C:\WINDOWS\SYSTEM\comct332.ocx=Yes
+C:\WINDOWS\SYSTEM\MSINET.OCX=Yes
+C:\WINDOWS\SYSTEM\mscomct2.ocx=Yes
+C:\WINDOWS\SYSTEM\ltocx12n.ocx=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WINDOWS\SYSTEM\VB6STKIT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+C:\personal\ScreenSave\Graphic Pump Saver.scr=Yes
+C:\personal\GraphicPump\TestDest\blank.txt=Yes
+C:\personal\GraphicPump\readme.txt=Yes
+C:\personal\GraphicPump\graphicpump.doc=Yes
+C:\personal\GraphicPump\TestSource\elephant.jpg=Yes
+C:\personal\GraphicPump\TestSource\flower.jpg=Yes
+C:\personal\GraphicPump\TestSource\fun.gpa=Yes
+C:\personal\GraphicPump\TestSource\fun.gpt=Yes
+C:\personal\GraphicPump\TestSource\gpdata.xml=Yes
+C:\personal\GraphicPump\TestSource\m&m.jpg=Yes
+C:\personal\GraphicPump\TestSource\photos.gpt=Yes
+C:\personal\GraphicPump\pumpschema.xml=Yes
+C:\Program Files\LEAD Technologies, Inc\LEADTOOLS 12.0 Win32\redist\lfgif12n.dll=Yes
+C:\Program Files\LEAD Technologies, Inc\LEADTOOLS 12.0 Win32\redist\lftif12n.dll=Yes
+C:\Program Files\LEAD Technologies, Inc\LEADTOOLS 12.0 Win32\redist\LFCMP12n.DLL=Yes
+C:\Program Files\LEAD Technologies, Inc\LEADTOOLS 12.0 Win32\redist\LTDIS12n.dll=Yes
+C:\Program Files\LEAD Technologies, Inc\LEADTOOLS 12.0 Win32\redist\ltefx12n.dll=Yes
+C:\Program Files\LEAD Technologies, Inc\LEADTOOLS 12.0 Win32\redist\ltfil12n.DLL=Yes
+C:\Program Files\LEAD Technologies, Inc\LEADTOOLS 12.0 Win32\redist\ltimg12n.dll=Yes
+C:\Program Files\LEAD Technologies, Inc\LEADTOOLS 12.0 Win32\redist\NoNagLTKRN\ltkrn12n.dll=Yes
+C:\Program Files\LEAD Technologies, Inc\LEADTOOLS 12.0 Win32\redist\lttwn12n.dll=Yes
+C:\Program Files\LEAD Technologies, Inc\LEADTOOLS 12.0 Win32\redist\Ltwvc12n.dll=Yes
+
+[Package|Standard Setup Package 1|Configure Registry Files]
+Applicable=No
+
+[Package|Standard Setup Package 1|Configure Remote Servers]
+Applicable=No
+
+[Package|Standard Setup Package 1|Install Locations]
+C:\personal\GraphicPump\GraphicPump.exe=$(AppPath)
+C:\WINDOWS\SYSTEM\MSVBVM60.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\WSC32.DLL=$(AppPath)
+C:\WINDOWS\SYSTEM\XYDRV32.DLL=$(AppPath)
+C:\WINDOWS\SYSTEM\WININET.DLL=$(WinSysPath)
+C:\WINDOWS\SYSTEM\MSXML.DLL=$(WinSysPath)
+C:\WINDOWS\SYSTEM\SCRRUN.DLL=$(WinSysPath)
+C:\WINDOWS\SYSTEM\MSVCRT.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\comdlg32.ocx=$(WinSysPath)
+C:\WINDOWS\SYSTEM\mscomctl.ocx=$(WinSysPath)
+C:\WINDOWS\SYSTEM\comct332.ocx=$(WinSysPath)
+C:\WINDOWS\SYSTEM\MSINET.OCX=$(WinSysPath)
+C:\WINDOWS\SYSTEM\mscomct2.ocx=$(WinSysPath)
+C:\WINDOWS\SYSTEM\ltocx12n.ocx=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINDOWS\SYSTEM\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+C:\personal\ScreenSave\Graphic Pump Saver.scr=$(WinSysPath)
+C:\personal\GraphicPump\TestDest\blank.txt=$(AppPath)\TestDest
+C:\personal\GraphicPump\readme.txt=$(AppPath)
+C:\personal\GraphicPump\graphicpump.doc=$(AppPath)
+C:\personal\GraphicPump\TestSource\elephant.jpg=$(AppPath)\TestSource
+C:\personal\GraphicPump\TestSource\flower.jpg=$(AppPath)\TestSource
+C:\personal\GraphicPump\TestSource\fun.gpa=$(AppPath)\TestSource
+C:\personal\GraphicPump\TestSource\fun.gpt=$(AppPath)\TestSource
+C:\personal\GraphicPump\TestSource\gpdata.xml=$(AppPath)
+C:\personal\GraphicPump\TestSource\m&m.jpg=$(AppPath)\TestSource
+C:\personal\GraphicPump\TestSource\photos.gpt=$(AppPath)\TestSource
+C:\personal\GraphicPump\pumpschema.xml=$(AppPath)
+C:\Program Files\LEAD Technologies, Inc\LEADTOOLS 12.0 Win32\redist\lfgif12n.dll=$(WinSysPath)
+C:\Program Files\LEAD Technologies, Inc\LEADTOOLS 12.0 Win32\redist\lftif12n.dll=$(WinSysPath)
+C:\Program Files\LEAD Technologies, Inc\LEADTOOLS 12.0 Win32\redist\LFCMP12n.DLL=$(WinSysPath)
+C:\Program Files\LEAD Technologies, Inc\LEADTOOLS 12.0 Win32\redist\LTDIS12n.dll=$(WinSysPath)
+C:\Program Files\LEAD Technologies, Inc\LEADTOOLS 12.0 Win32\redist\ltefx12n.dll=$(WinSysPath)
+C:\Program Files\LEAD Technologies, Inc\LEADTOOLS 12.0 Win32\redist\ltfil12n.DLL=$(WinSysPath)
+C:\Program Files\LEAD Technologies, Inc\LEADTOOLS 12.0 Win32\redist\ltimg12n.dll=$(WinSysPath)
+C:\Program Files\LEAD Technologies, Inc\LEADTOOLS 12.0 Win32\redist\NoNagLTKRN\ltkrn12n.dll=$(WinSysPath)
+C:\Program Files\LEAD Technologies, Inc\LEADTOOLS 12.0 Win32\redist\lttwn12n.dll=$(WinSysPath)
+C:\Program Files\LEAD Technologies, Inc\LEADTOOLS 12.0 Win32\redist\Ltwvc12n.dll=$(WinSysPath)
+
+[Package|Standard Setup Package 1|Configure Shared Files]
+Applicable=Yes
+C:\personal\GraphicPump\GraphicPump.exe=No
+C:\WINDOWS\SYSTEM\WSC32.DLL=No
+C:\WINDOWS\SYSTEM\XYDRV32.DLL=No
+C:\personal\ScreenSave\Graphic Pump Saver.scr=No
+C:\personal\GraphicPump\TestDest\blank.txt=No
+C:\personal\GraphicPump\readme.txt=No
+C:\personal\GraphicPump\graphicpump.doc=No
+C:\personal\GraphicPump\TestSource\elephant.jpg=No
+C:\personal\GraphicPump\TestSource\flower.jpg=No
+C:\personal\GraphicPump\TestSource\fun.gpa=No
+C:\personal\GraphicPump\TestSource\fun.gpt=No
+C:\personal\GraphicPump\TestSource\gpdata.xml=No
+C:\personal\GraphicPump\TestSource\m&m.jpg=No
+C:\personal\GraphicPump\TestSource\photos.gpt=No
+C:\personal\GraphicPump\pumpschema.xml=No
+
+[Package|Standard Setup Package 1|Distribution]
+Type=single
+Size=
+Title=Graphic Pump
+
+[Package|Standard Setup Package 1|IconGroups]
+Group0=Graphic Pump
+PrivateGroup0=True
+Parent0=$(Programs)
+Group1=StartUp
+PrivateGroup1=False
+Parent1=$(Programs)
+
+[Package|Standard Setup Package 1|Graphic Pump]
+Icon1=GraphicPump.exe
+Title1=Graphic Pump
+StartIn1=$(AppPath)
+Key1=Icon1
+Icon2=graphicpump.doc
+Title2=Documentation
+StartIn2=$(AppPath)
+Key2=Icon3
+
+[Package|Standard Setup Package 1|StartUp]
+Icon1=GraphicPump.exe
+Title1=Graphic Pump
+StartIn1=$(AppPath)
+Key1=Icon4
+
+[Package|Standard Setup Package 1|Package]
+PackageFolder=C:\personal\GraphicPump\Package
+ProjectFolder=C:\personal\GraphicPump
+ServerSideCab=
+File1=C:\personal\GraphicPump\Package\setup.exe
+File2=C:\personal\GraphicPump\Package\Setup.Lst
+File3=C:\personal\GraphicPump\Package\GraphicPump.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz

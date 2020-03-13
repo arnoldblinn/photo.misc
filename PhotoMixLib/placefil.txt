@@ -1,0 +1,5 @@
+Msn.PhotoMix.dll			PhotoMix\PhotoMixWeb\bin
+Microsoft.Passport.RPS.dll		PhotoMix\PhotoMixWeb\bin
+Microsoft.Passport.RPS.Native.dll	PhotoMix\PhotoMixWeb\bin
+AntiXssLibrary.dll			PhotoMix\PhotoMixWeb\bin
+Microsoft.mshtml.dll			PhotoMix\PhotoMixWeb\bin
